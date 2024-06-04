@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\VservertaskApi
+# csakel\RUBClient\VservertaskApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**vserverTaskRunning**](VservertaskApi.md#vservertaskrunning) | **GET** /vserver/task/running | Laufende vServer Tasks abrufen
 
 # **vserverTaskAbort**
-> \c-sakel\RUBClient\Model\VserverTask[] vserverTaskAbort($server_id, $task_id)
+> \csakel\RUBClient\Model\VserverTask[] vserverTaskAbort($server_id, $task_id)
 
 Laufenden vServer Tasks abbrechen
 
@@ -18,11 +18,11 @@ Laufenden vServer Tasks abbrechen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VservertaskApi(
+$apiInstance = new csakel\RUBClient\Api\VservertaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\VserverTask[]**](../Model/VserverTask.md)
+[**\csakel\RUBClient\Model\VserverTask[]**](../Model/VserverTask.md)
 
 ### Authorization
 
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverTaskIndex**
-> \c-sakel\RUBClient\Model\VserverTask[] vserverTaskIndex($server_id)
+> \csakel\RUBClient\Model\VserverTask[] vserverTaskIndex($server_id)
 
 vServer Tasks abrufen
 
@@ -72,11 +72,11 @@ vServer Tasks abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VservertaskApi(
+$apiInstance = new csakel\RUBClient\Api\VservertaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -101,7 +101,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\VserverTask[]**](../Model/VserverTask.md)
+[**\csakel\RUBClient\Model\VserverTask[]**](../Model/VserverTask.md)
 
 ### Authorization
 
@@ -115,7 +115,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverTaskRunning**
-> \c-sakel\RUBClient\Model\VserverTask[] vserverTaskRunning($server_id)
+> \csakel\RUBClient\Model\VserverTask[] vserverTaskRunning($server_id)
 
 Laufende vServer Tasks abrufen
 
@@ -124,11 +124,11 @@ Laufende vServer Tasks abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VservertaskApi(
+$apiInstance = new csakel\RUBClient\Api\VservertaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\VserverTask[]**](../Model/VserverTask.md)
+[**\csakel\RUBClient\Model\VserverTask[]**](../Model/VserverTask.md)
 
 ### Authorization
 

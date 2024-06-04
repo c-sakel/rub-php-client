@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient\Model
+ * @package  csakel\RUBClient\Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Model;
+namespace csakel\RUBClient\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package c-sakel\RUBClient\Model
+ * @package csakel\RUBClient\Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface

@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\VserverbootApi
+# csakel\RUBClient\VserverbootApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**vserverBootUpdatePost**](VserverbootApi.md#vserverbootupdatepost) | **POST** /vserver/boot/update | 
 
 # **vserverBootGet**
-> \c-sakel\RUBClient\Model\VserverBoot[] vserverBootGet($server_id)
+> \csakel\RUBClient\Model\VserverBoot[] vserverBootGet($server_id)
 
 
 
@@ -17,11 +17,11 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VserverbootApi(
+$apiInstance = new csakel\RUBClient\Api\VserverbootApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\VserverBoot[]**](../Model/VserverBoot.md)
+[**\csakel\RUBClient\Model\VserverBoot[]**](../Model/VserverBoot.md)
 
 ### Authorization
 
@@ -69,11 +69,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VserverbootApi(
+$apiInstance = new csakel\RUBClient\Api\VserverbootApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

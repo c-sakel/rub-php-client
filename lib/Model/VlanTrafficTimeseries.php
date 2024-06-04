@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Model;
+namespace csakel\RUBClient\Model;
 
 use \ArrayAccess;
-use \c-sakel\RUBClient\ObjectSerializer;
+use \csakel\RUBClient\ObjectSerializer;
 
 /**
  * VlanTrafficTimeseries Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class VlanTrafficTimeseries implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'in' => '\c-sakel\RUBClient\Model\VlanTrafficTimeseriesIn[]',
-        'out' => '\c-sakel\RUBClient\Model\VlanTrafficTimeseriesIn[]'
+        'in' => '\csakel\RUBClient\Model\VlanTrafficTimeseriesIn[]',
+        'out' => '\csakel\RUBClient\Model\VlanTrafficTimeseriesIn[]'
     ];
 
     /**
@@ -210,7 +210,7 @@ class VlanTrafficTimeseries implements ModelInterface, ArrayAccess
     /**
      * Gets in
      *
-     * @return \c-sakel\RUBClient\Model\VlanTrafficTimeseriesIn[]
+     * @return \csakel\RUBClient\Model\VlanTrafficTimeseriesIn[]
      */
     public function getIn()
     {
@@ -220,7 +220,7 @@ class VlanTrafficTimeseries implements ModelInterface, ArrayAccess
     /**
      * Sets in
      *
-     * @param \c-sakel\RUBClient\Model\VlanTrafficTimeseriesIn[] $in in
+     * @param \csakel\RUBClient\Model\VlanTrafficTimeseriesIn[] $in in
      *
      * @return $this
      */
@@ -234,7 +234,7 @@ class VlanTrafficTimeseries implements ModelInterface, ArrayAccess
     /**
      * Gets out
      *
-     * @return \c-sakel\RUBClient\Model\VlanTrafficTimeseriesIn[]
+     * @return \csakel\RUBClient\Model\VlanTrafficTimeseriesIn[]
      */
     public function getOut()
     {
@@ -244,7 +244,7 @@ class VlanTrafficTimeseries implements ModelInterface, ArrayAccess
     /**
      * Sets out
      *
-     * @param \c-sakel\RUBClient\Model\VlanTrafficTimeseriesIn[] $out out
+     * @param \csakel\RUBClient\Model\VlanTrafficTimeseriesIn[] $out out
      *
      * @return $this
      */

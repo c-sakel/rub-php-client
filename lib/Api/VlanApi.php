@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * VlanApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -90,9 +90,9 @@ class VlanApi
      * Operation vlanGet
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Vlan[]
+     * @return \csakel\RUBClient\Model\Vlan[]
      */
     public function vlanGet()
     {
@@ -104,13 +104,13 @@ class VlanApi
      * Operation vlanGetWithHttpInfo
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Vlan[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Vlan[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vlanGetWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vlan[]';
+        $returnType = '\csakel\RUBClient\Model\Vlan[]';
         $request = $this->vlanGetRequest();
 
         try {
@@ -162,7 +162,7 @@ class VlanApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Vlan[]',
+                        '\csakel\RUBClient\Model\Vlan[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -202,7 +202,7 @@ class VlanApi
      */
     public function vlanGetAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vlan[]';
+        $returnType = '\csakel\RUBClient\Model\Vlan[]';
         $request = $this->vlanGetRequest();
 
         return $this->client
@@ -334,9 +334,9 @@ class VlanApi
      *
      * @param  int $vlan vlan (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Vlan[]
+     * @return \csakel\RUBClient\Model\Vlan[]
      */
     public function vlanShowGet($vlan)
     {
@@ -349,13 +349,13 @@ class VlanApi
      *
      * @param  int $vlan (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Vlan[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Vlan[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vlanShowGetWithHttpInfo($vlan)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vlan[]';
+        $returnType = '\csakel\RUBClient\Model\Vlan[]';
         $request = $this->vlanShowGetRequest($vlan);
 
         try {
@@ -407,7 +407,7 @@ class VlanApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Vlan[]',
+                        '\csakel\RUBClient\Model\Vlan[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -449,7 +449,7 @@ class VlanApi
      */
     public function vlanShowGetAsyncWithHttpInfo($vlan)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vlan[]';
+        $returnType = '\csakel\RUBClient\Model\Vlan[]';
         $request = $this->vlanShowGetRequest($vlan);
 
         return $this->client
@@ -594,9 +594,9 @@ class VlanApi
      * @param  \DateTime $start_date Startdatum für Traffic Zeitraum (optional)
      * @param  \DateTime $end_date Enddatum für Traffic Zeitraum (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VlanTrafficTimeseries[]
+     * @return \csakel\RUBClient\Model\VlanTrafficTimeseries[]
      */
     public function vlanTrafficTimeseriesGet($vlan, $start_date = null, $end_date = null)
     {
@@ -611,13 +611,13 @@ class VlanApi
      * @param  \DateTime $start_date Startdatum für Traffic Zeitraum (optional)
      * @param  \DateTime $end_date Enddatum für Traffic Zeitraum (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VlanTrafficTimeseries[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VlanTrafficTimeseries[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vlanTrafficTimeseriesGetWithHttpInfo($vlan, $start_date = null, $end_date = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VlanTrafficTimeseries[]';
+        $returnType = '\csakel\RUBClient\Model\VlanTrafficTimeseries[]';
         $request = $this->vlanTrafficTimeseriesGetRequest($vlan, $start_date, $end_date);
 
         try {
@@ -669,7 +669,7 @@ class VlanApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VlanTrafficTimeseries[]',
+                        '\csakel\RUBClient\Model\VlanTrafficTimeseries[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -715,7 +715,7 @@ class VlanApi
      */
     public function vlanTrafficTimeseriesGetAsyncWithHttpInfo($vlan, $start_date = null, $end_date = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VlanTrafficTimeseries[]';
+        $returnType = '\csakel\RUBClient\Model\VlanTrafficTimeseries[]';
         $request = $this->vlanTrafficTimeseriesGetRequest($vlan, $start_date, $end_date);
 
         return $this->client
@@ -870,9 +870,9 @@ class VlanApi
      * @param  \DateTime $start_date Startdatum für Traffic Zeitraum (optional)
      * @param  \DateTime $end_date Enddatum für Traffic Zeitraum (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VlanTrafficUsage[]
+     * @return \csakel\RUBClient\Model\VlanTrafficUsage[]
      */
     public function vlanTrafficUsageGet($vlan, $start_date = null, $end_date = null)
     {
@@ -887,13 +887,13 @@ class VlanApi
      * @param  \DateTime $start_date Startdatum für Traffic Zeitraum (optional)
      * @param  \DateTime $end_date Enddatum für Traffic Zeitraum (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VlanTrafficUsage[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VlanTrafficUsage[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vlanTrafficUsageGetWithHttpInfo($vlan, $start_date = null, $end_date = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VlanTrafficUsage[]';
+        $returnType = '\csakel\RUBClient\Model\VlanTrafficUsage[]';
         $request = $this->vlanTrafficUsageGetRequest($vlan, $start_date, $end_date);
 
         try {
@@ -945,7 +945,7 @@ class VlanApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VlanTrafficUsage[]',
+                        '\csakel\RUBClient\Model\VlanTrafficUsage[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -991,7 +991,7 @@ class VlanApi
      */
     public function vlanTrafficUsageGetAsyncWithHttpInfo($vlan, $start_date = null, $end_date = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VlanTrafficUsage[]';
+        $returnType = '\csakel\RUBClient\Model\VlanTrafficUsage[]';
         $request = $this->vlanTrafficUsageGetRequest($vlan, $start_date, $end_date);
 
         return $this->client

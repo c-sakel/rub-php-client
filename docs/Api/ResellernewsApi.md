@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\ResellernewsApi
+# csakel\RUBClient\ResellernewsApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**resellerNewsUpdate**](ResellernewsApi.md#resellernewsupdate) | **POST** /reseller/news/update | Bestehende Reseller News aktualisieren
 
 # **resellerNewsCreate**
-> \c-sakel\RUBClient\Model\News[] resellerNewsCreate($subject, $text, $tag)
+> \csakel\RUBClient\Model\News[] resellerNewsCreate($subject, $text, $tag)
 
 Neue Reseller News anlegen
 
@@ -20,11 +20,11 @@ Neue Reseller News anlegen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\ResellernewsApi(
+$apiInstance = new csakel\RUBClient\Api\ResellernewsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\News[]**](../Model/News.md)
+[**\csakel\RUBClient\Model\News[]**](../Model/News.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **resellerNewsDelete**
-> \c-sakel\RUBClient\Model\News[] resellerNewsDelete($news_id)
+> \csakel\RUBClient\Model\News[] resellerNewsDelete($news_id)
 
 Bestehende Reseller News löschen
 
@@ -76,11 +76,11 @@ Bestehende Reseller News löschen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\ResellernewsApi(
+$apiInstance = new csakel\RUBClient\Api\ResellernewsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\News[]**](../Model/News.md)
+[**\csakel\RUBClient\Model\News[]**](../Model/News.md)
 
 ### Authorization
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **resellerNewsIndex**
-> \c-sakel\RUBClient\Model\News[] resellerNewsIndex()
+> \csakel\RUBClient\Model\News[] resellerNewsIndex()
 
 Alle Reseller News abrufen
 
@@ -128,11 +128,11 @@ Alle Reseller News abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\ResellernewsApi(
+$apiInstance = new csakel\RUBClient\Api\ResellernewsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -153,7 +153,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\News[]**](../Model/News.md)
+[**\csakel\RUBClient\Model\News[]**](../Model/News.md)
 
 ### Authorization
 
@@ -167,7 +167,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **resellerNewsShow**
-> \c-sakel\RUBClient\Model\News[] resellerNewsShow($news_id)
+> \csakel\RUBClient\Model\News[] resellerNewsShow($news_id)
 
 Einzelne Reseller News abrufen
 
@@ -176,11 +176,11 @@ Einzelne Reseller News abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\ResellernewsApi(
+$apiInstance = new csakel\RUBClient\Api\ResellernewsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -205,7 +205,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\News[]**](../Model/News.md)
+[**\csakel\RUBClient\Model\News[]**](../Model/News.md)
 
 ### Authorization
 
@@ -219,7 +219,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **resellerNewsUpdate**
-> \c-sakel\RUBClient\Model\News[] resellerNewsUpdate($news_id, $subject, $text, $tag)
+> \csakel\RUBClient\Model\News[] resellerNewsUpdate($news_id, $subject, $text, $tag)
 
 Bestehende Reseller News aktualisieren
 
@@ -228,11 +228,11 @@ Bestehende Reseller News aktualisieren
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\ResellernewsApi(
+$apiInstance = new csakel\RUBClient\Api\ResellernewsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\News[]**](../Model/News.md)
+[**\csakel\RUBClient\Model\News[]**](../Model/News.md)
 
 ### Authorization
 

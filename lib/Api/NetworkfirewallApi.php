@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * NetworkfirewallApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class NetworkfirewallApi
      * @param  string $vserver_id vserver_id (optional)
      * @param  bool $override override (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\NetworkFirewall[]
+     * @return \csakel\RUBClient\Model\NetworkFirewall[]
      */
     public function networkFirewallAssignPost($firewall_id, $vserver_id = null, $override = null)
     {
@@ -110,13 +110,13 @@ class NetworkfirewallApi
      * @param  string $vserver_id (optional)
      * @param  bool $override (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
      */
     public function networkFirewallAssignPostWithHttpInfo($firewall_id, $vserver_id = null, $override = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->networkFirewallAssignPostRequest($firewall_id, $vserver_id, $override);
 
         try {
@@ -168,7 +168,7 @@ class NetworkfirewallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\NetworkFirewall[]',
+                        '\csakel\RUBClient\Model\NetworkFirewall[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class NetworkfirewallApi
      */
     public function networkFirewallAssignPostAsyncWithHttpInfo($firewall_id, $vserver_id = null, $override = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->networkFirewallAssignPostRequest($firewall_id, $vserver_id, $override);
 
         return $this->client
@@ -367,9 +367,9 @@ class NetworkfirewallApi
      *
      * @param  int $firewall_id firewall_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\NetworkFirewall[]
+     * @return \csakel\RUBClient\Model\NetworkFirewall[]
      */
     public function networkFirewallCopyPost($firewall_id)
     {
@@ -382,13 +382,13 @@ class NetworkfirewallApi
      *
      * @param  int $firewall_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
      */
     public function networkFirewallCopyPostWithHttpInfo($firewall_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->networkFirewallCopyPostRequest($firewall_id);
 
         try {
@@ -440,7 +440,7 @@ class NetworkfirewallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\NetworkFirewall[]',
+                        '\csakel\RUBClient\Model\NetworkFirewall[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -482,7 +482,7 @@ class NetworkfirewallApi
      */
     public function networkFirewallCopyPostAsyncWithHttpInfo($firewall_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->networkFirewallCopyPostRequest($firewall_id);
 
         return $this->client
@@ -627,9 +627,9 @@ class NetworkfirewallApi
      * @param  string $policy_in Der Standardwert für eingehende Pakete (optional)
      * @param  string $policy_out Der Standardwert für ausgehende Pakete (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\NetworkFirewall[]
+     * @return \csakel\RUBClient\Model\NetworkFirewall[]
      */
     public function networkFirewallCreatePost($title, $policy_in = null, $policy_out = null)
     {
@@ -644,13 +644,13 @@ class NetworkfirewallApi
      * @param  string $policy_in Der Standardwert für eingehende Pakete (optional)
      * @param  string $policy_out Der Standardwert für ausgehende Pakete (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
      */
     public function networkFirewallCreatePostWithHttpInfo($title, $policy_in = null, $policy_out = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->networkFirewallCreatePostRequest($title, $policy_in, $policy_out);
 
         try {
@@ -702,7 +702,7 @@ class NetworkfirewallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\NetworkFirewall[]',
+                        '\csakel\RUBClient\Model\NetworkFirewall[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -748,7 +748,7 @@ class NetworkfirewallApi
      */
     public function networkFirewallCreatePostAsyncWithHttpInfo($title, $policy_in = null, $policy_out = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->networkFirewallCreatePostRequest($title, $policy_in, $policy_out);
 
         return $this->client
@@ -901,7 +901,7 @@ class NetworkfirewallApi
      *
      * @param  int $firewall_id firewall_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -916,7 +916,7 @@ class NetworkfirewallApi
      *
      * @param  int $firewall_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1158,9 +1158,9 @@ class NetworkfirewallApi
      * Operation networkFirewallGet
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\NetworkFirewall[]
+     * @return \csakel\RUBClient\Model\NetworkFirewall[]
      */
     public function networkFirewallGet()
     {
@@ -1172,13 +1172,13 @@ class NetworkfirewallApi
      * Operation networkFirewallGetWithHttpInfo
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
      */
     public function networkFirewallGetWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->networkFirewallGetRequest();
 
         try {
@@ -1230,7 +1230,7 @@ class NetworkfirewallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\NetworkFirewall[]',
+                        '\csakel\RUBClient\Model\NetworkFirewall[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1270,7 +1270,7 @@ class NetworkfirewallApi
      */
     public function networkFirewallGetAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->networkFirewallGetRequest();
 
         return $this->client
@@ -1403,7 +1403,7 @@ class NetworkfirewallApi
      * @param  int $firewall_id firewall_id (required)
      * @param  int $vserver_id vserver_id (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1419,7 +1419,7 @@ class NetworkfirewallApi
      * @param  int $firewall_id (required)
      * @param  int $vserver_id (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1676,9 +1676,9 @@ class NetworkfirewallApi
      * @param  string[] $source_addresses Hiermit können Quell-IP-Adressen bei eingehenden Regeln angegeben werden. (optional)
      * @param  string[] $destination_addresses Hiermit können Ziel-IP-Adressen bei ausgehenden Regeln angegeben werden. (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\NetworkFirewallRule[]
+     * @return \csakel\RUBClient\Model\NetworkFirewallRule[]
      */
     public function networkFirewallRuleCreatePost($firewall_id, $direction, $active = null, $description = null, $protocol = null, $port = null, $source_addresses = null, $destination_addresses = null)
     {
@@ -1698,13 +1698,13 @@ class NetworkfirewallApi
      * @param  string[] $source_addresses Hiermit können Quell-IP-Adressen bei eingehenden Regeln angegeben werden. (optional)
      * @param  string[] $destination_addresses Hiermit können Ziel-IP-Adressen bei ausgehenden Regeln angegeben werden. (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\NetworkFirewallRule[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\NetworkFirewallRule[], HTTP status code, HTTP response headers (array of strings)
      */
     public function networkFirewallRuleCreatePostWithHttpInfo($firewall_id, $direction, $active = null, $description = null, $protocol = null, $port = null, $source_addresses = null, $destination_addresses = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewallRule[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewallRule[]';
         $request = $this->networkFirewallRuleCreatePostRequest($firewall_id, $direction, $active, $description, $protocol, $port, $source_addresses, $destination_addresses);
 
         try {
@@ -1756,7 +1756,7 @@ class NetworkfirewallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\NetworkFirewallRule[]',
+                        '\csakel\RUBClient\Model\NetworkFirewallRule[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1812,7 +1812,7 @@ class NetworkfirewallApi
      */
     public function networkFirewallRuleCreatePostAsyncWithHttpInfo($firewall_id, $direction, $active = null, $description = null, $protocol = null, $port = null, $source_addresses = null, $destination_addresses = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewallRule[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewallRule[]';
         $request = $this->networkFirewallRuleCreatePostRequest($firewall_id, $direction, $active, $description, $protocol, $port, $source_addresses, $destination_addresses);
 
         return $this->client
@@ -2003,7 +2003,7 @@ class NetworkfirewallApi
      * @param  int $firewall_id firewall_id (required)
      * @param  int $rule_id rule_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -2019,7 +2019,7 @@ class NetworkfirewallApi
      * @param  int $firewall_id (required)
      * @param  int $rule_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2282,9 +2282,9 @@ class NetworkfirewallApi
      * @param  string[] $source_addresses Hiermit können Quell-IP-Adressen bei eingehenden Regeln angegeben werden. (optional)
      * @param  string[] $destination_addresses Hiermit können Ziel-IP-Adressen bei ausgehenden Regeln angegeben werden. (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\NetworkFirewallRule[]
+     * @return \csakel\RUBClient\Model\NetworkFirewallRule[]
      */
     public function networkFirewallRuleUpdatePost($firewall_id, $rule_id, $active = null, $description = null, $protocol = null, $port = null, $source_addresses = null, $destination_addresses = null)
     {
@@ -2304,13 +2304,13 @@ class NetworkfirewallApi
      * @param  string[] $source_addresses Hiermit können Quell-IP-Adressen bei eingehenden Regeln angegeben werden. (optional)
      * @param  string[] $destination_addresses Hiermit können Ziel-IP-Adressen bei ausgehenden Regeln angegeben werden. (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\NetworkFirewallRule[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\NetworkFirewallRule[], HTTP status code, HTTP response headers (array of strings)
      */
     public function networkFirewallRuleUpdatePostWithHttpInfo($firewall_id, $rule_id, $active = null, $description = null, $protocol = null, $port = null, $source_addresses = null, $destination_addresses = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewallRule[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewallRule[]';
         $request = $this->networkFirewallRuleUpdatePostRequest($firewall_id, $rule_id, $active, $description, $protocol, $port, $source_addresses, $destination_addresses);
 
         try {
@@ -2362,7 +2362,7 @@ class NetworkfirewallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\NetworkFirewallRule[]',
+                        '\csakel\RUBClient\Model\NetworkFirewallRule[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2418,7 +2418,7 @@ class NetworkfirewallApi
      */
     public function networkFirewallRuleUpdatePostAsyncWithHttpInfo($firewall_id, $rule_id, $active = null, $description = null, $protocol = null, $port = null, $source_addresses = null, $destination_addresses = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewallRule[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewallRule[]';
         $request = $this->networkFirewallRuleUpdatePostRequest($firewall_id, $rule_id, $active, $description, $protocol, $port, $source_addresses, $destination_addresses);
 
         return $this->client
@@ -2608,9 +2608,9 @@ class NetworkfirewallApi
      *
      * @param  int $firewall_id firewall_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\NetworkFirewall[]
+     * @return \csakel\RUBClient\Model\NetworkFirewall[]
      */
     public function networkFirewallShowGet($firewall_id)
     {
@@ -2623,13 +2623,13 @@ class NetworkfirewallApi
      *
      * @param  int $firewall_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
      */
     public function networkFirewallShowGetWithHttpInfo($firewall_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->networkFirewallShowGetRequest($firewall_id);
 
         try {
@@ -2681,7 +2681,7 @@ class NetworkfirewallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\NetworkFirewall[]',
+                        '\csakel\RUBClient\Model\NetworkFirewall[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2723,7 +2723,7 @@ class NetworkfirewallApi
      */
     public function networkFirewallShowGetAsyncWithHttpInfo($firewall_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->networkFirewallShowGetRequest($firewall_id);
 
         return $this->client
@@ -2867,9 +2867,9 @@ class NetworkfirewallApi
      * @param  int $firewall_id firewall_id (required)
      * @param  string $vserver_id vserver_id (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\NetworkFirewall[]
+     * @return \csakel\RUBClient\Model\NetworkFirewall[]
      */
     public function networkFirewallUnassignDelete($firewall_id, $vserver_id = null)
     {
@@ -2883,13 +2883,13 @@ class NetworkfirewallApi
      * @param  int $firewall_id (required)
      * @param  string $vserver_id (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
      */
     public function networkFirewallUnassignDeleteWithHttpInfo($firewall_id, $vserver_id = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->networkFirewallUnassignDeleteRequest($firewall_id, $vserver_id);
 
         try {
@@ -2941,7 +2941,7 @@ class NetworkfirewallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\NetworkFirewall[]',
+                        '\csakel\RUBClient\Model\NetworkFirewall[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2985,7 +2985,7 @@ class NetworkfirewallApi
      */
     public function networkFirewallUnassignDeleteAsyncWithHttpInfo($firewall_id, $vserver_id = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->networkFirewallUnassignDeleteRequest($firewall_id, $vserver_id);
 
         return $this->client
@@ -3136,9 +3136,9 @@ class NetworkfirewallApi
      * @param  string $policy_in Der Standardwert für eingehende Pakete (optional)
      * @param  string $policy_out Der Standardwert für ausgehende Pakete (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\NetworkFirewall[]
+     * @return \csakel\RUBClient\Model\NetworkFirewall[]
      */
     public function networkFirewallUpdatePost($firewall_id, $title, $policy_in = null, $policy_out = null)
     {
@@ -3154,13 +3154,13 @@ class NetworkfirewallApi
      * @param  string $policy_in Der Standardwert für eingehende Pakete (optional)
      * @param  string $policy_out Der Standardwert für ausgehende Pakete (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
      */
     public function networkFirewallUpdatePostWithHttpInfo($firewall_id, $title, $policy_in = null, $policy_out = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->networkFirewallUpdatePostRequest($firewall_id, $title, $policy_in, $policy_out);
 
         try {
@@ -3212,7 +3212,7 @@ class NetworkfirewallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\NetworkFirewall[]',
+                        '\csakel\RUBClient\Model\NetworkFirewall[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3260,7 +3260,7 @@ class NetworkfirewallApi
      */
     public function networkFirewallUpdatePostAsyncWithHttpInfo($firewall_id, $title, $policy_in = null, $policy_out = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->networkFirewallUpdatePostRequest($firewall_id, $title, $policy_in, $policy_out);
 
         return $this->client

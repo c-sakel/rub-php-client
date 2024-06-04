@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\PduApi
+# csakel\RUBClient\PduApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**pduUsageGet**](PduApi.md#pduusageget) | **GET** /pdu/usage | 
 
 # **pduGet**
-> \c-sakel\RUBClient\Model\Pdu[] pduGet()
+> \csakel\RUBClient\Model\Pdu[] pduGet()
 
 
 
@@ -18,11 +18,11 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\PduApi(
+$apiInstance = new csakel\RUBClient\Api\PduApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -43,7 +43,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Pdu[]**](../Model/Pdu.md)
+[**\csakel\RUBClient\Model\Pdu[]**](../Model/Pdu.md)
 
 ### Authorization
 
@@ -57,7 +57,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pduShowGet**
-> \c-sakel\RUBClient\Model\Pdu[] pduShowGet()
+> \csakel\RUBClient\Model\Pdu[] pduShowGet()
 
 
 
@@ -66,11 +66,11 @@ This endpoint does not need any parameter.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\PduApi(
+$apiInstance = new csakel\RUBClient\Api\PduApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -91,7 +91,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Pdu[]**](../Model/Pdu.md)
+[**\csakel\RUBClient\Model\Pdu[]**](../Model/Pdu.md)
 
 ### Authorization
 
@@ -105,7 +105,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pduUsageGet**
-> \c-sakel\RUBClient\Model\PduUsage[] pduUsageGet($pdu_id, $start_date, $end_date)
+> \csakel\RUBClient\Model\PduUsage[] pduUsageGet($pdu_id, $start_date, $end_date)
 
 
 
@@ -114,11 +114,11 @@ This endpoint does not need any parameter.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\PduApi(
+$apiInstance = new csakel\RUBClient\Api\PduApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PduUsage[]**](../Model/PduUsage.md)
+[**\csakel\RUBClient\Model\PduUsage[]**](../Model/PduUsage.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * VserverfirewallApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,7 +92,7 @@ class VserverfirewallApi
      * @param  int $server_id server_id (required)
      * @param  int $firewall_id firewall_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -108,7 +108,7 @@ class VserverfirewallApi
      * @param  int $server_id (required)
      * @param  int $firewall_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -364,9 +364,9 @@ class VserverfirewallApi
      *
      * @param  int $server_id server_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\NetworkFirewall[]
+     * @return \csakel\RUBClient\Model\NetworkFirewall[]
      */
     public function vserverFirewallGet($server_id)
     {
@@ -379,13 +379,13 @@ class VserverfirewallApi
      *
      * @param  int $server_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\NetworkFirewall[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverFirewallGetWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->vserverFirewallGetRequest($server_id);
 
         try {
@@ -437,7 +437,7 @@ class VserverfirewallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\NetworkFirewall[]',
+                        '\csakel\RUBClient\Model\NetworkFirewall[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -479,7 +479,7 @@ class VserverfirewallApi
      */
     public function vserverFirewallGetAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\NetworkFirewall[]';
+        $returnType = '\csakel\RUBClient\Model\NetworkFirewall[]';
         $request = $this->vserverFirewallGetRequest($server_id);
 
         return $this->client
@@ -622,7 +622,7 @@ class VserverfirewallApi
      *
      * @param  int $server_id server_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -637,7 +637,7 @@ class VserverfirewallApi
      *
      * @param  int $server_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

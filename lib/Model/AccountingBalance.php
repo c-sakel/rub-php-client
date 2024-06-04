@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Model;
+namespace csakel\RUBClient\Model;
 
 use \ArrayAccess;
-use \c-sakel\RUBClient\ObjectSerializer;
+use \csakel\RUBClient\ObjectSerializer;
 
 /**
  * AccountingBalance Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class AccountingBalance implements ModelInterface, ArrayAccess
         'reserved_amount' => 'string',
         'available_amount' => 'string',
         'next_invoice_generation' => '\DateTime',
-        'reserved_positions' => '\c-sakel\RUBClient\Model\AccountingBalanceReservedPositions[]'
+        'reserved_positions' => '\csakel\RUBClient\Model\AccountingBalanceReservedPositions[]'
     ];
 
     /**
@@ -354,7 +354,7 @@ class AccountingBalance implements ModelInterface, ArrayAccess
     /**
      * Gets reserved_positions
      *
-     * @return \c-sakel\RUBClient\Model\AccountingBalanceReservedPositions[]
+     * @return \csakel\RUBClient\Model\AccountingBalanceReservedPositions[]
      */
     public function getReservedPositions()
     {
@@ -364,7 +364,7 @@ class AccountingBalance implements ModelInterface, ArrayAccess
     /**
      * Sets reserved_positions
      *
-     * @param \c-sakel\RUBClient\Model\AccountingBalanceReservedPositions[] $reserved_positions reserved_positions
+     * @param \csakel\RUBClient\Model\AccountingBalanceReservedPositions[] $reserved_positions reserved_positions
      *
      * @return $this
      */

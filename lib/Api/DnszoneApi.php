@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * DnszoneApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -90,9 +90,9 @@ class DnszoneApi
      * Operation dnsZoneGet
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DnsZone[]
+     * @return \csakel\RUBClient\Model\DnsZone[]
      */
     public function dnsZoneGet()
     {
@@ -104,13 +104,13 @@ class DnszoneApi
      * Operation dnsZoneGetWithHttpInfo
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DnsZone[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DnsZone[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dnsZoneGetWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\DnsZone[]';
+        $returnType = '\csakel\RUBClient\Model\DnsZone[]';
         $request = $this->dnsZoneGetRequest();
 
         try {
@@ -162,7 +162,7 @@ class DnszoneApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DnsZone[]',
+                        '\csakel\RUBClient\Model\DnsZone[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -202,7 +202,7 @@ class DnszoneApi
      */
     public function dnsZoneGetAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\DnsZone[]';
+        $returnType = '\csakel\RUBClient\Model\DnsZone[]';
         $request = $this->dnsZoneGetRequest();
 
         return $this->client
@@ -339,9 +339,9 @@ class DnszoneApi
      * @param  int $priority priority (optional)
      * @param  int $ttl ttl (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DnsZoneRecord[]
+     * @return \csakel\RUBClient\Model\DnsZoneRecord[]
      */
     public function dnsZoneRecordCreatePost($zone_name, $type, $content, $name = null, $priority = null, $ttl = null)
     {
@@ -359,13 +359,13 @@ class DnszoneApi
      * @param  int $priority (optional)
      * @param  int $ttl (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DnsZoneRecord[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DnsZoneRecord[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dnsZoneRecordCreatePostWithHttpInfo($zone_name, $type, $content, $name = null, $priority = null, $ttl = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DnsZoneRecord[]';
+        $returnType = '\csakel\RUBClient\Model\DnsZoneRecord[]';
         $request = $this->dnsZoneRecordCreatePostRequest($zone_name, $type, $content, $name, $priority, $ttl);
 
         try {
@@ -417,7 +417,7 @@ class DnszoneApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DnsZoneRecord[]',
+                        '\csakel\RUBClient\Model\DnsZoneRecord[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -469,7 +469,7 @@ class DnszoneApi
      */
     public function dnsZoneRecordCreatePostAsyncWithHttpInfo($zone_name, $type, $content, $name = null, $priority = null, $ttl = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DnsZoneRecord[]';
+        $returnType = '\csakel\RUBClient\Model\DnsZoneRecord[]';
         $request = $this->dnsZoneRecordCreatePostRequest($zone_name, $type, $content, $name, $priority, $ttl);
 
         return $this->client
@@ -650,7 +650,7 @@ class DnszoneApi
      * @param  string $zone_name zone_name (required)
      * @param  string $record_id record_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -666,7 +666,7 @@ class DnszoneApi
      * @param  string $zone_name (required)
      * @param  string $record_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -922,9 +922,9 @@ class DnszoneApi
      *
      * @param  string $zone_name zone_name (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DnsZoneRecord[]
+     * @return \csakel\RUBClient\Model\DnsZoneRecord[]
      */
     public function dnsZoneRecordGet($zone_name)
     {
@@ -937,13 +937,13 @@ class DnszoneApi
      *
      * @param  string $zone_name (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DnsZoneRecord[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DnsZoneRecord[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dnsZoneRecordGetWithHttpInfo($zone_name)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DnsZoneRecord[]';
+        $returnType = '\csakel\RUBClient\Model\DnsZoneRecord[]';
         $request = $this->dnsZoneRecordGetRequest($zone_name);
 
         try {
@@ -995,7 +995,7 @@ class DnszoneApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DnsZoneRecord[]',
+                        '\csakel\RUBClient\Model\DnsZoneRecord[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1037,7 +1037,7 @@ class DnszoneApi
      */
     public function dnsZoneRecordGetAsyncWithHttpInfo($zone_name)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DnsZoneRecord[]';
+        $returnType = '\csakel\RUBClient\Model\DnsZoneRecord[]';
         $request = $this->dnsZoneRecordGetRequest($zone_name);
 
         return $this->client
@@ -1181,9 +1181,9 @@ class DnszoneApi
      * @param  string $zone_name zone_name (required)
      * @param  string $record_id record_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DnsZoneRecord[]
+     * @return \csakel\RUBClient\Model\DnsZoneRecord[]
      */
     public function dnsZoneRecordShowGet($zone_name, $record_id)
     {
@@ -1197,13 +1197,13 @@ class DnszoneApi
      * @param  string $zone_name (required)
      * @param  string $record_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DnsZoneRecord[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DnsZoneRecord[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dnsZoneRecordShowGetWithHttpInfo($zone_name, $record_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DnsZoneRecord[]';
+        $returnType = '\csakel\RUBClient\Model\DnsZoneRecord[]';
         $request = $this->dnsZoneRecordShowGetRequest($zone_name, $record_id);
 
         try {
@@ -1255,7 +1255,7 @@ class DnszoneApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DnsZoneRecord[]',
+                        '\csakel\RUBClient\Model\DnsZoneRecord[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1299,7 +1299,7 @@ class DnszoneApi
      */
     public function dnsZoneRecordShowGetAsyncWithHttpInfo($zone_name, $record_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DnsZoneRecord[]';
+        $returnType = '\csakel\RUBClient\Model\DnsZoneRecord[]';
         $request = $this->dnsZoneRecordShowGetRequest($zone_name, $record_id);
 
         return $this->client
@@ -1459,9 +1459,9 @@ class DnszoneApi
      * @param  int $priority priority (optional)
      * @param  int $ttl ttl (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DnsZoneRecord[]
+     * @return \csakel\RUBClient\Model\DnsZoneRecord[]
      */
     public function dnsZoneRecordUpdatePost($zone_name, $record_id, $type, $content, $name = null, $priority = null, $ttl = null)
     {
@@ -1480,13 +1480,13 @@ class DnszoneApi
      * @param  int $priority (optional)
      * @param  int $ttl (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DnsZoneRecord[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DnsZoneRecord[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dnsZoneRecordUpdatePostWithHttpInfo($zone_name, $record_id, $type, $content, $name = null, $priority = null, $ttl = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DnsZoneRecord[]';
+        $returnType = '\csakel\RUBClient\Model\DnsZoneRecord[]';
         $request = $this->dnsZoneRecordUpdatePostRequest($zone_name, $record_id, $type, $content, $name, $priority, $ttl);
 
         try {
@@ -1538,7 +1538,7 @@ class DnszoneApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DnsZoneRecord[]',
+                        '\csakel\RUBClient\Model\DnsZoneRecord[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1592,7 +1592,7 @@ class DnszoneApi
      */
     public function dnsZoneRecordUpdatePostAsyncWithHttpInfo($zone_name, $record_id, $type, $content, $name = null, $priority = null, $ttl = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DnsZoneRecord[]';
+        $returnType = '\csakel\RUBClient\Model\DnsZoneRecord[]';
         $request = $this->dnsZoneRecordUpdatePostRequest($zone_name, $record_id, $type, $content, $name, $priority, $ttl);
 
         return $this->client
@@ -1783,9 +1783,9 @@ class DnszoneApi
      *
      * @param  string $zone_name zone_name (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DnsZone[]
+     * @return \csakel\RUBClient\Model\DnsZone[]
      */
     public function dnsZoneShowGet($zone_name)
     {
@@ -1798,13 +1798,13 @@ class DnszoneApi
      *
      * @param  string $zone_name (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DnsZone[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DnsZone[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dnsZoneShowGetWithHttpInfo($zone_name)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DnsZone[]';
+        $returnType = '\csakel\RUBClient\Model\DnsZone[]';
         $request = $this->dnsZoneShowGetRequest($zone_name);
 
         try {
@@ -1856,7 +1856,7 @@ class DnszoneApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DnsZone[]',
+                        '\csakel\RUBClient\Model\DnsZone[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1898,7 +1898,7 @@ class DnszoneApi
      */
     public function dnsZoneShowGetAsyncWithHttpInfo($zone_name)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DnsZone[]';
+        $returnType = '\csakel\RUBClient\Model\DnsZone[]';
         $request = $this->dnsZoneShowGetRequest($zone_name);
 
         return $this->client

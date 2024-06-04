@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * ReselleraccountingApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,9 +91,9 @@ class ReselleraccountingApi
      *
      * @param  int $reseller_id reseller_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\AccountingBalance[]
+     * @return \csakel\RUBClient\Model\AccountingBalance[]
      */
     public function resellerAccountingBalanceGet($reseller_id)
     {
@@ -106,13 +106,13 @@ class ReselleraccountingApi
      *
      * @param  int $reseller_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\AccountingBalance[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\AccountingBalance[], HTTP status code, HTTP response headers (array of strings)
      */
     public function resellerAccountingBalanceGetWithHttpInfo($reseller_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\AccountingBalance[]';
+        $returnType = '\csakel\RUBClient\Model\AccountingBalance[]';
         $request = $this->resellerAccountingBalanceGetRequest($reseller_id);
 
         try {
@@ -164,7 +164,7 @@ class ReselleraccountingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\AccountingBalance[]',
+                        '\csakel\RUBClient\Model\AccountingBalance[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class ReselleraccountingApi
      */
     public function resellerAccountingBalanceGetAsyncWithHttpInfo($reseller_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\AccountingBalance[]';
+        $returnType = '\csakel\RUBClient\Model\AccountingBalance[]';
         $request = $this->resellerAccountingBalanceGetRequest($reseller_id);
 
         return $this->client

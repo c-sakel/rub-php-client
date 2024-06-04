@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * DedicatedServerApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class DedicatedServerApi
      * Alle dedizierten Server abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DedicatedServer[]
+     * @return \csakel\RUBClient\Model\DedicatedServer[]
      */
     public function dedicatedServerIndex()
     {
@@ -108,13 +108,13 @@ class DedicatedServerApi
      * Alle dedizierten Server abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DedicatedServer[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DedicatedServer[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dedicatedServerIndexWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\DedicatedServer[]';
+        $returnType = '\csakel\RUBClient\Model\DedicatedServer[]';
         $request = $this->dedicatedServerIndexRequest();
 
         try {
@@ -166,7 +166,7 @@ class DedicatedServerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DedicatedServer[]',
+                        '\csakel\RUBClient\Model\DedicatedServer[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class DedicatedServerApi
      */
     public function dedicatedServerIndexAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\DedicatedServer[]';
+        $returnType = '\csakel\RUBClient\Model\DedicatedServer[]';
         $request = $this->dedicatedServerIndexRequest();
 
         return $this->client
@@ -340,7 +340,7 @@ class DedicatedServerApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -357,7 +357,7 @@ class DedicatedServerApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -602,7 +602,7 @@ class DedicatedServerApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -618,7 +618,7 @@ class DedicatedServerApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -832,9 +832,9 @@ class DedicatedServerApi
      * @param  string[] $commands Benutzerdefinierte Befehle, welche nach der Installation auf dem Server ausgeführt werden sollen. (optional)
      * @param  int $raid_level Raid Level zur Einrichtung direkt bei der Installation. Mögliche Werte: 0, 1, 5, 6, 10 (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Vserver[]
+     * @return \csakel\RUBClient\Model\Vserver[]
      */
     public function dedicatedServerReinstall($server_id, $template, $password = null, $ssh_keys = null, $commands = null, $raid_level = null)
     {
@@ -854,13 +854,13 @@ class DedicatedServerApi
      * @param  string[] $commands Benutzerdefinierte Befehle, welche nach der Installation auf dem Server ausgeführt werden sollen. (optional)
      * @param  int $raid_level Raid Level zur Einrichtung direkt bei der Installation. Mögliche Werte: 0, 1, 5, 6, 10 (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dedicatedServerReinstallWithHttpInfo($server_id, $template, $password = null, $ssh_keys = null, $commands = null, $raid_level = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->dedicatedServerReinstallRequest($server_id, $template, $password, $ssh_keys, $commands, $raid_level);
 
         try {
@@ -912,7 +912,7 @@ class DedicatedServerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Vserver[]',
+                        '\csakel\RUBClient\Model\Vserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -964,7 +964,7 @@ class DedicatedServerApi
      */
     public function dedicatedServerReinstallAsyncWithHttpInfo($server_id, $template, $password = null, $ssh_keys = null, $commands = null, $raid_level = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->dedicatedServerReinstallRequest($server_id, $template, $password, $ssh_keys, $commands, $raid_level);
 
         return $this->client
@@ -1146,9 +1146,9 @@ class DedicatedServerApi
      *
      * @param  int $server_id Server-ID, welche neugestartet werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DedicatedServer[]
+     * @return \csakel\RUBClient\Model\DedicatedServer[]
      */
     public function dedicatedServerReset($server_id)
     {
@@ -1163,13 +1163,13 @@ class DedicatedServerApi
      *
      * @param  int $server_id Server-ID, welche neugestartet werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DedicatedServer[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DedicatedServer[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dedicatedServerResetWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DedicatedServer[]';
+        $returnType = '\csakel\RUBClient\Model\DedicatedServer[]';
         $request = $this->dedicatedServerResetRequest($server_id);
 
         try {
@@ -1221,7 +1221,7 @@ class DedicatedServerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DedicatedServer[]',
+                        '\csakel\RUBClient\Model\DedicatedServer[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1263,7 +1263,7 @@ class DedicatedServerApi
      */
     public function dedicatedServerResetAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DedicatedServer[]';
+        $returnType = '\csakel\RUBClient\Model\DedicatedServer[]';
         $request = $this->dedicatedServerResetRequest($server_id);
 
         return $this->client
@@ -1408,9 +1408,9 @@ class DedicatedServerApi
      *
      * @param  int $server_id Server-ID, welche abgerufen werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DedicatedServer[]
+     * @return \csakel\RUBClient\Model\DedicatedServer[]
      */
     public function dedicatedServerShow($server_id)
     {
@@ -1425,13 +1425,13 @@ class DedicatedServerApi
      *
      * @param  int $server_id Server-ID, welche abgerufen werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DedicatedServer[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DedicatedServer[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dedicatedServerShowWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DedicatedServer[]';
+        $returnType = '\csakel\RUBClient\Model\DedicatedServer[]';
         $request = $this->dedicatedServerShowRequest($server_id);
 
         try {
@@ -1483,7 +1483,7 @@ class DedicatedServerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DedicatedServer[]',
+                        '\csakel\RUBClient\Model\DedicatedServer[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1525,7 +1525,7 @@ class DedicatedServerApi
      */
     public function dedicatedServerShowAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DedicatedServer[]';
+        $returnType = '\csakel\RUBClient\Model\DedicatedServer[]';
         $request = $this->dedicatedServerShowRequest($server_id);
 
         return $this->client
@@ -1670,9 +1670,9 @@ class DedicatedServerApi
      *
      * @param  int $server_id Server-ID, welche gestartet werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DedicatedServer[]
+     * @return \csakel\RUBClient\Model\DedicatedServer[]
      */
     public function dedicatedServerStart($server_id)
     {
@@ -1687,13 +1687,13 @@ class DedicatedServerApi
      *
      * @param  int $server_id Server-ID, welche gestartet werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DedicatedServer[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DedicatedServer[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dedicatedServerStartWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DedicatedServer[]';
+        $returnType = '\csakel\RUBClient\Model\DedicatedServer[]';
         $request = $this->dedicatedServerStartRequest($server_id);
 
         try {
@@ -1745,7 +1745,7 @@ class DedicatedServerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DedicatedServer[]',
+                        '\csakel\RUBClient\Model\DedicatedServer[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1787,7 +1787,7 @@ class DedicatedServerApi
      */
     public function dedicatedServerStartAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DedicatedServer[]';
+        $returnType = '\csakel\RUBClient\Model\DedicatedServer[]';
         $request = $this->dedicatedServerStartRequest($server_id);
 
         return $this->client
@@ -1932,9 +1932,9 @@ class DedicatedServerApi
      *
      * @param  int $server_id Server-ID, welche abgerufen werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DedicatedServer[]
+     * @return \csakel\RUBClient\Model\DedicatedServer[]
      */
     public function dedicatedServerStatus($server_id)
     {
@@ -1949,13 +1949,13 @@ class DedicatedServerApi
      *
      * @param  int $server_id Server-ID, welche abgerufen werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DedicatedServer[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DedicatedServer[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dedicatedServerStatusWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DedicatedServer[]';
+        $returnType = '\csakel\RUBClient\Model\DedicatedServer[]';
         $request = $this->dedicatedServerStatusRequest($server_id);
 
         try {
@@ -2007,7 +2007,7 @@ class DedicatedServerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DedicatedServer[]',
+                        '\csakel\RUBClient\Model\DedicatedServer[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2049,7 +2049,7 @@ class DedicatedServerApi
      */
     public function dedicatedServerStatusAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DedicatedServer[]';
+        $returnType = '\csakel\RUBClient\Model\DedicatedServer[]';
         $request = $this->dedicatedServerStatusRequest($server_id);
 
         return $this->client
@@ -2194,9 +2194,9 @@ class DedicatedServerApi
      *
      * @param  int $server_id Server-ID, welche heruntergefahren werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DedicatedServer[]
+     * @return \csakel\RUBClient\Model\DedicatedServer[]
      */
     public function dedicatedServerStop($server_id)
     {
@@ -2211,13 +2211,13 @@ class DedicatedServerApi
      *
      * @param  int $server_id Server-ID, welche heruntergefahren werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DedicatedServer[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DedicatedServer[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dedicatedServerStopWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DedicatedServer[]';
+        $returnType = '\csakel\RUBClient\Model\DedicatedServer[]';
         $request = $this->dedicatedServerStopRequest($server_id);
 
         try {
@@ -2269,7 +2269,7 @@ class DedicatedServerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DedicatedServer[]',
+                        '\csakel\RUBClient\Model\DedicatedServer[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2311,7 +2311,7 @@ class DedicatedServerApi
      */
     public function dedicatedServerStopAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DedicatedServer[]';
+        $returnType = '\csakel\RUBClient\Model\DedicatedServer[]';
         $request = $this->dedicatedServerStopRequest($server_id);
 
         return $this->client
@@ -2455,9 +2455,9 @@ class DedicatedServerApi
      * Installations-Templates abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PxeTemplate[]
+     * @return \csakel\RUBClient\Model\PxeTemplate[]
      */
     public function dedicatedServerTemplates()
     {
@@ -2471,13 +2471,13 @@ class DedicatedServerApi
      * Installations-Templates abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PxeTemplate[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PxeTemplate[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dedicatedServerTemplatesWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\PxeTemplate[]';
+        $returnType = '\csakel\RUBClient\Model\PxeTemplate[]';
         $request = $this->dedicatedServerTemplatesRequest();
 
         try {
@@ -2529,7 +2529,7 @@ class DedicatedServerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PxeTemplate[]',
+                        '\csakel\RUBClient\Model\PxeTemplate[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2569,7 +2569,7 @@ class DedicatedServerApi
      */
     public function dedicatedServerTemplatesAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\PxeTemplate[]';
+        $returnType = '\csakel\RUBClient\Model\PxeTemplate[]';
         $request = $this->dedicatedServerTemplatesRequest();
 
         return $this->client

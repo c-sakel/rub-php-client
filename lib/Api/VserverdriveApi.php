@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * VserverdriveApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,9 +91,9 @@ class VserverdriveApi
      *
      * @param  int $server_id server_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverDrive[]
+     * @return \csakel\RUBClient\Model\VserverDrive[]
      */
     public function vserverDriveCreatePost($server_id)
     {
@@ -106,13 +106,13 @@ class VserverdriveApi
      *
      * @param  int $server_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverDrive[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverDrive[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverDriveCreatePostWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDrive[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDrive[]';
         $request = $this->vserverDriveCreatePostRequest($server_id);
 
         try {
@@ -164,7 +164,7 @@ class VserverdriveApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverDrive[]',
+                        '\csakel\RUBClient\Model\VserverDrive[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class VserverdriveApi
      */
     public function vserverDriveCreatePostAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDrive[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDrive[]';
         $request = $this->vserverDriveCreatePostRequest($server_id);
 
         return $this->client
@@ -350,7 +350,7 @@ class VserverdriveApi
      * @param  int $server_id server_id (required)
      * @param  string $drive_name drive_name (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -366,7 +366,7 @@ class VserverdriveApi
      * @param  int $server_id (required)
      * @param  string $drive_name (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -622,9 +622,9 @@ class VserverdriveApi
      *
      * @param  int $server_id server_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverDrive[]
+     * @return \csakel\RUBClient\Model\VserverDrive[]
      */
     public function vserverDriveGet($server_id)
     {
@@ -637,13 +637,13 @@ class VserverdriveApi
      *
      * @param  int $server_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverDrive[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverDrive[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverDriveGetWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDrive[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDrive[]';
         $request = $this->vserverDriveGetRequest($server_id);
 
         try {
@@ -695,7 +695,7 @@ class VserverdriveApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverDrive[]',
+                        '\csakel\RUBClient\Model\VserverDrive[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -737,7 +737,7 @@ class VserverdriveApi
      */
     public function vserverDriveGetAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDrive[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDrive[]';
         $request = $this->vserverDriveGetRequest($server_id);
 
         return $this->client
@@ -881,9 +881,9 @@ class VserverdriveApi
      * @param  string $title title (required)
      * @param  string $url url (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverDriveIso[]
+     * @return \csakel\RUBClient\Model\VserverDriveIso[]
      */
     public function vserverDriveIsoDownloadPost($title, $url)
     {
@@ -897,13 +897,13 @@ class VserverdriveApi
      * @param  string $title (required)
      * @param  string $url (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverDriveIso[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverDriveIso[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverDriveIsoDownloadPostWithHttpInfo($title, $url)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDriveIso[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDriveIso[]';
         $request = $this->vserverDriveIsoDownloadPostRequest($title, $url);
 
         try {
@@ -955,7 +955,7 @@ class VserverdriveApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverDriveIso[]',
+                        '\csakel\RUBClient\Model\VserverDriveIso[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -999,7 +999,7 @@ class VserverdriveApi
      */
     public function vserverDriveIsoDownloadPostAsyncWithHttpInfo($title, $url)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDriveIso[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDriveIso[]';
         $request = $this->vserverDriveIsoDownloadPostRequest($title, $url);
 
         return $this->client
@@ -1152,9 +1152,9 @@ class VserverdriveApi
      * Operation vserverDriveIsoGet
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverDriveIso[]
+     * @return \csakel\RUBClient\Model\VserverDriveIso[]
      */
     public function vserverDriveIsoGet()
     {
@@ -1166,13 +1166,13 @@ class VserverdriveApi
      * Operation vserverDriveIsoGetWithHttpInfo
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverDriveIso[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverDriveIso[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverDriveIsoGetWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDriveIso[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDriveIso[]';
         $request = $this->vserverDriveIsoGetRequest();
 
         try {
@@ -1224,7 +1224,7 @@ class VserverdriveApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverDriveIso[]',
+                        '\csakel\RUBClient\Model\VserverDriveIso[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1264,7 +1264,7 @@ class VserverdriveApi
      */
     public function vserverDriveIsoGetAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDriveIso[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDriveIso[]';
         $request = $this->vserverDriveIsoGetRequest();
 
         return $this->client
@@ -1398,9 +1398,9 @@ class VserverdriveApi
      * @param  string $drive_name drive_name (required)
      * @param  int $iso_id iso_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverDrive[]
+     * @return \csakel\RUBClient\Model\VserverDrive[]
      */
     public function vserverDriveIsoMountPost($server_id, $drive_name, $iso_id)
     {
@@ -1415,13 +1415,13 @@ class VserverdriveApi
      * @param  string $drive_name (required)
      * @param  int $iso_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverDrive[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverDrive[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverDriveIsoMountPostWithHttpInfo($server_id, $drive_name, $iso_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDrive[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDrive[]';
         $request = $this->vserverDriveIsoMountPostRequest($server_id, $drive_name, $iso_id);
 
         try {
@@ -1473,7 +1473,7 @@ class VserverdriveApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverDrive[]',
+                        '\csakel\RUBClient\Model\VserverDrive[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1519,7 +1519,7 @@ class VserverdriveApi
      */
     public function vserverDriveIsoMountPostAsyncWithHttpInfo($server_id, $drive_name, $iso_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDrive[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDrive[]';
         $request = $this->vserverDriveIsoMountPostRequest($server_id, $drive_name, $iso_id);
 
         return $this->client
@@ -1684,9 +1684,9 @@ class VserverdriveApi
      *
      * @param  string $url url (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\QueryUrlMetadata[]
+     * @return \csakel\RUBClient\Model\QueryUrlMetadata[]
      */
     public function vserverDriveIsoQueryUrlGet($url)
     {
@@ -1699,13 +1699,13 @@ class VserverdriveApi
      *
      * @param  string $url (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\QueryUrlMetadata[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\QueryUrlMetadata[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverDriveIsoQueryUrlGetWithHttpInfo($url)
     {
-        $returnType = '\c-sakel\RUBClient\Model\QueryUrlMetadata[]';
+        $returnType = '\csakel\RUBClient\Model\QueryUrlMetadata[]';
         $request = $this->vserverDriveIsoQueryUrlGetRequest($url);
 
         try {
@@ -1757,7 +1757,7 @@ class VserverdriveApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\QueryUrlMetadata[]',
+                        '\csakel\RUBClient\Model\QueryUrlMetadata[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1799,7 +1799,7 @@ class VserverdriveApi
      */
     public function vserverDriveIsoQueryUrlGetAsyncWithHttpInfo($url)
     {
-        $returnType = '\c-sakel\RUBClient\Model\QueryUrlMetadata[]';
+        $returnType = '\csakel\RUBClient\Model\QueryUrlMetadata[]';
         $request = $this->vserverDriveIsoQueryUrlGetRequest($url);
 
         return $this->client
@@ -1942,9 +1942,9 @@ class VserverdriveApi
      *
      * @param  int $iso_id iso_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverDriveIso[]
+     * @return \csakel\RUBClient\Model\VserverDriveIso[]
      */
     public function vserverDriveIsoShowGet($iso_id)
     {
@@ -1957,13 +1957,13 @@ class VserverdriveApi
      *
      * @param  int $iso_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverDriveIso[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverDriveIso[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverDriveIsoShowGetWithHttpInfo($iso_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDriveIso[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDriveIso[]';
         $request = $this->vserverDriveIsoShowGetRequest($iso_id);
 
         try {
@@ -2015,7 +2015,7 @@ class VserverdriveApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverDriveIso[]',
+                        '\csakel\RUBClient\Model\VserverDriveIso[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2057,7 +2057,7 @@ class VserverdriveApi
      */
     public function vserverDriveIsoShowGetAsyncWithHttpInfo($iso_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDriveIso[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDriveIso[]';
         $request = $this->vserverDriveIsoShowGetRequest($iso_id);
 
         return $this->client
@@ -2201,9 +2201,9 @@ class VserverdriveApi
      * @param  int $server_id server_id (required)
      * @param  string $drive_name drive_name (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverDrive[]
+     * @return \csakel\RUBClient\Model\VserverDrive[]
      */
     public function vserverDriveIsoUnmountDelete($server_id, $drive_name)
     {
@@ -2217,13 +2217,13 @@ class VserverdriveApi
      * @param  int $server_id (required)
      * @param  string $drive_name (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverDrive[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverDrive[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverDriveIsoUnmountDeleteWithHttpInfo($server_id, $drive_name)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDrive[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDrive[]';
         $request = $this->vserverDriveIsoUnmountDeleteRequest($server_id, $drive_name);
 
         try {
@@ -2275,7 +2275,7 @@ class VserverdriveApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverDrive[]',
+                        '\csakel\RUBClient\Model\VserverDrive[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2319,7 +2319,7 @@ class VserverdriveApi
      */
     public function vserverDriveIsoUnmountDeleteAsyncWithHttpInfo($server_id, $drive_name)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDrive[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDrive[]';
         $request = $this->vserverDriveIsoUnmountDeleteRequest($server_id, $drive_name);
 
         return $this->client
@@ -2474,9 +2474,9 @@ class VserverdriveApi
      * @param  int $server_id server_id (required)
      * @param  string $drive_name drive_name (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverDrive[]
+     * @return \csakel\RUBClient\Model\VserverDrive[]
      */
     public function vserverDriveShowGet($server_id, $drive_name)
     {
@@ -2490,13 +2490,13 @@ class VserverdriveApi
      * @param  int $server_id (required)
      * @param  string $drive_name (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverDrive[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverDrive[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverDriveShowGetWithHttpInfo($server_id, $drive_name)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDrive[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDrive[]';
         $request = $this->vserverDriveShowGetRequest($server_id, $drive_name);
 
         try {
@@ -2548,7 +2548,7 @@ class VserverdriveApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverDrive[]',
+                        '\csakel\RUBClient\Model\VserverDrive[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2592,7 +2592,7 @@ class VserverdriveApi
      */
     public function vserverDriveShowGetAsyncWithHttpInfo($server_id, $drive_name)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverDrive[]';
+        $returnType = '\csakel\RUBClient\Model\VserverDrive[]';
         $request = $this->vserverDriveShowGetRequest($server_id, $drive_name);
 
         return $this->client

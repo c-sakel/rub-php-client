@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\LicensepleskApi
+# csakel\RUBClient\LicensepleskApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -22,7 +22,7 @@ Method | HTTP request | Description
 [**licensePleskUndelete**](LicensepleskApi.md#licensepleskundelete) | **POST** /license/plesk/undelete | Plesk Lizenz Kündigung zurückziehen
 
 # **licensePlesk**
-> \c-sakel\RUBClient\Model\PleskLicense[] licensePlesk()
+> \csakel\RUBClient\Model\PleskLicense[] licensePlesk()
 
 Alle Plesk Lizenzen abrufen
 
@@ -33,11 +33,11 @@ Alle Plesk Lizenzen abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -58,7 +58,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
+[**\csakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskCreate**
-> \c-sakel\RUBClient\Model\PleskLicense[] licensePleskCreate($type)
+> \csakel\RUBClient\Model\PleskLicense[] licensePleskCreate($type)
 
 Neue Plesk Lizenz bestellen
 
@@ -83,11 +83,11 @@ Neue Plesk Lizenz bestellen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
+[**\csakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskDelete**
-> \c-sakel\RUBClient\Model\PleskLicense[] licensePleskDelete($license, $date)
+> \csakel\RUBClient\Model\PleskLicense[] licensePleskDelete($license, $date)
 
 Plesk Lizenz kündigen
 
@@ -137,11 +137,11 @@ Plesk Lizenz kündigen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
+[**\csakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskEdit**
-> \c-sakel\RUBClient\Model\PleskLicense[] licensePleskEdit($license, $comment)
+> \csakel\RUBClient\Model\PleskLicense[] licensePleskEdit($license, $comment)
 
 Plesk Lizenz bearbeiten
 
@@ -193,11 +193,11 @@ Plesk Lizenz bearbeiten
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -224,7 +224,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
+[**\csakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
 
 ### Authorization
 
@@ -238,7 +238,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskGetBinding**
-> \c-sakel\RUBClient\Model\PleskLicense[] licensePleskGetBinding($license)
+> \csakel\RUBClient\Model\PleskLicense[] licensePleskGetBinding($license)
 
 Plesk Lizenz Binding abrufen
 
@@ -249,11 +249,11 @@ Plesk Lizenz Binding abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -278,7 +278,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
+[**\csakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
 
 ### Authorization
 
@@ -292,7 +292,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskGetDownload**
-> \c-sakel\RUBClient\Model\PleskLicense[] licensePleskGetDownload($license)
+> \csakel\RUBClient\Model\PleskLicense[] licensePleskGetDownload($license)
 
 Plesk Lizenz herunterladen
 
@@ -303,11 +303,11 @@ Plesk Lizenz-Datei herunterladen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -332,7 +332,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
+[**\csakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
 
 ### Authorization
 
@@ -346,7 +346,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskGetFrauds**
-> \c-sakel\RUBClient\Model\PleskLicenseFrauds[] licensePleskGetFrauds($license)
+> \csakel\RUBClient\Model\PleskLicenseFrauds[] licensePleskGetFrauds($license)
 
 Plesk Lizenz Multiuse Verstöße abrufen
 
@@ -357,11 +357,11 @@ Plesk Lizenz Multiuse Verstöße abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -386,7 +386,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicenseFrauds[]**](../Model/PleskLicenseFrauds.md)
+[**\csakel\RUBClient\Model\PleskLicenseFrauds[]**](../Model/PleskLicenseFrauds.md)
 
 ### Authorization
 
@@ -400,7 +400,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskGetStatistic**
-> \c-sakel\RUBClient\Model\PleskLicenseStatistic[] licensePleskGetStatistic()
+> \csakel\RUBClient\Model\PleskLicenseStatistic[] licensePleskGetStatistic()
 
 Plesk Lizenz Statistiken abrufen
 
@@ -411,11 +411,11 @@ Plesk Lizenz Statistiken abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -436,7 +436,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicenseStatistic[]**](../Model/PleskLicenseStatistic.md)
+[**\csakel\RUBClient\Model\PleskLicenseStatistic[]**](../Model/PleskLicenseStatistic.md)
 
 ### Authorization
 
@@ -450,7 +450,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskGetTypes**
-> \c-sakel\RUBClient\Model\PleskLicenseType[] licensePleskGetTypes()
+> \csakel\RUBClient\Model\PleskLicenseType[] licensePleskGetTypes()
 
 Plesk Lizenz Typen abrufen
 
@@ -461,11 +461,11 @@ Verfügbare Plesk Lizenz zur Bestellung abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -486,7 +486,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicenseType[]**](../Model/PleskLicenseType.md)
+[**\csakel\RUBClient\Model\PleskLicenseType[]**](../Model/PleskLicenseType.md)
 
 ### Authorization
 
@@ -500,7 +500,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskGetUpgrade**
-> \c-sakel\RUBClient\Model\PleskLicenseUpgrade[] licensePleskGetUpgrade($license)
+> \csakel\RUBClient\Model\PleskLicenseUpgrade[] licensePleskGetUpgrade($license)
 
 Plesk Lizenz Upgrades und Addons abrufen
 
@@ -511,11 +511,11 @@ Verfügbare Plesk Lizenz Upgrades und Addons abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -540,7 +540,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicenseUpgrade[]**](../Model/PleskLicenseUpgrade.md)
+[**\csakel\RUBClient\Model\PleskLicenseUpgrade[]**](../Model/PleskLicenseUpgrade.md)
 
 ### Authorization
 
@@ -554,7 +554,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskPostUpgrade**
-> \c-sakel\RUBClient\Model\PleskLicense[] licensePleskPostUpgrade($license, $type)
+> \csakel\RUBClient\Model\PleskLicense[] licensePleskPostUpgrade($license, $type)
 
 Plesk Lizenz Upgrade durchführen
 
@@ -565,11 +565,11 @@ Führen Sie ein Upgrade auf eine höhere Lizenz durch. Zusätzlich kann über di
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -596,7 +596,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
+[**\csakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
 
 ### Authorization
 
@@ -610,7 +610,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskPrice**
-> \c-sakel\RUBClient\Model\PleskLicensePrice[] licensePleskPrice()
+> \csakel\RUBClient\Model\PleskLicensePrice[] licensePleskPrice()
 
 Plesk Lizenz Preise abrufen
 
@@ -621,11 +621,11 @@ Plesk Lizenz Preise abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -646,7 +646,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicensePrice[]**](../Model/PleskLicensePrice.md)
+[**\csakel\RUBClient\Model\PleskLicensePrice[]**](../Model/PleskLicensePrice.md)
 
 ### Authorization
 
@@ -660,7 +660,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskPriceCsv**
-> \c-sakel\RUBClient\Model\PleskLicensePriceCsv[] licensePleskPriceCsv()
+> \csakel\RUBClient\Model\PleskLicensePriceCsv[] licensePleskPriceCsv()
 
 Plesk Lizenz Preise als CSV abrufen
 
@@ -671,11 +671,11 @@ Plesk Lizenz Preise als CSV abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -696,7 +696,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicensePriceCsv[]**](../Model/PleskLicensePriceCsv.md)
+[**\csakel\RUBClient\Model\PleskLicensePriceCsv[]**](../Model/PleskLicensePriceCsv.md)
 
 ### Authorization
 
@@ -710,7 +710,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskSetBinding**
-> \c-sakel\RUBClient\Model\PleskLicense[] licensePleskSetBinding($license, $address)
+> \csakel\RUBClient\Model\PleskLicense[] licensePleskSetBinding($license, $address)
 
 Plesk Lizenz Binding setzen
 
@@ -721,11 +721,11 @@ Plesk Lizenz Binding setzen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -752,7 +752,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
+[**\csakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
 
 ### Authorization
 
@@ -766,7 +766,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskShow**
-> \c-sakel\RUBClient\Model\PleskLicense[] licensePleskShow($license)
+> \csakel\RUBClient\Model\PleskLicense[] licensePleskShow($license)
 
 Einzelne Plesk Lizenz abrufen
 
@@ -777,11 +777,11 @@ Einzelne Plesk Lizenz abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -806,7 +806,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
+[**\csakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
 
 ### Authorization
 
@@ -820,7 +820,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **licensePleskUndelete**
-> \c-sakel\RUBClient\Model\PleskLicense[] licensePleskUndelete($license)
+> \csakel\RUBClient\Model\PleskLicense[] licensePleskUndelete($license)
 
 Plesk Lizenz Kündigung zurückziehen
 
@@ -831,11 +831,11 @@ Plesk Lizenz Kündigung zurückziehen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\LicensepleskApi(
+$apiInstance = new csakel\RUBClient\Api\LicensepleskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -860,7 +860,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
+[**\csakel\RUBClient\Model\PleskLicense[]**](../Model/PleskLicense.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * VserverApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Address[]
+     * @return \csakel\RUBClient\Model\Address[]
      */
     public function vserverAddress($server_id)
     {
@@ -110,13 +110,13 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Address[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Address[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverAddressWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Address[]';
+        $returnType = '\csakel\RUBClient\Model\Address[]';
         $request = $this->vserverAddressRequest($server_id);
 
         try {
@@ -168,7 +168,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Address[]',
+                        '\csakel\RUBClient\Model\Address[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class VserverApi
      */
     public function vserverAddressAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Address[]';
+        $returnType = '\csakel\RUBClient\Model\Address[]';
         $request = $this->vserverAddressRequest($server_id);
 
         return $this->client
@@ -365,9 +365,9 @@ class VserverApi
      * @param  string[] $ssh_keys Public-Keys, welche auf dem Server eingerichtet werden sollen. (optional)
      * @param  string[] $commands Benutzerdefinierte Befehle, welche nach der Installation auf dem Server ausgeführt werden sollen. (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Vserver[]
+     * @return \csakel\RUBClient\Model\Vserver[]
      */
     public function vserverCreate($cores, $memory, $disk, $ip_addresses, $ip6_addresses, $backups, $template, $hostname = null, $password = null, $ssh_keys = null, $commands = null)
     {
@@ -392,13 +392,13 @@ class VserverApi
      * @param  string[] $ssh_keys Public-Keys, welche auf dem Server eingerichtet werden sollen. (optional)
      * @param  string[] $commands Benutzerdefinierte Befehle, welche nach der Installation auf dem Server ausgeführt werden sollen. (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverCreateWithHttpInfo($cores, $memory, $disk, $ip_addresses, $ip6_addresses, $backups, $template, $hostname = null, $password = null, $ssh_keys = null, $commands = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverCreateRequest($cores, $memory, $disk, $ip_addresses, $ip6_addresses, $backups, $template, $hostname, $password, $ssh_keys, $commands);
 
         try {
@@ -450,7 +450,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Vserver[]',
+                        '\csakel\RUBClient\Model\Vserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -512,7 +512,7 @@ class VserverApi
      */
     public function vserverCreateAsyncWithHttpInfo($cores, $memory, $disk, $ip_addresses, $ip6_addresses, $backups, $template, $hostname = null, $password = null, $ssh_keys = null, $commands = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverCreateRequest($cores, $memory, $disk, $ip_addresses, $ip6_addresses, $backups, $template, $hostname, $password, $ssh_keys, $commands);
 
         return $this->client
@@ -749,9 +749,9 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DdosAlert[]
+     * @return \csakel\RUBClient\Model\DdosAlert[]
      */
     public function vserverDdosAlert($server_id)
     {
@@ -766,13 +766,13 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DdosAlert[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DdosAlert[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverDdosAlertWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DdosAlert[]';
+        $returnType = '\csakel\RUBClient\Model\DdosAlert[]';
         $request = $this->vserverDdosAlertRequest($server_id);
 
         try {
@@ -824,7 +824,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DdosAlert[]',
+                        '\csakel\RUBClient\Model\DdosAlert[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -866,7 +866,7 @@ class VserverApi
      */
     public function vserverDdosAlertAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DdosAlert[]';
+        $returnType = '\csakel\RUBClient\Model\DdosAlert[]';
         $request = $this->vserverDdosAlertRequest($server_id);
 
         return $this->client
@@ -1011,9 +1011,9 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Vserver[]
+     * @return \csakel\RUBClient\Model\Vserver[]
      */
     public function vserverDelete($server_id)
     {
@@ -1028,13 +1028,13 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverDeleteWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverDeleteRequest($server_id);
 
         try {
@@ -1086,7 +1086,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Vserver[]',
+                        '\csakel\RUBClient\Model\Vserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1128,7 +1128,7 @@ class VserverApi
      */
     public function vserverDeleteAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverDeleteRequest($server_id);
 
         return $this->client
@@ -1275,7 +1275,7 @@ class VserverApi
      * @param  string $timeframe Zeitraum (hour, day, week, month, year) (optional)
      * @param  string $cf Werte-Typ (AVERAGE, MAX) (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1293,7 +1293,7 @@ class VserverApi
      * @param  string $timeframe Zeitraum (hour, day, week, month, year) (optional)
      * @param  string $cf Werte-Typ (AVERAGE, MAX) (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1519,7 +1519,7 @@ class VserverApi
      * @param  string $cf Werte-Typ (AVERAGE, MAX) (optional)
      * @param  string[] $ds Werte (maxcpu, cpu, maxmem, mem, maxdisk, disk, netin, netout, diskread, diskwrite) (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1538,7 +1538,7 @@ class VserverApi
      * @param  string $cf Werte-Typ (AVERAGE, MAX) (optional)
      * @param  string[] $ds Werte (maxcpu, cpu, maxmem, mem, maxdisk, disk, netin, netout, diskread, diskwrite) (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1770,9 +1770,9 @@ class VserverApi
      * Alle vServer abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Vserver[]
+     * @return \csakel\RUBClient\Model\Vserver[]
      */
     public function vserverIndex()
     {
@@ -1786,13 +1786,13 @@ class VserverApi
      * Alle vServer abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverIndexWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverIndexRequest();
 
         try {
@@ -1844,7 +1844,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Vserver[]',
+                        '\csakel\RUBClient\Model\Vserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1884,7 +1884,7 @@ class VserverApi
      */
     public function vserverIndexAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverIndexRequest();
 
         return $this->client
@@ -2018,9 +2018,9 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PxeAction[]
+     * @return \csakel\RUBClient\Model\PxeAction[]
      */
     public function vserverInstallation($server_id)
     {
@@ -2035,13 +2035,13 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PxeAction[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PxeAction[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverInstallationWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PxeAction[]';
+        $returnType = '\csakel\RUBClient\Model\PxeAction[]';
         $request = $this->vserverInstallationRequest($server_id);
 
         try {
@@ -2093,7 +2093,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PxeAction[]',
+                        '\csakel\RUBClient\Model\PxeAction[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2135,7 +2135,7 @@ class VserverApi
      */
     public function vserverInstallationAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PxeAction[]';
+        $returnType = '\csakel\RUBClient\Model\PxeAction[]';
         $request = $this->vserverInstallationRequest($server_id);
 
         return $this->client
@@ -2280,7 +2280,7 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2296,7 +2296,7 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2505,9 +2505,9 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PxeAction[]
+     * @return \csakel\RUBClient\Model\PxeAction[]
      */
     public function vserverOperation($server_id)
     {
@@ -2522,13 +2522,13 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PxeAction[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PxeAction[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverOperationWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PxeAction[]';
+        $returnType = '\csakel\RUBClient\Model\PxeAction[]';
         $request = $this->vserverOperationRequest($server_id);
 
         try {
@@ -2580,7 +2580,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PxeAction[]',
+                        '\csakel\RUBClient\Model\PxeAction[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2622,7 +2622,7 @@ class VserverApi
      */
     public function vserverOperationAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PxeAction[]';
+        $returnType = '\csakel\RUBClient\Model\PxeAction[]';
         $request = $this->vserverOperationRequest($server_id);
 
         return $this->client
@@ -2767,9 +2767,9 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PxeTemplate[]
+     * @return \csakel\RUBClient\Model\PxeTemplate[]
      */
     public function vserverOperations($server_id)
     {
@@ -2784,13 +2784,13 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PxeTemplate[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PxeTemplate[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverOperationsWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PxeTemplate[]';
+        $returnType = '\csakel\RUBClient\Model\PxeTemplate[]';
         $request = $this->vserverOperationsRequest($server_id);
 
         try {
@@ -2842,7 +2842,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PxeTemplate[]',
+                        '\csakel\RUBClient\Model\PxeTemplate[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2884,7 +2884,7 @@ class VserverApi
      */
     public function vserverOperationsAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PxeTemplate[]';
+        $returnType = '\csakel\RUBClient\Model\PxeTemplate[]';
         $request = $this->vserverOperationsRequest($server_id);
 
         return $this->client
@@ -3030,7 +3030,7 @@ class VserverApi
      * @param  int $server_id Server-ID (required)
      * @param  string $password Neues Rootpasswort des Servers (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3047,7 +3047,7 @@ class VserverApi
      * @param  int $server_id Server-ID (required)
      * @param  string $password Neues Rootpasswort des Servers (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3270,9 +3270,9 @@ class VserverApi
      * @param  string[] $ip_addresses Array von IPv4-Adressen, welche automatisch eingerichtet werden sollen. Standardmäßig werden sämtliche IPv4-Adressen eingerichtet. (optional)
      * @param  string[] $ip6_addresses Array von IPv6-Adressen, welche automatisch eingerichtet werden sollen. Standardmäßig werden sämtliche IPv6-Adressen eingerichtet. (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Vserver[]
+     * @return \csakel\RUBClient\Model\Vserver[]
      */
     public function vserverReinstall($server_id, $template, $hostname = null, $password = null, $ssh_keys = null, $commands = null, $ip_addresses = null, $ip6_addresses = null)
     {
@@ -3294,13 +3294,13 @@ class VserverApi
      * @param  string[] $ip_addresses Array von IPv4-Adressen, welche automatisch eingerichtet werden sollen. Standardmäßig werden sämtliche IPv4-Adressen eingerichtet. (optional)
      * @param  string[] $ip6_addresses Array von IPv6-Adressen, welche automatisch eingerichtet werden sollen. Standardmäßig werden sämtliche IPv6-Adressen eingerichtet. (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverReinstallWithHttpInfo($server_id, $template, $hostname = null, $password = null, $ssh_keys = null, $commands = null, $ip_addresses = null, $ip6_addresses = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverReinstallRequest($server_id, $template, $hostname, $password, $ssh_keys, $commands, $ip_addresses, $ip6_addresses);
 
         try {
@@ -3352,7 +3352,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Vserver[]',
+                        '\csakel\RUBClient\Model\Vserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3408,7 +3408,7 @@ class VserverApi
      */
     public function vserverReinstallAsyncWithHttpInfo($server_id, $template, $hostname = null, $password = null, $ssh_keys = null, $commands = null, $ip_addresses = null, $ip6_addresses = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverReinstallRequest($server_id, $template, $hostname, $password, $ssh_keys, $commands, $ip_addresses, $ip6_addresses);
 
         return $this->client
@@ -3606,9 +3606,9 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Vserver[]
+     * @return \csakel\RUBClient\Model\Vserver[]
      */
     public function vserverRestart($server_id)
     {
@@ -3623,13 +3623,13 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverRestartWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverRestartRequest($server_id);
 
         try {
@@ -3681,7 +3681,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Vserver[]',
+                        '\csakel\RUBClient\Model\Vserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3723,7 +3723,7 @@ class VserverApi
      */
     public function vserverRestartAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverRestartRequest($server_id);
 
         return $this->client
@@ -3870,9 +3870,9 @@ class VserverApi
      * @param  string $title Titel des vServers (optional)
      * @param  string $hostname Hostname des vServers (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Vserver[]
+     * @return \csakel\RUBClient\Model\Vserver[]
      */
     public function vserverSettings($server_id, $title = null, $hostname = null)
     {
@@ -3889,13 +3889,13 @@ class VserverApi
      * @param  string $title Titel des vServers (optional)
      * @param  string $hostname Hostname des vServers (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverSettingsWithHttpInfo($server_id, $title = null, $hostname = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverSettingsRequest($server_id, $title, $hostname);
 
         try {
@@ -3947,7 +3947,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Vserver[]',
+                        '\csakel\RUBClient\Model\Vserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3993,7 +3993,7 @@ class VserverApi
      */
     public function vserverSettingsAsyncWithHttpInfo($server_id, $title = null, $hostname = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverSettingsRequest($server_id, $title, $hostname);
 
         return $this->client
@@ -4148,9 +4148,9 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Vserver[]
+     * @return \csakel\RUBClient\Model\Vserver[]
      */
     public function vserverShow($server_id)
     {
@@ -4165,13 +4165,13 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverShowWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverShowRequest($server_id);
 
         try {
@@ -4223,7 +4223,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Vserver[]',
+                        '\csakel\RUBClient\Model\Vserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4265,7 +4265,7 @@ class VserverApi
      */
     public function vserverShowAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverShowRequest($server_id);
 
         return $this->client
@@ -4410,9 +4410,9 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Vserver[]
+     * @return \csakel\RUBClient\Model\Vserver[]
      */
     public function vserverShutdown($server_id)
     {
@@ -4427,13 +4427,13 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverShutdownWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverShutdownRequest($server_id);
 
         try {
@@ -4485,7 +4485,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Vserver[]',
+                        '\csakel\RUBClient\Model\Vserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4527,7 +4527,7 @@ class VserverApi
      */
     public function vserverShutdownAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverShutdownRequest($server_id);
 
         return $this->client
@@ -4672,9 +4672,9 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Vserver[]
+     * @return \csakel\RUBClient\Model\Vserver[]
      */
     public function vserverStart($server_id)
     {
@@ -4689,13 +4689,13 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverStartWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverStartRequest($server_id);
 
         try {
@@ -4747,7 +4747,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Vserver[]',
+                        '\csakel\RUBClient\Model\Vserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4789,7 +4789,7 @@ class VserverApi
      */
     public function vserverStartAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverStartRequest($server_id);
 
         return $this->client
@@ -4934,9 +4934,9 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverStatus[]
+     * @return \csakel\RUBClient\Model\VserverStatus[]
      */
     public function vserverStatus($server_id)
     {
@@ -4951,13 +4951,13 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverStatus[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverStatus[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverStatusWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverStatus[]';
+        $returnType = '\csakel\RUBClient\Model\VserverStatus[]';
         $request = $this->vserverStatusRequest($server_id);
 
         try {
@@ -5009,7 +5009,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverStatus[]',
+                        '\csakel\RUBClient\Model\VserverStatus[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5051,7 +5051,7 @@ class VserverApi
      */
     public function vserverStatusAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverStatus[]';
+        $returnType = '\csakel\RUBClient\Model\VserverStatus[]';
         $request = $this->vserverStatusRequest($server_id);
 
         return $this->client
@@ -5196,9 +5196,9 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Vserver[]
+     * @return \csakel\RUBClient\Model\Vserver[]
      */
     public function vserverStop($server_id)
     {
@@ -5213,13 +5213,13 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverStopWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverStopRequest($server_id);
 
         try {
@@ -5271,7 +5271,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Vserver[]',
+                        '\csakel\RUBClient\Model\Vserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5313,7 +5313,7 @@ class VserverApi
      */
     public function vserverStopAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverStopRequest($server_id);
 
         return $this->client
@@ -5457,9 +5457,9 @@ class VserverApi
      * Installations-Templates abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PxeTemplate[]
+     * @return \csakel\RUBClient\Model\PxeTemplate[]
      */
     public function vserverTemplates()
     {
@@ -5473,13 +5473,13 @@ class VserverApi
      * Installations-Templates abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PxeTemplate[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PxeTemplate[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverTemplatesWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\PxeTemplate[]';
+        $returnType = '\csakel\RUBClient\Model\PxeTemplate[]';
         $request = $this->vserverTemplatesRequest();
 
         try {
@@ -5531,7 +5531,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PxeTemplate[]',
+                        '\csakel\RUBClient\Model\PxeTemplate[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5571,7 +5571,7 @@ class VserverApi
      */
     public function vserverTemplatesAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\PxeTemplate[]';
+        $returnType = '\csakel\RUBClient\Model\PxeTemplate[]';
         $request = $this->vserverTemplatesRequest();
 
         return $this->client
@@ -5708,9 +5708,9 @@ class VserverApi
      * @param  \DateTime $end_date Enddatum für Traffic Zeitraum (required)
      * @param  string $group_by Gruppierung von Traffic Werten für den angefragten Zeitraum.  Mögliche Werte: MONTH &#x3D;&gt; monatliche Gruppierung (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverTraffic[]
+     * @return \csakel\RUBClient\Model\VserverTraffic[]
      */
     public function vserverTraffic($server_id, $start_date, $end_date, $group_by = null)
     {
@@ -5728,13 +5728,13 @@ class VserverApi
      * @param  \DateTime $end_date Enddatum für Traffic Zeitraum (required)
      * @param  string $group_by Gruppierung von Traffic Werten für den angefragten Zeitraum.  Mögliche Werte: MONTH &#x3D;&gt; monatliche Gruppierung (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverTraffic[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverTraffic[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverTrafficWithHttpInfo($server_id, $start_date, $end_date, $group_by = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverTraffic[]';
+        $returnType = '\csakel\RUBClient\Model\VserverTraffic[]';
         $request = $this->vserverTrafficRequest($server_id, $start_date, $end_date, $group_by);
 
         try {
@@ -5786,7 +5786,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverTraffic[]',
+                        '\csakel\RUBClient\Model\VserverTraffic[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5834,7 +5834,7 @@ class VserverApi
      */
     public function vserverTrafficAsyncWithHttpInfo($server_id, $start_date, $end_date, $group_by = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverTraffic[]';
+        $returnType = '\csakel\RUBClient\Model\VserverTraffic[]';
         $request = $this->vserverTrafficRequest($server_id, $start_date, $end_date, $group_by);
 
         return $this->client
@@ -6012,9 +6012,9 @@ class VserverApi
      * @param  int $ip6_addresses Anzahl der IPv6 Adressen (required)
      * @param  int $backups Anzahl der Backup-Slots (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Vserver[]
+     * @return \csakel\RUBClient\Model\Vserver[]
      */
     public function vserverUpgrade($server_id, $cores, $memory, $disk, $ip_addresses, $ip6_addresses, $backups)
     {
@@ -6035,13 +6035,13 @@ class VserverApi
      * @param  int $ip6_addresses Anzahl der IPv6 Adressen (required)
      * @param  int $backups Anzahl der Backup-Slots (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Vserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverUpgradeWithHttpInfo($server_id, $cores, $memory, $disk, $ip_addresses, $ip6_addresses, $backups)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverUpgradeRequest($server_id, $cores, $memory, $disk, $ip_addresses, $ip6_addresses, $backups);
 
         try {
@@ -6093,7 +6093,7 @@ class VserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Vserver[]',
+                        '\csakel\RUBClient\Model\Vserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6147,7 +6147,7 @@ class VserverApi
      */
     public function vserverUpgradeAsyncWithHttpInfo($server_id, $cores, $memory, $disk, $ip_addresses, $ip6_addresses, $backups)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Vserver[]';
+        $returnType = '\csakel\RUBClient\Model\Vserver[]';
         $request = $this->vserverUpgradeRequest($server_id, $cores, $memory, $disk, $ip_addresses, $ip6_addresses, $backups);
 
         return $this->client
@@ -6358,7 +6358,7 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -6374,7 +6374,7 @@ class VserverApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * VserverbootApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,9 +91,9 @@ class VserverbootApi
      *
      * @param  int $server_id server_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverBoot[]
+     * @return \csakel\RUBClient\Model\VserverBoot[]
      */
     public function vserverBootGet($server_id)
     {
@@ -106,13 +106,13 @@ class VserverbootApi
      *
      * @param  int $server_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverBoot[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverBoot[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverBootGetWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBoot[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBoot[]';
         $request = $this->vserverBootGetRequest($server_id);
 
         try {
@@ -164,7 +164,7 @@ class VserverbootApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverBoot[]',
+                        '\csakel\RUBClient\Model\VserverBoot[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class VserverbootApi
      */
     public function vserverBootGetAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBoot[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBoot[]';
         $request = $this->vserverBootGetRequest($server_id);
 
         return $this->client
@@ -350,7 +350,7 @@ class VserverbootApi
      * @param  int $server_id server_id (required)
      * @param  string $boot_order Boot Reihenfolge mit Semikolon getrennt (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -366,7 +366,7 @@ class VserverbootApi
      * @param  int $server_id (required)
      * @param  string $boot_order Boot Reihenfolge mit Semikolon getrennt (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

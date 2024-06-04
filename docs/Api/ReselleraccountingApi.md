@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\ReselleraccountingApi
+# csakel\RUBClient\ReselleraccountingApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**resellerAccountingBalanceGet**](ReselleraccountingApi.md#reselleraccountingbalanceget) | **GET** /reseller/accounting/balance | 
 
 # **resellerAccountingBalanceGet**
-> \c-sakel\RUBClient\Model\AccountingBalance[] resellerAccountingBalanceGet($reseller_id)
+> \csakel\RUBClient\Model\AccountingBalance[] resellerAccountingBalanceGet($reseller_id)
 
 
 
@@ -16,11 +16,11 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\ReselleraccountingApi(
+$apiInstance = new csakel\RUBClient\Api\ReselleraccountingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\AccountingBalance[]**](../Model/AccountingBalance.md)
+[**\csakel\RUBClient\Model\AccountingBalance[]**](../Model/AccountingBalance.md)
 
 ### Authorization
 

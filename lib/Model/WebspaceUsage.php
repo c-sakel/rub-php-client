@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Model;
+namespace csakel\RUBClient\Model;
 
 use \ArrayAccess;
-use \c-sakel\RUBClient\ObjectSerializer;
+use \csakel\RUBClient\ObjectSerializer;
 
 /**
  * WebspaceUsage Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class WebspaceUsage implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'usage' => '\c-sakel\RUBClient\Model\WebspaceUsageUsage',
-        'limits' => '\c-sakel\RUBClient\Model\WebspaceUsageLimits',
+        'usage' => '\csakel\RUBClient\Model\WebspaceUsageUsage',
+        'limits' => '\csakel\RUBClient\Model\WebspaceUsageLimits',
         'addresses' => 'string[]'
     ];
 
@@ -216,7 +216,7 @@ class WebspaceUsage implements ModelInterface, ArrayAccess
     /**
      * Gets usage
      *
-     * @return \c-sakel\RUBClient\Model\WebspaceUsageUsage
+     * @return \csakel\RUBClient\Model\WebspaceUsageUsage
      */
     public function getUsage()
     {
@@ -226,7 +226,7 @@ class WebspaceUsage implements ModelInterface, ArrayAccess
     /**
      * Sets usage
      *
-     * @param \c-sakel\RUBClient\Model\WebspaceUsageUsage $usage usage
+     * @param \csakel\RUBClient\Model\WebspaceUsageUsage $usage usage
      *
      * @return $this
      */
@@ -240,7 +240,7 @@ class WebspaceUsage implements ModelInterface, ArrayAccess
     /**
      * Gets limits
      *
-     * @return \c-sakel\RUBClient\Model\WebspaceUsageLimits
+     * @return \csakel\RUBClient\Model\WebspaceUsageLimits
      */
     public function getLimits()
     {
@@ -250,7 +250,7 @@ class WebspaceUsage implements ModelInterface, ArrayAccess
     /**
      * Sets limits
      *
-     * @param \c-sakel\RUBClient\Model\WebspaceUsageLimits $limits limits
+     * @param \csakel\RUBClient\Model\WebspaceUsageLimits $limits limits
      *
      * @return $this
      */

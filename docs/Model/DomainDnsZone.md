@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **retry** | **int** |  | [optional] 
 **expire** | **int** |  | [optional] 
 **ttl** | **int** |  | [optional] 
-**records** | [**\c-sakel\RUBClient\Model\DnsRecord[]**](DnsRecord.md) | Array with DNS Record Objects | [optional] 
+**records** | [**\csakel\RUBClient\Model\DnsRecord[]**](DnsRecord.md) | Array with DNS Record Objects | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

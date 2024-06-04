@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\AccountApi
+# csakel\RUBClient\AccountApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**accountIndex**](AccountApi.md#accountindex) | **GET** /account | Account Daten abrufen
 
 # **accountIndex**
-> \c-sakel\RUBClient\Model\Account[] accountIndex()
+> \csakel\RUBClient\Model\Account[] accountIndex()
 
 Account Daten abrufen
 
@@ -16,11 +16,11 @@ Account Daten abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\AccountApi(
+$apiInstance = new csakel\RUBClient\Api\AccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -41,7 +41,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Account[]**](../Model/Account.md)
+[**\csakel\RUBClient\Model\Account[]**](../Model/Account.md)
 
 ### Authorization
 

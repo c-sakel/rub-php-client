@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\NetworkfirewallApi
+# csakel\RUBClient\NetworkfirewallApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 [**networkFirewallUpdatePost**](NetworkfirewallApi.md#networkfirewallupdatepost) | **POST** /network/firewall/update | 
 
 # **networkFirewallAssignPost**
-> \c-sakel\RUBClient\Model\NetworkFirewall[] networkFirewallAssignPost($firewall_id, $vserver_id, $override)
+> \csakel\RUBClient\Model\NetworkFirewall[] networkFirewallAssignPost($firewall_id, $vserver_id, $override)
 
 
 
@@ -27,11 +27,11 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\NetworkfirewallApi(
+$apiInstance = new csakel\RUBClient\Api\NetworkfirewallApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\NetworkFirewall[]**](../Model/NetworkFirewall.md)
+[**\csakel\RUBClient\Model\NetworkFirewall[]**](../Model/NetworkFirewall.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **networkFirewallCopyPost**
-> \c-sakel\RUBClient\Model\NetworkFirewall[] networkFirewallCopyPost($firewall_id)
+> \csakel\RUBClient\Model\NetworkFirewall[] networkFirewallCopyPost($firewall_id)
 
 
 
@@ -83,11 +83,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\NetworkfirewallApi(
+$apiInstance = new csakel\RUBClient\Api\NetworkfirewallApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\NetworkFirewall[]**](../Model/NetworkFirewall.md)
+[**\csakel\RUBClient\Model\NetworkFirewall[]**](../Model/NetworkFirewall.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **networkFirewallCreatePost**
-> \c-sakel\RUBClient\Model\NetworkFirewall[] networkFirewallCreatePost($title, $policy_in, $policy_out)
+> \csakel\RUBClient\Model\NetworkFirewall[] networkFirewallCreatePost($title, $policy_in, $policy_out)
 
 
 
@@ -135,11 +135,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\NetworkfirewallApi(
+$apiInstance = new csakel\RUBClient\Api\NetworkfirewallApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\NetworkFirewall[]**](../Model/NetworkFirewall.md)
+[**\csakel\RUBClient\Model\NetworkFirewall[]**](../Model/NetworkFirewall.md)
 
 ### Authorization
 
@@ -191,11 +191,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\NetworkfirewallApi(
+$apiInstance = new csakel\RUBClient\Api\NetworkfirewallApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -234,7 +234,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **networkFirewallGet**
-> \c-sakel\RUBClient\Model\NetworkFirewall[] networkFirewallGet()
+> \csakel\RUBClient\Model\NetworkFirewall[] networkFirewallGet()
 
 
 
@@ -243,11 +243,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\NetworkfirewallApi(
+$apiInstance = new csakel\RUBClient\Api\NetworkfirewallApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -268,7 +268,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\NetworkFirewall[]**](../Model/NetworkFirewall.md)
+[**\csakel\RUBClient\Model\NetworkFirewall[]**](../Model/NetworkFirewall.md)
 
 ### Authorization
 
@@ -291,11 +291,11 @@ This endpoint does not need any parameter.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\NetworkfirewallApi(
+$apiInstance = new csakel\RUBClient\Api\NetworkfirewallApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -336,7 +336,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **networkFirewallRuleCreatePost**
-> \c-sakel\RUBClient\Model\NetworkFirewallRule[] networkFirewallRuleCreatePost($firewall_id, $direction, $active, $description, $protocol, $port, $source_addresses, $destination_addresses)
+> \csakel\RUBClient\Model\NetworkFirewallRule[] networkFirewallRuleCreatePost($firewall_id, $direction, $active, $description, $protocol, $port, $source_addresses, $destination_addresses)
 
 
 
@@ -345,11 +345,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\NetworkfirewallApi(
+$apiInstance = new csakel\RUBClient\Api\NetworkfirewallApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -388,7 +388,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\NetworkFirewallRule[]**](../Model/NetworkFirewallRule.md)
+[**\csakel\RUBClient\Model\NetworkFirewallRule[]**](../Model/NetworkFirewallRule.md)
 
 ### Authorization
 
@@ -411,11 +411,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\NetworkfirewallApi(
+$apiInstance = new csakel\RUBClient\Api\NetworkfirewallApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -456,7 +456,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **networkFirewallRuleUpdatePost**
-> \c-sakel\RUBClient\Model\NetworkFirewallRule[] networkFirewallRuleUpdatePost($firewall_id, $rule_id, $active, $description, $protocol, $port, $source_addresses, $destination_addresses)
+> \csakel\RUBClient\Model\NetworkFirewallRule[] networkFirewallRuleUpdatePost($firewall_id, $rule_id, $active, $description, $protocol, $port, $source_addresses, $destination_addresses)
 
 
 
@@ -465,11 +465,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\NetworkfirewallApi(
+$apiInstance = new csakel\RUBClient\Api\NetworkfirewallApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -508,7 +508,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\NetworkFirewallRule[]**](../Model/NetworkFirewallRule.md)
+[**\csakel\RUBClient\Model\NetworkFirewallRule[]**](../Model/NetworkFirewallRule.md)
 
 ### Authorization
 
@@ -522,7 +522,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **networkFirewallShowGet**
-> \c-sakel\RUBClient\Model\NetworkFirewall[] networkFirewallShowGet($firewall_id)
+> \csakel\RUBClient\Model\NetworkFirewall[] networkFirewallShowGet($firewall_id)
 
 
 
@@ -531,11 +531,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\NetworkfirewallApi(
+$apiInstance = new csakel\RUBClient\Api\NetworkfirewallApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -560,7 +560,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\NetworkFirewall[]**](../Model/NetworkFirewall.md)
+[**\csakel\RUBClient\Model\NetworkFirewall[]**](../Model/NetworkFirewall.md)
 
 ### Authorization
 
@@ -574,7 +574,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **networkFirewallUnassignDelete**
-> \c-sakel\RUBClient\Model\NetworkFirewall[] networkFirewallUnassignDelete($firewall_id, $vserver_id)
+> \csakel\RUBClient\Model\NetworkFirewall[] networkFirewallUnassignDelete($firewall_id, $vserver_id)
 
 
 
@@ -583,11 +583,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\NetworkfirewallApi(
+$apiInstance = new csakel\RUBClient\Api\NetworkfirewallApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -614,7 +614,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\NetworkFirewall[]**](../Model/NetworkFirewall.md)
+[**\csakel\RUBClient\Model\NetworkFirewall[]**](../Model/NetworkFirewall.md)
 
 ### Authorization
 
@@ -628,7 +628,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **networkFirewallUpdatePost**
-> \c-sakel\RUBClient\Model\NetworkFirewall[] networkFirewallUpdatePost($firewall_id, $title, $policy_in, $policy_out)
+> \csakel\RUBClient\Model\NetworkFirewall[] networkFirewallUpdatePost($firewall_id, $title, $policy_in, $policy_out)
 
 
 
@@ -637,11 +637,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\NetworkfirewallApi(
+$apiInstance = new csakel\RUBClient\Api\NetworkfirewallApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -672,7 +672,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\NetworkFirewall[]**](../Model/NetworkFirewall.md)
+[**\csakel\RUBClient\Model\NetworkFirewall[]**](../Model/NetworkFirewall.md)
 
 ### Authorization
 

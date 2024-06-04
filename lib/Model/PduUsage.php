@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Model;
+namespace csakel\RUBClient\Model;
 
 use \ArrayAccess;
-use \c-sakel\RUBClient\ObjectSerializer;
+use \csakel\RUBClient\ObjectSerializer;
 
 /**
  * PduUsage Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class PduUsage implements ModelInterface, ArrayAccess
         'average_ampere' => 'int',
         'max_watt' => 'int',
         'max_ampere' => 'int',
-        'timeseries' => '\c-sakel\RUBClient\Model\PduCurrentUsage[]'
+        'timeseries' => '\csakel\RUBClient\Model\PduCurrentUsage[]'
     ];
 
     /**
@@ -324,7 +324,7 @@ class PduUsage implements ModelInterface, ArrayAccess
     /**
      * Gets timeseries
      *
-     * @return \c-sakel\RUBClient\Model\PduCurrentUsage[]
+     * @return \csakel\RUBClient\Model\PduCurrentUsage[]
      */
     public function getTimeseries()
     {
@@ -334,7 +334,7 @@ class PduUsage implements ModelInterface, ArrayAccess
     /**
      * Sets timeseries
      *
-     * @param \c-sakel\RUBClient\Model\PduCurrentUsage[] $timeseries timeseries
+     * @param \csakel\RUBClient\Model\PduCurrentUsage[] $timeseries timeseries
      *
      * @return $this
      */

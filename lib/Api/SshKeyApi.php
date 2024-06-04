@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * SshKeyApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class SshKeyApi
      * @param  string $name Name des SSH Keys (required)
      * @param  string $ssh_public_key SSH Public Keys (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\SshKey[]
+     * @return \csakel\RUBClient\Model\SshKey[]
      */
     public function sshKeyCreate($name, $ssh_public_key)
     {
@@ -112,13 +112,13 @@ class SshKeyApi
      * @param  string $name Name des SSH Keys (required)
      * @param  string $ssh_public_key SSH Public Keys (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\SshKey[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\SshKey[], HTTP status code, HTTP response headers (array of strings)
      */
     public function sshKeyCreateWithHttpInfo($name, $ssh_public_key)
     {
-        $returnType = '\c-sakel\RUBClient\Model\SshKey[]';
+        $returnType = '\csakel\RUBClient\Model\SshKey[]';
         $request = $this->sshKeyCreateRequest($name, $ssh_public_key);
 
         try {
@@ -170,7 +170,7 @@ class SshKeyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\SshKey[]',
+                        '\csakel\RUBClient\Model\SshKey[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class SshKeyApi
      */
     public function sshKeyCreateAsyncWithHttpInfo($name, $ssh_public_key)
     {
-        $returnType = '\c-sakel\RUBClient\Model\SshKey[]';
+        $returnType = '\csakel\RUBClient\Model\SshKey[]';
         $request = $this->sshKeyCreateRequest($name, $ssh_public_key);
 
         return $this->client
@@ -370,9 +370,9 @@ class SshKeyApi
      *
      * @param  int $ssh_key_id SSH-KEY-ID, welche gelöscht werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\SshKey[]
+     * @return \csakel\RUBClient\Model\SshKey[]
      */
     public function sshKeyDelete($ssh_key_id)
     {
@@ -387,13 +387,13 @@ class SshKeyApi
      *
      * @param  int $ssh_key_id SSH-KEY-ID, welche gelöscht werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\SshKey[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\SshKey[], HTTP status code, HTTP response headers (array of strings)
      */
     public function sshKeyDeleteWithHttpInfo($ssh_key_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\SshKey[]';
+        $returnType = '\csakel\RUBClient\Model\SshKey[]';
         $request = $this->sshKeyDeleteRequest($ssh_key_id);
 
         try {
@@ -445,7 +445,7 @@ class SshKeyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\SshKey[]',
+                        '\csakel\RUBClient\Model\SshKey[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -487,7 +487,7 @@ class SshKeyApi
      */
     public function sshKeyDeleteAsyncWithHttpInfo($ssh_key_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\SshKey[]';
+        $returnType = '\csakel\RUBClient\Model\SshKey[]';
         $request = $this->sshKeyDeleteRequest($ssh_key_id);
 
         return $this->client
@@ -631,9 +631,9 @@ class SshKeyApi
      * Alle SSH Keys abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\SshKey[]
+     * @return \csakel\RUBClient\Model\SshKey[]
      */
     public function sshKeyIndex()
     {
@@ -647,13 +647,13 @@ class SshKeyApi
      * Alle SSH Keys abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\SshKey[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\SshKey[], HTTP status code, HTTP response headers (array of strings)
      */
     public function sshKeyIndexWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\SshKey[]';
+        $returnType = '\csakel\RUBClient\Model\SshKey[]';
         $request = $this->sshKeyIndexRequest();
 
         try {
@@ -705,7 +705,7 @@ class SshKeyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\SshKey[]',
+                        '\csakel\RUBClient\Model\SshKey[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -745,7 +745,7 @@ class SshKeyApi
      */
     public function sshKeyIndexAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\SshKey[]';
+        $returnType = '\csakel\RUBClient\Model\SshKey[]';
         $request = $this->sshKeyIndexRequest();
 
         return $this->client
@@ -879,9 +879,9 @@ class SshKeyApi
      *
      * @param  int $ssh_key_id SSH-KEY-ID, welche abgerufen werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\SshKey[]
+     * @return \csakel\RUBClient\Model\SshKey[]
      */
     public function sshKeyShow($ssh_key_id)
     {
@@ -896,13 +896,13 @@ class SshKeyApi
      *
      * @param  int $ssh_key_id SSH-KEY-ID, welche abgerufen werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\SshKey[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\SshKey[], HTTP status code, HTTP response headers (array of strings)
      */
     public function sshKeyShowWithHttpInfo($ssh_key_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\SshKey[]';
+        $returnType = '\csakel\RUBClient\Model\SshKey[]';
         $request = $this->sshKeyShowRequest($ssh_key_id);
 
         try {
@@ -954,7 +954,7 @@ class SshKeyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\SshKey[]',
+                        '\csakel\RUBClient\Model\SshKey[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -996,7 +996,7 @@ class SshKeyApi
      */
     public function sshKeyShowAsyncWithHttpInfo($ssh_key_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\SshKey[]';
+        $returnType = '\csakel\RUBClient\Model\SshKey[]';
         $request = $this->sshKeyShowRequest($ssh_key_id);
 
         return $this->client

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * DomaintaskApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class DomaintaskApi
      * Alle Domain Tasks abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DomainTask[]
+     * @return \csakel\RUBClient\Model\DomainTask[]
      */
     public function domainTaskIndex()
     {
@@ -108,13 +108,13 @@ class DomaintaskApi
      * Alle Domain Tasks abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DomainTask[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DomainTask[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainTaskIndexWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\DomainTask[]';
+        $returnType = '\csakel\RUBClient\Model\DomainTask[]';
         $request = $this->domainTaskIndexRequest();
 
         try {
@@ -166,7 +166,7 @@ class DomaintaskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DomainTask[]',
+                        '\csakel\RUBClient\Model\DomainTask[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class DomaintaskApi
      */
     public function domainTaskIndexAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\DomainTask[]';
+        $returnType = '\csakel\RUBClient\Model\DomainTask[]';
         $request = $this->domainTaskIndexRequest();
 
         return $this->client
@@ -340,9 +340,9 @@ class DomaintaskApi
      *
      * @param  int $task_id ID des Domain Tasks, welcher abgerufen werden soll. (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DomainTask[]
+     * @return \csakel\RUBClient\Model\DomainTask[]
      */
     public function domainTaskShow($task_id)
     {
@@ -357,13 +357,13 @@ class DomaintaskApi
      *
      * @param  int $task_id ID des Domain Tasks, welcher abgerufen werden soll. (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DomainTask[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DomainTask[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainTaskShowWithHttpInfo($task_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DomainTask[]';
+        $returnType = '\csakel\RUBClient\Model\DomainTask[]';
         $request = $this->domainTaskShowRequest($task_id);
 
         try {
@@ -415,7 +415,7 @@ class DomaintaskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DomainTask[]',
+                        '\csakel\RUBClient\Model\DomainTask[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -457,7 +457,7 @@ class DomaintaskApi
      */
     public function domainTaskShowAsyncWithHttpInfo($task_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DomainTask[]';
+        $returnType = '\csakel\RUBClient\Model\DomainTask[]';
         $request = $this->domainTaskShowRequest($task_id);
 
         return $this->client

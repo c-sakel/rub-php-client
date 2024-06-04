@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\DdosAlertApi
+# csakel\RUBClient\DdosAlertApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**ddosAlertShow**](DdosAlertApi.md#ddosalertshow) | **GET** /ddos_alert/show | Einzelnen DDoS Alert abrufen
 
 # **ddosAlertIndex**
-> \c-sakel\RUBClient\Model\DdosAlert[] ddosAlertIndex()
+> \csakel\RUBClient\Model\DdosAlert[] ddosAlertIndex()
 
 Alle DDoS Alerts abrufen
 
@@ -17,11 +17,11 @@ Alle DDoS Alerts abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DdosAlertApi(
+$apiInstance = new csakel\RUBClient\Api\DdosAlertApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -42,7 +42,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\DdosAlert[]**](../Model/DdosAlert.md)
+[**\csakel\RUBClient\Model\DdosAlert[]**](../Model/DdosAlert.md)
 
 ### Authorization
 
@@ -56,7 +56,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **ddosAlertShow**
-> \c-sakel\RUBClient\Model\DdosAlert[] ddosAlertShow($alert_id)
+> \csakel\RUBClient\Model\DdosAlert[] ddosAlertShow($alert_id)
 
 Einzelnen DDoS Alert abrufen
 
@@ -65,11 +65,11 @@ Einzelnen DDoS Alert abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DdosAlertApi(
+$apiInstance = new csakel\RUBClient\Api\DdosAlertApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\DdosAlert[]**](../Model/DdosAlert.md)
+[**\csakel\RUBClient\Model\DdosAlert[]**](../Model/DdosAlert.md)
 
 ### Authorization
 

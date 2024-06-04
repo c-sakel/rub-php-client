@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\SsoApi
+# csakel\RUBClient\SsoApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**ssoCreate**](SsoApi.md#ssocreate) | **POST** /sso/create | Neuen SSO Hash erzeugen
 
 # **ssoCreate**
-> \c-sakel\RUBClient\Model\SsoHash[] ssoCreate($username, $ip_address, $url)
+> \csakel\RUBClient\Model\SsoHash[] ssoCreate($username, $ip_address, $url)
 
 Neuen SSO Hash erzeugen
 
@@ -18,11 +18,11 @@ Die Login-URL lautet /sso-login?hash=&lt;hash&gt;  &lt;hash&gt; muss durch den g
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\SsoApi(
+$apiInstance = new csakel\RUBClient\Api\SsoApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\SsoHash[]**](../Model/SsoHash.md)
+[**\csakel\RUBClient\Model\SsoHash[]**](../Model/SsoHash.md)
 
 ### Authorization
 

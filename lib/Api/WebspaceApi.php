@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * WebspaceApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class WebspaceApi
      *
      * @param  int $package Paket-ID aus /webspace/packages (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Webspace[]
+     * @return \csakel\RUBClient\Model\Webspace[]
      */
     public function webspaceCreate($package)
     {
@@ -110,13 +110,13 @@ class WebspaceApi
      *
      * @param  int $package Paket-ID aus /webspace/packages (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Webspace[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Webspace[], HTTP status code, HTTP response headers (array of strings)
      */
     public function webspaceCreateWithHttpInfo($package)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Webspace[]';
+        $returnType = '\csakel\RUBClient\Model\Webspace[]';
         $request = $this->webspaceCreateRequest($package);
 
         try {
@@ -168,7 +168,7 @@ class WebspaceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Webspace[]',
+                        '\csakel\RUBClient\Model\Webspace[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class WebspaceApi
      */
     public function webspaceCreateAsyncWithHttpInfo($package)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Webspace[]';
+        $returnType = '\csakel\RUBClient\Model\Webspace[]';
         $request = $this->webspaceCreateRequest($package);
 
         return $this->client
@@ -354,9 +354,9 @@ class WebspaceApi
      * Webspaces abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Webspace[]
+     * @return \csakel\RUBClient\Model\Webspace[]
      */
     public function webspaceIndex()
     {
@@ -370,13 +370,13 @@ class WebspaceApi
      * Webspaces abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Webspace[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Webspace[], HTTP status code, HTTP response headers (array of strings)
      */
     public function webspaceIndexWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\Webspace[]';
+        $returnType = '\csakel\RUBClient\Model\Webspace[]';
         $request = $this->webspaceIndexRequest();
 
         try {
@@ -428,7 +428,7 @@ class WebspaceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Webspace[]',
+                        '\csakel\RUBClient\Model\Webspace[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -468,7 +468,7 @@ class WebspaceApi
      */
     public function webspaceIndexAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\Webspace[]';
+        $returnType = '\csakel\RUBClient\Model\Webspace[]';
         $request = $this->webspaceIndexRequest();
 
         return $this->client
@@ -601,9 +601,9 @@ class WebspaceApi
      * Verfügbare Pakete für Webspacebestellung abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\WebspacePackage[]
+     * @return \csakel\RUBClient\Model\WebspacePackage[]
      */
     public function webspacePackages()
     {
@@ -617,13 +617,13 @@ class WebspaceApi
      * Verfügbare Pakete für Webspacebestellung abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\WebspacePackage[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\WebspacePackage[], HTTP status code, HTTP response headers (array of strings)
      */
     public function webspacePackagesWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\WebspacePackage[]';
+        $returnType = '\csakel\RUBClient\Model\WebspacePackage[]';
         $request = $this->webspacePackagesRequest();
 
         try {
@@ -675,7 +675,7 @@ class WebspaceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\WebspacePackage[]',
+                        '\csakel\RUBClient\Model\WebspacePackage[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -715,7 +715,7 @@ class WebspaceApi
      */
     public function webspacePackagesAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\WebspacePackage[]';
+        $returnType = '\csakel\RUBClient\Model\WebspacePackage[]';
         $request = $this->webspacePackagesRequest();
 
         return $this->client
@@ -850,9 +850,9 @@ class WebspaceApi
      * @param  int $webspace_id Webspace-ID (required)
      * @param  string $description Beschreibung für Webspace (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Webspace[]
+     * @return \csakel\RUBClient\Model\Webspace[]
      */
     public function webspaceSettings($webspace_id, $description = null)
     {
@@ -868,13 +868,13 @@ class WebspaceApi
      * @param  int $webspace_id Webspace-ID (required)
      * @param  string $description Beschreibung für Webspace (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Webspace[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Webspace[], HTTP status code, HTTP response headers (array of strings)
      */
     public function webspaceSettingsWithHttpInfo($webspace_id, $description = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Webspace[]';
+        $returnType = '\csakel\RUBClient\Model\Webspace[]';
         $request = $this->webspaceSettingsRequest($webspace_id, $description);
 
         try {
@@ -926,7 +926,7 @@ class WebspaceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Webspace[]',
+                        '\csakel\RUBClient\Model\Webspace[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -970,7 +970,7 @@ class WebspaceApi
      */
     public function webspaceSettingsAsyncWithHttpInfo($webspace_id, $description = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Webspace[]';
+        $returnType = '\csakel\RUBClient\Model\Webspace[]';
         $request = $this->webspaceSettingsRequest($webspace_id, $description);
 
         return $this->client
@@ -1120,9 +1120,9 @@ class WebspaceApi
      *
      * @param  int $webspace_id Webspace-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Webspace[]
+     * @return \csakel\RUBClient\Model\Webspace[]
      */
     public function webspaceShow($webspace_id)
     {
@@ -1137,13 +1137,13 @@ class WebspaceApi
      *
      * @param  int $webspace_id Webspace-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Webspace[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Webspace[], HTTP status code, HTTP response headers (array of strings)
      */
     public function webspaceShowWithHttpInfo($webspace_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Webspace[]';
+        $returnType = '\csakel\RUBClient\Model\Webspace[]';
         $request = $this->webspaceShowRequest($webspace_id);
 
         try {
@@ -1195,7 +1195,7 @@ class WebspaceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Webspace[]',
+                        '\csakel\RUBClient\Model\Webspace[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1237,7 +1237,7 @@ class WebspaceApi
      */
     public function webspaceShowAsyncWithHttpInfo($webspace_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Webspace[]';
+        $returnType = '\csakel\RUBClient\Model\Webspace[]';
         $request = $this->webspaceShowRequest($webspace_id);
 
         return $this->client
@@ -1383,9 +1383,9 @@ class WebspaceApi
      * @param  int $webspace_id Webspace-ID (required)
      * @param  string $client_ip Client IP-Adresse (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\WebspaceSso[]
+     * @return \csakel\RUBClient\Model\WebspaceSso[]
      */
     public function webspaceSso($webspace_id, $client_ip)
     {
@@ -1401,13 +1401,13 @@ class WebspaceApi
      * @param  int $webspace_id Webspace-ID (required)
      * @param  string $client_ip Client IP-Adresse (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\WebspaceSso[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\WebspaceSso[], HTTP status code, HTTP response headers (array of strings)
      */
     public function webspaceSsoWithHttpInfo($webspace_id, $client_ip)
     {
-        $returnType = '\c-sakel\RUBClient\Model\WebspaceSso[]';
+        $returnType = '\csakel\RUBClient\Model\WebspaceSso[]';
         $request = $this->webspaceSsoRequest($webspace_id, $client_ip);
 
         try {
@@ -1459,7 +1459,7 @@ class WebspaceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\WebspaceSso[]',
+                        '\csakel\RUBClient\Model\WebspaceSso[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1503,7 +1503,7 @@ class WebspaceApi
      */
     public function webspaceSsoAsyncWithHttpInfo($webspace_id, $client_ip)
     {
-        $returnType = '\c-sakel\RUBClient\Model\WebspaceSso[]';
+        $returnType = '\csakel\RUBClient\Model\WebspaceSso[]';
         $request = $this->webspaceSsoRequest($webspace_id, $client_ip);
 
         return $this->client
@@ -1659,9 +1659,9 @@ class WebspaceApi
      *
      * @param  int $webspace_id Webspace-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\WebspaceUsage[]
+     * @return \csakel\RUBClient\Model\WebspaceUsage[]
      */
     public function webspaceUsage($webspace_id)
     {
@@ -1676,13 +1676,13 @@ class WebspaceApi
      *
      * @param  int $webspace_id Webspace-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\WebspaceUsage[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\WebspaceUsage[], HTTP status code, HTTP response headers (array of strings)
      */
     public function webspaceUsageWithHttpInfo($webspace_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\WebspaceUsage[]';
+        $returnType = '\csakel\RUBClient\Model\WebspaceUsage[]';
         $request = $this->webspaceUsageRequest($webspace_id);
 
         try {
@@ -1734,7 +1734,7 @@ class WebspaceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\WebspaceUsage[]',
+                        '\csakel\RUBClient\Model\WebspaceUsage[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1776,7 +1776,7 @@ class WebspaceApi
      */
     public function webspaceUsageAsyncWithHttpInfo($webspace_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\WebspaceUsage[]';
+        $returnType = '\csakel\RUBClient\Model\WebspaceUsage[]';
         $request = $this->webspaceUsageRequest($webspace_id);
 
         return $this->client

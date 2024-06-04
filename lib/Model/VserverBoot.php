@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Model;
+namespace csakel\RUBClient\Model;
 
 use \ArrayAccess;
-use \c-sakel\RUBClient\ObjectSerializer;
+use \csakel\RUBClient\ObjectSerializer;
 
 /**
  * VserverBoot Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class VserverBoot implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'current_order' => 'string',
-        'available_options' => '\c-sakel\RUBClient\Model\VserverBootAvailableOptions[]'
+        'available_options' => '\csakel\RUBClient\Model\VserverBootAvailableOptions[]'
     ];
 
     /**
@@ -234,7 +234,7 @@ class VserverBoot implements ModelInterface, ArrayAccess
     /**
      * Gets available_options
      *
-     * @return \c-sakel\RUBClient\Model\VserverBootAvailableOptions[]
+     * @return \csakel\RUBClient\Model\VserverBootAvailableOptions[]
      */
     public function getAvailableOptions()
     {
@@ -244,7 +244,7 @@ class VserverBoot implements ModelInterface, ArrayAccess
     /**
      * Sets available_options
      *
-     * @param \c-sakel\RUBClient\Model\VserverBootAvailableOptions[] $available_options available_options
+     * @param \csakel\RUBClient\Model\VserverBootAvailableOptions[] $available_options available_options
      *
      * @return $this
      */

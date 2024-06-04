@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * AddressApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class AddressApi
      * Alle IP-Adressen abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Address[]
+     * @return \csakel\RUBClient\Model\Address[]
      */
     public function addressIndex()
     {
@@ -108,13 +108,13 @@ class AddressApi
      * Alle IP-Adressen abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Address[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Address[], HTTP status code, HTTP response headers (array of strings)
      */
     public function addressIndexWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\Address[]';
+        $returnType = '\csakel\RUBClient\Model\Address[]';
         $request = $this->addressIndexRequest();
 
         try {
@@ -166,7 +166,7 @@ class AddressApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Address[]',
+                        '\csakel\RUBClient\Model\Address[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class AddressApi
      */
     public function addressIndexAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\Address[]';
+        $returnType = '\csakel\RUBClient\Model\Address[]';
         $request = $this->addressIndexRequest();
 
         return $this->client
@@ -341,9 +341,9 @@ class AddressApi
      * @param  string $address IP-Adresse, wofür der rDNS Eintrag gesetzt werden soll (required)
      * @param  string $rdns rDNS Eintrag, welcher gesetzt werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Address[]
+     * @return \csakel\RUBClient\Model\Address[]
      */
     public function addressRdns($address, $rdns)
     {
@@ -359,13 +359,13 @@ class AddressApi
      * @param  string $address IP-Adresse, wofür der rDNS Eintrag gesetzt werden soll (required)
      * @param  string $rdns rDNS Eintrag, welcher gesetzt werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Address[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Address[], HTTP status code, HTTP response headers (array of strings)
      */
     public function addressRdnsWithHttpInfo($address, $rdns)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Address[]';
+        $returnType = '\csakel\RUBClient\Model\Address[]';
         $request = $this->addressRdnsRequest($address, $rdns);
 
         try {
@@ -417,7 +417,7 @@ class AddressApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Address[]',
+                        '\csakel\RUBClient\Model\Address[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -461,7 +461,7 @@ class AddressApi
      */
     public function addressRdnsAsyncWithHttpInfo($address, $rdns)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Address[]';
+        $returnType = '\csakel\RUBClient\Model\Address[]';
         $request = $this->addressRdnsRequest($address, $rdns);
 
         return $this->client
@@ -617,9 +617,9 @@ class AddressApi
      *
      * @param  string $address IP-Adresse, welche abgerufen werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\Address[]
+     * @return \csakel\RUBClient\Model\Address[]
      */
     public function addressShow($address)
     {
@@ -634,13 +634,13 @@ class AddressApi
      *
      * @param  string $address IP-Adresse, welche abgerufen werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\Address[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\Address[], HTTP status code, HTTP response headers (array of strings)
      */
     public function addressShowWithHttpInfo($address)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Address[]';
+        $returnType = '\csakel\RUBClient\Model\Address[]';
         $request = $this->addressShowRequest($address);
 
         try {
@@ -692,7 +692,7 @@ class AddressApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\Address[]',
+                        '\csakel\RUBClient\Model\Address[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -734,7 +734,7 @@ class AddressApi
      */
     public function addressShowAsyncWithHttpInfo($address)
     {
-        $returnType = '\c-sakel\RUBClient\Model\Address[]';
+        $returnType = '\csakel\RUBClient\Model\Address[]';
         $request = $this->addressShowRequest($address);
 
         return $this->client
@@ -881,9 +881,9 @@ class AddressApi
      * @param  \DateTime $start_date Startdatum für Traffic Zeitraum (optional)
      * @param  \DateTime $end_date Enddatum für Traffic Zeitraum (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\AddressTraffic[]
+     * @return \csakel\RUBClient\Model\AddressTraffic[]
      */
     public function addressTraffic($address, $start_date = null, $end_date = null)
     {
@@ -900,13 +900,13 @@ class AddressApi
      * @param  \DateTime $start_date Startdatum für Traffic Zeitraum (optional)
      * @param  \DateTime $end_date Enddatum für Traffic Zeitraum (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\AddressTraffic[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\AddressTraffic[], HTTP status code, HTTP response headers (array of strings)
      */
     public function addressTrafficWithHttpInfo($address, $start_date = null, $end_date = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\AddressTraffic[]';
+        $returnType = '\csakel\RUBClient\Model\AddressTraffic[]';
         $request = $this->addressTrafficRequest($address, $start_date, $end_date);
 
         try {
@@ -958,7 +958,7 @@ class AddressApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\AddressTraffic[]',
+                        '\csakel\RUBClient\Model\AddressTraffic[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1004,7 +1004,7 @@ class AddressApi
      */
     public function addressTrafficAsyncWithHttpInfo($address, $start_date = null, $end_date = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\AddressTraffic[]';
+        $returnType = '\csakel\RUBClient\Model\AddressTraffic[]';
         $request = $this->addressTrafficRequest($address, $start_date, $end_date);
 
         return $this->client

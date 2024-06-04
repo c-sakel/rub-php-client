@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * VserverbackupApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class VserverbackupApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverBackup[]
+     * @return \csakel\RUBClient\Model\VserverBackup[]
      */
     public function vserverBackup($server_id)
     {
@@ -110,13 +110,13 @@ class VserverbackupApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverBackup[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverBackup[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverBackupWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackup[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackup[]';
         $request = $this->vserverBackupRequest($server_id);
 
         try {
@@ -168,7 +168,7 @@ class VserverbackupApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverBackup[]',
+                        '\csakel\RUBClient\Model\VserverBackup[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class VserverbackupApi
      */
     public function vserverBackupAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackup[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackup[]';
         $request = $this->vserverBackupRequest($server_id);
 
         return $this->client
@@ -356,9 +356,9 @@ class VserverbackupApi
      * @param  int $server_id Server-ID (required)
      * @param  int $backup_id Backup-ID, welches abgebrochen werden soll. (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverBackup[]
+     * @return \csakel\RUBClient\Model\VserverBackup[]
      */
     public function vserverBackupAbort($server_id, $backup_id)
     {
@@ -374,13 +374,13 @@ class VserverbackupApi
      * @param  int $server_id Server-ID (required)
      * @param  int $backup_id Backup-ID, welches abgebrochen werden soll. (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverBackup[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverBackup[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverBackupAbortWithHttpInfo($server_id, $backup_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackup[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackup[]';
         $request = $this->vserverBackupAbortRequest($server_id, $backup_id);
 
         try {
@@ -432,7 +432,7 @@ class VserverbackupApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverBackup[]',
+                        '\csakel\RUBClient\Model\VserverBackup[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -476,7 +476,7 @@ class VserverbackupApi
      */
     public function vserverBackupAbortAsyncWithHttpInfo($server_id, $backup_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackup[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackup[]';
         $request = $this->vserverBackupAbortRequest($server_id, $backup_id);
 
         return $this->client
@@ -633,9 +633,9 @@ class VserverbackupApi
      * @param  int $server_id Server-ID (required)
      * @param  string $title Titel des Backups (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverBackup[]
+     * @return \csakel\RUBClient\Model\VserverBackup[]
      */
     public function vserverBackupCreate($server_id, $title = null)
     {
@@ -651,13 +651,13 @@ class VserverbackupApi
      * @param  int $server_id Server-ID (required)
      * @param  string $title Titel des Backups (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverBackup[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverBackup[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverBackupCreateWithHttpInfo($server_id, $title = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackup[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackup[]';
         $request = $this->vserverBackupCreateRequest($server_id, $title);
 
         try {
@@ -709,7 +709,7 @@ class VserverbackupApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverBackup[]',
+                        '\csakel\RUBClient\Model\VserverBackup[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -753,7 +753,7 @@ class VserverbackupApi
      */
     public function vserverBackupCreateAsyncWithHttpInfo($server_id, $title = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackup[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackup[]';
         $request = $this->vserverBackupCreateRequest($server_id, $title);
 
         return $this->client
@@ -904,9 +904,9 @@ class VserverbackupApi
      * @param  int $server_id Server-ID (required)
      * @param  int $backup_id Backup-ID, welches gelöscht werden soll. (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverBackup[]
+     * @return \csakel\RUBClient\Model\VserverBackup[]
      */
     public function vserverBackupDelete($server_id, $backup_id)
     {
@@ -922,13 +922,13 @@ class VserverbackupApi
      * @param  int $server_id Server-ID (required)
      * @param  int $backup_id Backup-ID, welches gelöscht werden soll. (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverBackup[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverBackup[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverBackupDeleteWithHttpInfo($server_id, $backup_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackup[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackup[]';
         $request = $this->vserverBackupDeleteRequest($server_id, $backup_id);
 
         try {
@@ -980,7 +980,7 @@ class VserverbackupApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverBackup[]',
+                        '\csakel\RUBClient\Model\VserverBackup[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1024,7 +1024,7 @@ class VserverbackupApi
      */
     public function vserverBackupDeleteAsyncWithHttpInfo($server_id, $backup_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackup[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackup[]';
         $request = $this->vserverBackupDeleteRequest($server_id, $backup_id);
 
         return $this->client
@@ -1180,9 +1180,9 @@ class VserverbackupApi
      * @param  int $backup_id backup_id (required)
      * @param  int $file_restore_id file_restore_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverBackupFileRestore[]
+     * @return \csakel\RUBClient\Model\VserverBackupFileRestore[]
      */
     public function vserverBackupFileRestoreCheckPost($server_id, $backup_id, $file_restore_id)
     {
@@ -1197,13 +1197,13 @@ class VserverbackupApi
      * @param  int $backup_id (required)
      * @param  int $file_restore_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverBackupFileRestore[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverBackupFileRestore[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverBackupFileRestoreCheckPostWithHttpInfo($server_id, $backup_id, $file_restore_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackupFileRestore[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackupFileRestore[]';
         $request = $this->vserverBackupFileRestoreCheckPostRequest($server_id, $backup_id, $file_restore_id);
 
         try {
@@ -1255,7 +1255,7 @@ class VserverbackupApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverBackupFileRestore[]',
+                        '\csakel\RUBClient\Model\VserverBackupFileRestore[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1301,7 +1301,7 @@ class VserverbackupApi
      */
     public function vserverBackupFileRestoreCheckPostAsyncWithHttpInfo($server_id, $backup_id, $file_restore_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackupFileRestore[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackupFileRestore[]';
         $request = $this->vserverBackupFileRestoreCheckPostRequest($server_id, $backup_id, $file_restore_id);
 
         return $this->client
@@ -1468,9 +1468,9 @@ class VserverbackupApi
      * @param  int $backup_id backup_id (required)
      * @param  string $file_path file_path (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverBackupFileRestore[]
+     * @return \csakel\RUBClient\Model\VserverBackupFileRestore[]
      */
     public function vserverBackupFileRestoreDownloadPost($server_id, $backup_id, $file_path)
     {
@@ -1485,13 +1485,13 @@ class VserverbackupApi
      * @param  int $backup_id (required)
      * @param  string $file_path (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverBackupFileRestore[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverBackupFileRestore[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverBackupFileRestoreDownloadPostWithHttpInfo($server_id, $backup_id, $file_path)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackupFileRestore[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackupFileRestore[]';
         $request = $this->vserverBackupFileRestoreDownloadPostRequest($server_id, $backup_id, $file_path);
 
         try {
@@ -1543,7 +1543,7 @@ class VserverbackupApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverBackupFileRestore[]',
+                        '\csakel\RUBClient\Model\VserverBackupFileRestore[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1589,7 +1589,7 @@ class VserverbackupApi
      */
     public function vserverBackupFileRestoreDownloadPostAsyncWithHttpInfo($server_id, $backup_id, $file_path)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackupFileRestore[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackupFileRestore[]';
         $request = $this->vserverBackupFileRestoreDownloadPostRequest($server_id, $backup_id, $file_path);
 
         return $this->client
@@ -1756,9 +1756,9 @@ class VserverbackupApi
      * @param  int $backup_id backup_id (required)
      * @param  string $file_path file_path (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverBackupFileRestoreList[]
+     * @return \csakel\RUBClient\Model\VserverBackupFileRestoreList[]
      */
     public function vserverBackupFileRestoreListGet($server_id, $backup_id, $file_path = null)
     {
@@ -1773,13 +1773,13 @@ class VserverbackupApi
      * @param  int $backup_id (required)
      * @param  string $file_path (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverBackupFileRestoreList[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverBackupFileRestoreList[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverBackupFileRestoreListGetWithHttpInfo($server_id, $backup_id, $file_path = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackupFileRestoreList[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackupFileRestoreList[]';
         $request = $this->vserverBackupFileRestoreListGetRequest($server_id, $backup_id, $file_path);
 
         try {
@@ -1831,7 +1831,7 @@ class VserverbackupApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverBackupFileRestoreList[]',
+                        '\csakel\RUBClient\Model\VserverBackupFileRestoreList[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1877,7 +1877,7 @@ class VserverbackupApi
      */
     public function vserverBackupFileRestoreListGetAsyncWithHttpInfo($server_id, $backup_id, $file_path = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackupFileRestoreList[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackupFileRestoreList[]';
         $request = $this->vserverBackupFileRestoreListGetRequest($server_id, $backup_id, $file_path);
 
         return $this->client
@@ -2039,9 +2039,9 @@ class VserverbackupApi
      * @param  int $server_id Server-ID (required)
      * @param  int $backup_id Backup-ID, welches wiederhergestellt werden soll. (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverBackup[]
+     * @return \csakel\RUBClient\Model\VserverBackup[]
      */
     public function vserverBackupRestore($server_id, $backup_id)
     {
@@ -2057,13 +2057,13 @@ class VserverbackupApi
      * @param  int $server_id Server-ID (required)
      * @param  int $backup_id Backup-ID, welches wiederhergestellt werden soll. (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverBackup[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverBackup[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverBackupRestoreWithHttpInfo($server_id, $backup_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackup[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackup[]';
         $request = $this->vserverBackupRestoreRequest($server_id, $backup_id);
 
         try {
@@ -2115,7 +2115,7 @@ class VserverbackupApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverBackup[]',
+                        '\csakel\RUBClient\Model\VserverBackup[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2159,7 +2159,7 @@ class VserverbackupApi
      */
     public function vserverBackupRestoreAsyncWithHttpInfo($server_id, $backup_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverBackup[]';
+        $returnType = '\csakel\RUBClient\Model\VserverBackup[]';
         $request = $this->vserverBackupRestoreRequest($server_id, $backup_id);
 
         return $this->client

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * DomaindnsApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class DomaindnsApi
      *
      * @param  string $domain_name Domain, wofür die DNS Zone abgerufen werden soll. (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DomainDnsZone[]
+     * @return \csakel\RUBClient\Model\DomainDnsZone[]
      */
     public function domainDns($domain_name)
     {
@@ -110,13 +110,13 @@ class DomaindnsApi
      *
      * @param  string $domain_name Domain, wofür die DNS Zone abgerufen werden soll. (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DomainDnsZone[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DomainDnsZone[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainDnsWithHttpInfo($domain_name)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DomainDnsZone[]';
+        $returnType = '\csakel\RUBClient\Model\DomainDnsZone[]';
         $request = $this->domainDnsRequest($domain_name);
 
         try {
@@ -168,7 +168,7 @@ class DomaindnsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DomainDnsZone[]',
+                        '\csakel\RUBClient\Model\DomainDnsZone[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class DomaindnsApi
      */
     public function domainDnsAsyncWithHttpInfo($domain_name)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DomainDnsZone[]';
+        $returnType = '\csakel\RUBClient\Model\DomainDnsZone[]';
         $request = $this->domainDnsRequest($domain_name);
 
         return $this->client
@@ -356,9 +356,9 @@ class DomaindnsApi
      * @param  string $domain_name Domain, wofür die DNS Zone abgerufen werden soll. (required)
      * @param  string[] $records DNS Einträge für die Zone. (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\DomainDnsZone[]
+     * @return \csakel\RUBClient\Model\DomainDnsZone[]
      */
     public function domainDnsUpdate($domain_name, $records)
     {
@@ -374,13 +374,13 @@ class DomaindnsApi
      * @param  string $domain_name Domain, wofür die DNS Zone abgerufen werden soll. (required)
      * @param  string[] $records DNS Einträge für die Zone. (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\DomainDnsZone[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\DomainDnsZone[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainDnsUpdateWithHttpInfo($domain_name, $records)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DomainDnsZone[]';
+        $returnType = '\csakel\RUBClient\Model\DomainDnsZone[]';
         $request = $this->domainDnsUpdateRequest($domain_name, $records);
 
         try {
@@ -432,7 +432,7 @@ class DomaindnsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\DomainDnsZone[]',
+                        '\csakel\RUBClient\Model\DomainDnsZone[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -476,7 +476,7 @@ class DomaindnsApi
      */
     public function domainDnsUpdateAsyncWithHttpInfo($domain_name, $records)
     {
-        $returnType = '\c-sakel\RUBClient\Model\DomainDnsZone[]';
+        $returnType = '\csakel\RUBClient\Model\DomainDnsZone[]';
         $request = $this->domainDnsUpdateRequest($domain_name, $records);
 
         return $this->client

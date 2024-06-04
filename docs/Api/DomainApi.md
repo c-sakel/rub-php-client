@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\DomainApi
+# csakel\RUBClient\DomainApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -28,11 +28,11 @@ Domain Authinfo abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DomainApi(
+$apiInstance = new csakel\RUBClient\Api\DomainApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -79,11 +79,11 @@ Domain Authinfo per E-Mail an den Inhaber versenden
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DomainApi(
+$apiInstance = new csakel\RUBClient\Api\DomainApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -132,11 +132,11 @@ Achtung: Diese Aktion ist kostenpflichtig!
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DomainApi(
+$apiInstance = new csakel\RUBClient\Api\DomainApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -183,11 +183,11 @@ Domain Verfügbarkeit prüfen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DomainApi(
+$apiInstance = new csakel\RUBClient\Api\DomainApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -225,7 +225,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainCreate**
-> \c-sakel\RUBClient\Model\Domain[] domainCreate($domain_name, $owner_c, $admin_c, $tech_c, $zone_c, $ns1, $ns2, $ns3, $ns4, $ns5, $authinfo, $create_zone)
+> \csakel\RUBClient\Model\Domain[] domainCreate($domain_name, $owner_c, $admin_c, $tech_c, $zone_c, $ns1, $ns2, $ns3, $ns4, $ns5, $authinfo, $create_zone)
 
 Domain bestellen
 
@@ -236,11 +236,11 @@ Registriere oder Transferiere eine Domain
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DomainApi(
+$apiInstance = new csakel\RUBClient\Api\DomainApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -287,7 +287,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
+[**\csakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
 
 ### Authorization
 
@@ -301,7 +301,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainDelete**
-> \c-sakel\RUBClient\Model\Domain[] domainDelete($domain_name, $date)
+> \csakel\RUBClient\Model\Domain[] domainDelete($domain_name, $date)
 
 Domain löschen
 
@@ -312,11 +312,11 @@ Lösche eine Domain
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DomainApi(
+$apiInstance = new csakel\RUBClient\Api\DomainApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -343,7 +343,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
+[**\csakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
 
 ### Authorization
 
@@ -357,7 +357,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainIndex**
-> \c-sakel\RUBClient\Model\Domain[] domainIndex()
+> \csakel\RUBClient\Model\Domain[] domainIndex()
 
 Alle Domains abrufen
 
@@ -366,11 +366,11 @@ Alle Domains abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DomainApi(
+$apiInstance = new csakel\RUBClient\Api\DomainApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -391,7 +391,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
+[**\csakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
 
 ### Authorization
 
@@ -405,7 +405,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainRegistryStatus**
-> \c-sakel\RUBClient\Model\Domain[] domainRegistryStatus($domain_name, $status)
+> \csakel\RUBClient\Model\Domain[] domainRegistryStatus($domain_name, $status)
 
 Domain Registry Status aktualisieren
 
@@ -416,11 +416,11 @@ Aktualisieren Sie den Registry Status einer Domain. Diese Aktion ist nicht für 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DomainApi(
+$apiInstance = new csakel\RUBClient\Api\DomainApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -447,7 +447,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
+[**\csakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
 
 ### Authorization
 
@@ -461,7 +461,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainResendVerificationEmail**
-> \c-sakel\RUBClient\Model\Domain[] domainResendVerificationEmail($domain_name)
+> \csakel\RUBClient\Model\Domain[] domainResendVerificationEmail($domain_name)
 
 Domain Verifizierungsemail erneut versenden
 
@@ -472,11 +472,11 @@ Versenden Sie die Verifizierungsemail erneut. Diese Aktion ist nicht für alle D
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DomainApi(
+$apiInstance = new csakel\RUBClient\Api\DomainApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -501,7 +501,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
+[**\csakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
 
 ### Authorization
 
@@ -515,7 +515,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainRestore**
-> \c-sakel\RUBClient\Model\Domain[] domainRestore($domain_name)
+> \csakel\RUBClient\Model\Domain[] domainRestore($domain_name)
 
 Domain wiederherstellen
 
@@ -526,11 +526,11 @@ Domain wiederherstellen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DomainApi(
+$apiInstance = new csakel\RUBClient\Api\DomainApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -555,7 +555,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
+[**\csakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
 
 ### Authorization
 
@@ -569,7 +569,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainShow**
-> \c-sakel\RUBClient\Model\Domain[] domainShow($domain_name)
+> \csakel\RUBClient\Model\Domain[] domainShow($domain_name)
 
 Einzelne Domain abrufen
 
@@ -578,11 +578,11 @@ Einzelne Domain abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DomainApi(
+$apiInstance = new csakel\RUBClient\Api\DomainApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -607,7 +607,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
+[**\csakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
 
 ### Authorization
 
@@ -621,7 +621,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainUndelete**
-> \c-sakel\RUBClient\Model\Domain[] domainUndelete($domain_name)
+> \csakel\RUBClient\Model\Domain[] domainUndelete($domain_name)
 
 Domain Löschung zurückziehen
 
@@ -632,11 +632,11 @@ Ziehe eine Löschung zurück
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DomainApi(
+$apiInstance = new csakel\RUBClient\Api\DomainApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -661,7 +661,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
+[**\csakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
 
 ### Authorization
 
@@ -675,7 +675,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainUpdate**
-> \c-sakel\RUBClient\Model\Domain[] domainUpdate($domain_name, $owner_c, $admin_c, $tech_c, $zone_c, $ns1, $ns2, $ns3, $ns4, $ns5)
+> \csakel\RUBClient\Model\Domain[] domainUpdate($domain_name, $owner_c, $admin_c, $tech_c, $zone_c, $ns1, $ns2, $ns3, $ns4, $ns5)
 
 Domain aktualisieren
 
@@ -686,11 +686,11 @@ Aktualisieren Sie eine Domain
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DomainApi(
+$apiInstance = new csakel\RUBClient\Api\DomainApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -733,7 +733,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
+[**\csakel\RUBClient\Model\Domain[]**](../Model/Domain.md)
 
 ### Authorization
 

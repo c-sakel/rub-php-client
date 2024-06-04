@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\WebspaceApi
+# csakel\RUBClient\WebspaceApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 [**webspaceUsage**](WebspaceApi.md#webspaceusage) | **GET** /webspace/usage | Webspace Statistiken abrufen
 
 # **webspaceCreate**
-> \c-sakel\RUBClient\Model\Webspace[] webspaceCreate($package)
+> \csakel\RUBClient\Model\Webspace[] webspaceCreate($package)
 
 Neuen Webspace bestellen
 
@@ -24,11 +24,11 @@ Diese Funktion führt eine kostenpflichtige Bestellung aus.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\WebspaceApi(
+$apiInstance = new csakel\RUBClient\Api\WebspaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Webspace[]**](../Model/Webspace.md)
+[**\csakel\RUBClient\Model\Webspace[]**](../Model/Webspace.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **webspaceIndex**
-> \c-sakel\RUBClient\Model\Webspace[] webspaceIndex()
+> \csakel\RUBClient\Model\Webspace[] webspaceIndex()
 
 Webspaces abrufen
 
@@ -76,11 +76,11 @@ Webspaces abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\WebspaceApi(
+$apiInstance = new csakel\RUBClient\Api\WebspaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -101,7 +101,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Webspace[]**](../Model/Webspace.md)
+[**\csakel\RUBClient\Model\Webspace[]**](../Model/Webspace.md)
 
 ### Authorization
 
@@ -115,7 +115,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **webspacePackages**
-> \c-sakel\RUBClient\Model\WebspacePackage[] webspacePackages()
+> \csakel\RUBClient\Model\WebspacePackage[] webspacePackages()
 
 Verfügbare Pakete für Webspacebestellung abrufen
 
@@ -124,11 +124,11 @@ Verfügbare Pakete für Webspacebestellung abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\WebspaceApi(
+$apiInstance = new csakel\RUBClient\Api\WebspaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -149,7 +149,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\WebspacePackage[]**](../Model/WebspacePackage.md)
+[**\csakel\RUBClient\Model\WebspacePackage[]**](../Model/WebspacePackage.md)
 
 ### Authorization
 
@@ -163,7 +163,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **webspaceSettings**
-> \c-sakel\RUBClient\Model\Webspace[] webspaceSettings($webspace_id, $description)
+> \csakel\RUBClient\Model\Webspace[] webspaceSettings($webspace_id, $description)
 
 Einstellungen für Webspace ändern
 
@@ -172,11 +172,11 @@ Einstellungen für Webspace ändern
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\WebspaceApi(
+$apiInstance = new csakel\RUBClient\Api\WebspaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -203,7 +203,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Webspace[]**](../Model/Webspace.md)
+[**\csakel\RUBClient\Model\Webspace[]**](../Model/Webspace.md)
 
 ### Authorization
 
@@ -217,7 +217,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **webspaceShow**
-> \c-sakel\RUBClient\Model\Webspace[] webspaceShow($webspace_id)
+> \csakel\RUBClient\Model\Webspace[] webspaceShow($webspace_id)
 
 Einzelnen Webspace abrufen
 
@@ -226,11 +226,11 @@ Einzelnen Webspace abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\WebspaceApi(
+$apiInstance = new csakel\RUBClient\Api\WebspaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Webspace[]**](../Model/Webspace.md)
+[**\csakel\RUBClient\Model\Webspace[]**](../Model/Webspace.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **webspaceSso**
-> \c-sakel\RUBClient\Model\WebspaceSso[] webspaceSso($webspace_id, $client_ip)
+> \csakel\RUBClient\Model\WebspaceSso[] webspaceSso($webspace_id, $client_ip)
 
 SSO Url für Webspace abrufen
 
@@ -278,11 +278,11 @@ SSO Url für Webspace abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\WebspaceApi(
+$apiInstance = new csakel\RUBClient\Api\WebspaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -309,7 +309,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\WebspaceSso[]**](../Model/WebspaceSso.md)
+[**\csakel\RUBClient\Model\WebspaceSso[]**](../Model/WebspaceSso.md)
 
 ### Authorization
 
@@ -323,7 +323,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **webspaceUsage**
-> \c-sakel\RUBClient\Model\WebspaceUsage[] webspaceUsage($webspace_id)
+> \csakel\RUBClient\Model\WebspaceUsage[] webspaceUsage($webspace_id)
 
 Webspace Statistiken abrufen
 
@@ -332,11 +332,11 @@ Webspace Statistiken abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\WebspaceApi(
+$apiInstance = new csakel\RUBClient\Api\WebspaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -361,7 +361,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\WebspaceUsage[]**](../Model/WebspaceUsage.md)
+[**\csakel\RUBClient\Model\WebspaceUsage[]**](../Model/WebspaceUsage.md)
 
 ### Authorization
 

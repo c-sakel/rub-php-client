@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * NewsApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class NewsApi
      * Alle News abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\News[]
+     * @return \csakel\RUBClient\Model\News[]
      */
     public function newsIndex()
     {
@@ -108,13 +108,13 @@ class NewsApi
      * Alle News abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\News[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\News[], HTTP status code, HTTP response headers (array of strings)
      */
     public function newsIndexWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\News[]';
+        $returnType = '\csakel\RUBClient\Model\News[]';
         $request = $this->newsIndexRequest();
 
         try {
@@ -166,7 +166,7 @@ class NewsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\News[]',
+                        '\csakel\RUBClient\Model\News[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class NewsApi
      */
     public function newsIndexAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\News[]';
+        $returnType = '\csakel\RUBClient\Model\News[]';
         $request = $this->newsIndexRequest();
 
         return $this->client
@@ -340,9 +340,9 @@ class NewsApi
      *
      * @param  int $news News-ID, welche abgerufen werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\News[]
+     * @return \csakel\RUBClient\Model\News[]
      */
     public function newsShow($news)
     {
@@ -357,13 +357,13 @@ class NewsApi
      *
      * @param  int $news News-ID, welche abgerufen werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\News[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\News[], HTTP status code, HTTP response headers (array of strings)
      */
     public function newsShowWithHttpInfo($news)
     {
-        $returnType = '\c-sakel\RUBClient\Model\News[]';
+        $returnType = '\csakel\RUBClient\Model\News[]';
         $request = $this->newsShowRequest($news);
 
         try {
@@ -415,7 +415,7 @@ class NewsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\News[]',
+                        '\csakel\RUBClient\Model\News[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -457,7 +457,7 @@ class NewsApi
      */
     public function newsShowAsyncWithHttpInfo($news)
     {
-        $returnType = '\c-sakel\RUBClient\Model\News[]';
+        $returnType = '\csakel\RUBClient\Model\News[]';
         $request = $this->newsShowRequest($news);
 
         return $this->client

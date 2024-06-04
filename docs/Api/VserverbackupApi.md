@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\VserverbackupApi
+# csakel\RUBClient\VserverbackupApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**vserverBackupRestore**](VserverbackupApi.md#vserverbackuprestore) | **POST** /vserver/backup/restore | vServer Backup wiederherstellen
 
 # **vserverBackup**
-> \c-sakel\RUBClient\Model\VserverBackup[] vserverBackup($server_id)
+> \csakel\RUBClient\Model\VserverBackup[] vserverBackup($server_id)
 
 vServer Backups abrufen
 
@@ -23,11 +23,11 @@ vServer Backups abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VserverbackupApi(
+$apiInstance = new csakel\RUBClient\Api\VserverbackupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\VserverBackup[]**](../Model/VserverBackup.md)
+[**\csakel\RUBClient\Model\VserverBackup[]**](../Model/VserverBackup.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverBackupAbort**
-> \c-sakel\RUBClient\Model\VserverBackup[] vserverBackupAbort($server_id, $backup_id)
+> \csakel\RUBClient\Model\VserverBackup[] vserverBackupAbort($server_id, $backup_id)
 
 Laufendes vServer Backup abbrechen
 
@@ -75,11 +75,11 @@ Laufendes vServer Backup abbrechen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VserverbackupApi(
+$apiInstance = new csakel\RUBClient\Api\VserverbackupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\VserverBackup[]**](../Model/VserverBackup.md)
+[**\csakel\RUBClient\Model\VserverBackup[]**](../Model/VserverBackup.md)
 
 ### Authorization
 
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverBackupCreate**
-> \c-sakel\RUBClient\Model\VserverBackup[] vserverBackupCreate($server_id, $title)
+> \csakel\RUBClient\Model\VserverBackup[] vserverBackupCreate($server_id, $title)
 
 vServer Backups anlegen
 
@@ -129,11 +129,11 @@ vServer Backups anlegen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VserverbackupApi(
+$apiInstance = new csakel\RUBClient\Api\VserverbackupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\VserverBackup[]**](../Model/VserverBackup.md)
+[**\csakel\RUBClient\Model\VserverBackup[]**](../Model/VserverBackup.md)
 
 ### Authorization
 
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverBackupDelete**
-> \c-sakel\RUBClient\Model\VserverBackup[] vserverBackupDelete($server_id, $backup_id)
+> \csakel\RUBClient\Model\VserverBackup[] vserverBackupDelete($server_id, $backup_id)
 
 vServer Backup löschen
 
@@ -183,11 +183,11 @@ vServer Backup löschen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VserverbackupApi(
+$apiInstance = new csakel\RUBClient\Api\VserverbackupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -214,7 +214,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\VserverBackup[]**](../Model/VserverBackup.md)
+[**\csakel\RUBClient\Model\VserverBackup[]**](../Model/VserverBackup.md)
 
 ### Authorization
 
@@ -228,7 +228,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverBackupFileRestoreCheckPost**
-> \c-sakel\RUBClient\Model\VserverBackupFileRestore[] vserverBackupFileRestoreCheckPost($server_id, $backup_id, $file_restore_id)
+> \csakel\RUBClient\Model\VserverBackupFileRestore[] vserverBackupFileRestoreCheckPost($server_id, $backup_id, $file_restore_id)
 
 
 
@@ -237,11 +237,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VserverbackupApi(
+$apiInstance = new csakel\RUBClient\Api\VserverbackupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\VserverBackupFileRestore[]**](../Model/VserverBackupFileRestore.md)
+[**\csakel\RUBClient\Model\VserverBackupFileRestore[]**](../Model/VserverBackupFileRestore.md)
 
 ### Authorization
 
@@ -284,7 +284,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverBackupFileRestoreDownloadPost**
-> \c-sakel\RUBClient\Model\VserverBackupFileRestore[] vserverBackupFileRestoreDownloadPost($server_id, $backup_id, $file_path)
+> \csakel\RUBClient\Model\VserverBackupFileRestore[] vserverBackupFileRestoreDownloadPost($server_id, $backup_id, $file_path)
 
 
 
@@ -293,11 +293,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VserverbackupApi(
+$apiInstance = new csakel\RUBClient\Api\VserverbackupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -326,7 +326,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\VserverBackupFileRestore[]**](../Model/VserverBackupFileRestore.md)
+[**\csakel\RUBClient\Model\VserverBackupFileRestore[]**](../Model/VserverBackupFileRestore.md)
 
 ### Authorization
 
@@ -340,7 +340,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverBackupFileRestoreListGet**
-> \c-sakel\RUBClient\Model\VserverBackupFileRestoreList[] vserverBackupFileRestoreListGet($server_id, $backup_id, $file_path)
+> \csakel\RUBClient\Model\VserverBackupFileRestoreList[] vserverBackupFileRestoreListGet($server_id, $backup_id, $file_path)
 
 
 
@@ -349,11 +349,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VserverbackupApi(
+$apiInstance = new csakel\RUBClient\Api\VserverbackupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -382,7 +382,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\VserverBackupFileRestoreList[]**](../Model/VserverBackupFileRestoreList.md)
+[**\csakel\RUBClient\Model\VserverBackupFileRestoreList[]**](../Model/VserverBackupFileRestoreList.md)
 
 ### Authorization
 
@@ -396,7 +396,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverBackupRestore**
-> \c-sakel\RUBClient\Model\VserverBackup[] vserverBackupRestore($server_id, $backup_id)
+> \csakel\RUBClient\Model\VserverBackup[] vserverBackupRestore($server_id, $backup_id)
 
 vServer Backup wiederherstellen
 
@@ -405,11 +405,11 @@ vServer Backup wiederherstellen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VserverbackupApi(
+$apiInstance = new csakel\RUBClient\Api\VserverbackupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -436,7 +436,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\VserverBackup[]**](../Model/VserverBackup.md)
+[**\csakel\RUBClient\Model\VserverBackup[]**](../Model/VserverBackup.md)
 
 ### Authorization
 

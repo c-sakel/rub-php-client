@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * ResellernewsApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class ResellernewsApi
      * @param  string $text Text der News (required)
      * @param  string $tag Schlagwort vor der News (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\News[]
+     * @return \csakel\RUBClient\Model\News[]
      */
     public function resellerNewsCreate($subject, $text, $tag = null)
     {
@@ -114,13 +114,13 @@ class ResellernewsApi
      * @param  string $text Text der News (required)
      * @param  string $tag Schlagwort vor der News (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\News[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\News[], HTTP status code, HTTP response headers (array of strings)
      */
     public function resellerNewsCreateWithHttpInfo($subject, $text, $tag = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\News[]';
+        $returnType = '\csakel\RUBClient\Model\News[]';
         $request = $this->resellerNewsCreateRequest($subject, $text, $tag);
 
         try {
@@ -172,7 +172,7 @@ class ResellernewsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\News[]',
+                        '\csakel\RUBClient\Model\News[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class ResellernewsApi
      */
     public function resellerNewsCreateAsyncWithHttpInfo($subject, $text, $tag = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\News[]';
+        $returnType = '\csakel\RUBClient\Model\News[]';
         $request = $this->resellerNewsCreateRequest($subject, $text, $tag);
 
         return $this->client
@@ -379,9 +379,9 @@ class ResellernewsApi
      *
      * @param  int $news_id News-ID, welche gelöscht werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\News[]
+     * @return \csakel\RUBClient\Model\News[]
      */
     public function resellerNewsDelete($news_id)
     {
@@ -396,13 +396,13 @@ class ResellernewsApi
      *
      * @param  int $news_id News-ID, welche gelöscht werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\News[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\News[], HTTP status code, HTTP response headers (array of strings)
      */
     public function resellerNewsDeleteWithHttpInfo($news_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\News[]';
+        $returnType = '\csakel\RUBClient\Model\News[]';
         $request = $this->resellerNewsDeleteRequest($news_id);
 
         try {
@@ -454,7 +454,7 @@ class ResellernewsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\News[]',
+                        '\csakel\RUBClient\Model\News[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -496,7 +496,7 @@ class ResellernewsApi
      */
     public function resellerNewsDeleteAsyncWithHttpInfo($news_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\News[]';
+        $returnType = '\csakel\RUBClient\Model\News[]';
         $request = $this->resellerNewsDeleteRequest($news_id);
 
         return $this->client
@@ -640,9 +640,9 @@ class ResellernewsApi
      * Alle Reseller News abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\News[]
+     * @return \csakel\RUBClient\Model\News[]
      */
     public function resellerNewsIndex()
     {
@@ -656,13 +656,13 @@ class ResellernewsApi
      * Alle Reseller News abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\News[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\News[], HTTP status code, HTTP response headers (array of strings)
      */
     public function resellerNewsIndexWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\News[]';
+        $returnType = '\csakel\RUBClient\Model\News[]';
         $request = $this->resellerNewsIndexRequest();
 
         try {
@@ -714,7 +714,7 @@ class ResellernewsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\News[]',
+                        '\csakel\RUBClient\Model\News[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -754,7 +754,7 @@ class ResellernewsApi
      */
     public function resellerNewsIndexAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\News[]';
+        $returnType = '\csakel\RUBClient\Model\News[]';
         $request = $this->resellerNewsIndexRequest();
 
         return $this->client
@@ -888,9 +888,9 @@ class ResellernewsApi
      *
      * @param  int $news_id News-ID, welche abgerufen werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\News[]
+     * @return \csakel\RUBClient\Model\News[]
      */
     public function resellerNewsShow($news_id)
     {
@@ -905,13 +905,13 @@ class ResellernewsApi
      *
      * @param  int $news_id News-ID, welche abgerufen werden soll (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\News[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\News[], HTTP status code, HTTP response headers (array of strings)
      */
     public function resellerNewsShowWithHttpInfo($news_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\News[]';
+        $returnType = '\csakel\RUBClient\Model\News[]';
         $request = $this->resellerNewsShowRequest($news_id);
 
         try {
@@ -963,7 +963,7 @@ class ResellernewsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\News[]',
+                        '\csakel\RUBClient\Model\News[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1005,7 +1005,7 @@ class ResellernewsApi
      */
     public function resellerNewsShowAsyncWithHttpInfo($news_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\News[]';
+        $returnType = '\csakel\RUBClient\Model\News[]';
         $request = $this->resellerNewsShowRequest($news_id);
 
         return $this->client
@@ -1153,9 +1153,9 @@ class ResellernewsApi
      * @param  string $text Text der News (required)
      * @param  string $tag Schlagwort vor der News (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\News[]
+     * @return \csakel\RUBClient\Model\News[]
      */
     public function resellerNewsUpdate($news_id, $subject, $text, $tag = null)
     {
@@ -1173,13 +1173,13 @@ class ResellernewsApi
      * @param  string $text Text der News (required)
      * @param  string $tag Schlagwort vor der News (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\News[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\News[], HTTP status code, HTTP response headers (array of strings)
      */
     public function resellerNewsUpdateWithHttpInfo($news_id, $subject, $text, $tag = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\News[]';
+        $returnType = '\csakel\RUBClient\Model\News[]';
         $request = $this->resellerNewsUpdateRequest($news_id, $subject, $text, $tag);
 
         try {
@@ -1231,7 +1231,7 @@ class ResellernewsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\News[]',
+                        '\csakel\RUBClient\Model\News[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1279,7 +1279,7 @@ class ResellernewsApi
      */
     public function resellerNewsUpdateAsyncWithHttpInfo($news_id, $subject, $text, $tag = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\News[]';
+        $returnType = '\csakel\RUBClient\Model\News[]';
         $request = $this->resellerNewsUpdateRequest($news_id, $subject, $text, $tag);
 
         return $this->client

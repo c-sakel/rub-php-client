@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * LicensepleskApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class LicensepleskApi
      * Alle Plesk Lizenzen abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicense[]
+     * @return \csakel\RUBClient\Model\PleskLicense[]
      */
     public function licensePlesk()
     {
@@ -108,13 +108,13 @@ class LicensepleskApi
      * Alle Plesk Lizenzen abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskRequest();
 
         try {
@@ -166,7 +166,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicense[]',
+                        '\csakel\RUBClient\Model\PleskLicense[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class LicensepleskApi
      */
     public function licensePleskAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskRequest();
 
         return $this->client
@@ -340,9 +340,9 @@ class LicensepleskApi
      *
      * @param  string $type Lizenz-Typ. Mögliche Werte: PLSK_12_ADMIN_VPS, PLSK_12_PRO_VPS, PLSK_12_HOST_VPS, PLSK_12_ADMIN, PLSK_12_PRO, PLSK_12_HOST (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicense[]
+     * @return \csakel\RUBClient\Model\PleskLicense[]
      */
     public function licensePleskCreate($type)
     {
@@ -357,13 +357,13 @@ class LicensepleskApi
      *
      * @param  string $type Lizenz-Typ. Mögliche Werte: PLSK_12_ADMIN_VPS, PLSK_12_PRO_VPS, PLSK_12_HOST_VPS, PLSK_12_ADMIN, PLSK_12_PRO, PLSK_12_HOST (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskCreateWithHttpInfo($type)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskCreateRequest($type);
 
         try {
@@ -415,7 +415,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicense[]',
+                        '\csakel\RUBClient\Model\PleskLicense[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -457,7 +457,7 @@ class LicensepleskApi
      */
     public function licensePleskCreateAsyncWithHttpInfo($type)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskCreateRequest($type);
 
         return $this->client
@@ -603,9 +603,9 @@ class LicensepleskApi
      * @param  string $license Lizenz (required)
      * @param  string $date Datum, wann die Lizenz gelöscht werden soll. (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicense[]
+     * @return \csakel\RUBClient\Model\PleskLicense[]
      */
     public function licensePleskDelete($license, $date)
     {
@@ -621,13 +621,13 @@ class LicensepleskApi
      * @param  string $license Lizenz (required)
      * @param  string $date Datum, wann die Lizenz gelöscht werden soll. (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskDeleteWithHttpInfo($license, $date)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskDeleteRequest($license, $date);
 
         try {
@@ -679,7 +679,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicense[]',
+                        '\csakel\RUBClient\Model\PleskLicense[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -723,7 +723,7 @@ class LicensepleskApi
      */
     public function licensePleskDeleteAsyncWithHttpInfo($license, $date)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskDeleteRequest($license, $date);
 
         return $this->client
@@ -880,9 +880,9 @@ class LicensepleskApi
      * @param  string $license Lizenz (required)
      * @param  string $comment Beschreibung (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicense[]
+     * @return \csakel\RUBClient\Model\PleskLicense[]
      */
     public function licensePleskEdit($license, $comment)
     {
@@ -898,13 +898,13 @@ class LicensepleskApi
      * @param  string $license Lizenz (required)
      * @param  string $comment Beschreibung (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskEditWithHttpInfo($license, $comment)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskEditRequest($license, $comment);
 
         try {
@@ -956,7 +956,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicense[]',
+                        '\csakel\RUBClient\Model\PleskLicense[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1000,7 +1000,7 @@ class LicensepleskApi
      */
     public function licensePleskEditAsyncWithHttpInfo($license, $comment)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskEditRequest($license, $comment);
 
         return $this->client
@@ -1156,9 +1156,9 @@ class LicensepleskApi
      *
      * @param  string $license Lizenz (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicense[]
+     * @return \csakel\RUBClient\Model\PleskLicense[]
      */
     public function licensePleskGetBinding($license)
     {
@@ -1173,13 +1173,13 @@ class LicensepleskApi
      *
      * @param  string $license Lizenz (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskGetBindingWithHttpInfo($license)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskGetBindingRequest($license);
 
         try {
@@ -1231,7 +1231,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicense[]',
+                        '\csakel\RUBClient\Model\PleskLicense[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1273,7 +1273,7 @@ class LicensepleskApi
      */
     public function licensePleskGetBindingAsyncWithHttpInfo($license)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskGetBindingRequest($license);
 
         return $this->client
@@ -1418,9 +1418,9 @@ class LicensepleskApi
      *
      * @param  string $license Lizenz (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicense[]
+     * @return \csakel\RUBClient\Model\PleskLicense[]
      */
     public function licensePleskGetDownload($license)
     {
@@ -1435,13 +1435,13 @@ class LicensepleskApi
      *
      * @param  string $license Lizenz (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskGetDownloadWithHttpInfo($license)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskGetDownloadRequest($license);
 
         try {
@@ -1493,7 +1493,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicense[]',
+                        '\csakel\RUBClient\Model\PleskLicense[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1535,7 +1535,7 @@ class LicensepleskApi
      */
     public function licensePleskGetDownloadAsyncWithHttpInfo($license)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskGetDownloadRequest($license);
 
         return $this->client
@@ -1680,9 +1680,9 @@ class LicensepleskApi
      *
      * @param  string $license Lizenz (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicenseFrauds[]
+     * @return \csakel\RUBClient\Model\PleskLicenseFrauds[]
      */
     public function licensePleskGetFrauds($license)
     {
@@ -1697,13 +1697,13 @@ class LicensepleskApi
      *
      * @param  string $license Lizenz (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicenseFrauds[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicenseFrauds[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskGetFraudsWithHttpInfo($license)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicenseFrauds[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicenseFrauds[]';
         $request = $this->licensePleskGetFraudsRequest($license);
 
         try {
@@ -1755,7 +1755,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicenseFrauds[]',
+                        '\csakel\RUBClient\Model\PleskLicenseFrauds[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1797,7 +1797,7 @@ class LicensepleskApi
      */
     public function licensePleskGetFraudsAsyncWithHttpInfo($license)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicenseFrauds[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicenseFrauds[]';
         $request = $this->licensePleskGetFraudsRequest($license);
 
         return $this->client
@@ -1941,9 +1941,9 @@ class LicensepleskApi
      * Plesk Lizenz Statistiken abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicenseStatistic[]
+     * @return \csakel\RUBClient\Model\PleskLicenseStatistic[]
      */
     public function licensePleskGetStatistic()
     {
@@ -1957,13 +1957,13 @@ class LicensepleskApi
      * Plesk Lizenz Statistiken abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicenseStatistic[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicenseStatistic[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskGetStatisticWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicenseStatistic[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicenseStatistic[]';
         $request = $this->licensePleskGetStatisticRequest();
 
         try {
@@ -2015,7 +2015,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicenseStatistic[]',
+                        '\csakel\RUBClient\Model\PleskLicenseStatistic[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2055,7 +2055,7 @@ class LicensepleskApi
      */
     public function licensePleskGetStatisticAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicenseStatistic[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicenseStatistic[]';
         $request = $this->licensePleskGetStatisticRequest();
 
         return $this->client
@@ -2188,9 +2188,9 @@ class LicensepleskApi
      * Plesk Lizenz Typen abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicenseType[]
+     * @return \csakel\RUBClient\Model\PleskLicenseType[]
      */
     public function licensePleskGetTypes()
     {
@@ -2204,13 +2204,13 @@ class LicensepleskApi
      * Plesk Lizenz Typen abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicenseType[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicenseType[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskGetTypesWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicenseType[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicenseType[]';
         $request = $this->licensePleskGetTypesRequest();
 
         try {
@@ -2262,7 +2262,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicenseType[]',
+                        '\csakel\RUBClient\Model\PleskLicenseType[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2302,7 +2302,7 @@ class LicensepleskApi
      */
     public function licensePleskGetTypesAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicenseType[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicenseType[]';
         $request = $this->licensePleskGetTypesRequest();
 
         return $this->client
@@ -2436,9 +2436,9 @@ class LicensepleskApi
      *
      * @param  string $license Lizenz (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicenseUpgrade[]
+     * @return \csakel\RUBClient\Model\PleskLicenseUpgrade[]
      */
     public function licensePleskGetUpgrade($license)
     {
@@ -2453,13 +2453,13 @@ class LicensepleskApi
      *
      * @param  string $license Lizenz (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicenseUpgrade[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicenseUpgrade[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskGetUpgradeWithHttpInfo($license)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicenseUpgrade[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicenseUpgrade[]';
         $request = $this->licensePleskGetUpgradeRequest($license);
 
         try {
@@ -2511,7 +2511,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicenseUpgrade[]',
+                        '\csakel\RUBClient\Model\PleskLicenseUpgrade[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2553,7 +2553,7 @@ class LicensepleskApi
      */
     public function licensePleskGetUpgradeAsyncWithHttpInfo($license)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicenseUpgrade[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicenseUpgrade[]';
         $request = $this->licensePleskGetUpgradeRequest($license);
 
         return $this->client
@@ -2699,9 +2699,9 @@ class LicensepleskApi
      * @param  string $license Lizenz (required)
      * @param  string $type Upgrade oder Addon (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicense[]
+     * @return \csakel\RUBClient\Model\PleskLicense[]
      */
     public function licensePleskPostUpgrade($license, $type)
     {
@@ -2717,13 +2717,13 @@ class LicensepleskApi
      * @param  string $license Lizenz (required)
      * @param  string $type Upgrade oder Addon (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskPostUpgradeWithHttpInfo($license, $type)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskPostUpgradeRequest($license, $type);
 
         try {
@@ -2775,7 +2775,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicense[]',
+                        '\csakel\RUBClient\Model\PleskLicense[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2819,7 +2819,7 @@ class LicensepleskApi
      */
     public function licensePleskPostUpgradeAsyncWithHttpInfo($license, $type)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskPostUpgradeRequest($license, $type);
 
         return $this->client
@@ -2974,9 +2974,9 @@ class LicensepleskApi
      * Plesk Lizenz Preise abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicensePrice[]
+     * @return \csakel\RUBClient\Model\PleskLicensePrice[]
      */
     public function licensePleskPrice()
     {
@@ -2990,13 +2990,13 @@ class LicensepleskApi
      * Plesk Lizenz Preise abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicensePrice[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicensePrice[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskPriceWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicensePrice[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicensePrice[]';
         $request = $this->licensePleskPriceRequest();
 
         try {
@@ -3048,7 +3048,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicensePrice[]',
+                        '\csakel\RUBClient\Model\PleskLicensePrice[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3088,7 +3088,7 @@ class LicensepleskApi
      */
     public function licensePleskPriceAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicensePrice[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicensePrice[]';
         $request = $this->licensePleskPriceRequest();
 
         return $this->client
@@ -3221,9 +3221,9 @@ class LicensepleskApi
      * Plesk Lizenz Preise als CSV abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicensePriceCsv[]
+     * @return \csakel\RUBClient\Model\PleskLicensePriceCsv[]
      */
     public function licensePleskPriceCsv()
     {
@@ -3237,13 +3237,13 @@ class LicensepleskApi
      * Plesk Lizenz Preise als CSV abrufen
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicensePriceCsv[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicensePriceCsv[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskPriceCsvWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicensePriceCsv[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicensePriceCsv[]';
         $request = $this->licensePleskPriceCsvRequest();
 
         try {
@@ -3295,7 +3295,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicensePriceCsv[]',
+                        '\csakel\RUBClient\Model\PleskLicensePriceCsv[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3335,7 +3335,7 @@ class LicensepleskApi
      */
     public function licensePleskPriceCsvAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicensePriceCsv[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicensePriceCsv[]';
         $request = $this->licensePleskPriceCsvRequest();
 
         return $this->client
@@ -3470,9 +3470,9 @@ class LicensepleskApi
      * @param  string $license Lizenz (required)
      * @param  string $address IP-Adresse (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicense[]
+     * @return \csakel\RUBClient\Model\PleskLicense[]
      */
     public function licensePleskSetBinding($license, $address)
     {
@@ -3488,13 +3488,13 @@ class LicensepleskApi
      * @param  string $license Lizenz (required)
      * @param  string $address IP-Adresse (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskSetBindingWithHttpInfo($license, $address)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskSetBindingRequest($license, $address);
 
         try {
@@ -3546,7 +3546,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicense[]',
+                        '\csakel\RUBClient\Model\PleskLicense[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3590,7 +3590,7 @@ class LicensepleskApi
      */
     public function licensePleskSetBindingAsyncWithHttpInfo($license, $address)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskSetBindingRequest($license, $address);
 
         return $this->client
@@ -3746,9 +3746,9 @@ class LicensepleskApi
      *
      * @param  string $license Lizenz (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicense[]
+     * @return \csakel\RUBClient\Model\PleskLicense[]
      */
     public function licensePleskShow($license)
     {
@@ -3763,13 +3763,13 @@ class LicensepleskApi
      *
      * @param  string $license Lizenz (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskShowWithHttpInfo($license)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskShowRequest($license);
 
         try {
@@ -3821,7 +3821,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicense[]',
+                        '\csakel\RUBClient\Model\PleskLicense[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3863,7 +3863,7 @@ class LicensepleskApi
      */
     public function licensePleskShowAsyncWithHttpInfo($license)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskShowRequest($license);
 
         return $this->client
@@ -4008,9 +4008,9 @@ class LicensepleskApi
      *
      * @param  string $license Lizenz (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\PleskLicense[]
+     * @return \csakel\RUBClient\Model\PleskLicense[]
      */
     public function licensePleskUndelete($license)
     {
@@ -4025,13 +4025,13 @@ class LicensepleskApi
      *
      * @param  string $license Lizenz (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\PleskLicense[], HTTP status code, HTTP response headers (array of strings)
      */
     public function licensePleskUndeleteWithHttpInfo($license)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskUndeleteRequest($license);
 
         try {
@@ -4083,7 +4083,7 @@ class LicensepleskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\PleskLicense[]',
+                        '\csakel\RUBClient\Model\PleskLicense[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4125,7 +4125,7 @@ class LicensepleskApi
      */
     public function licensePleskUndeleteAsyncWithHttpInfo($license)
     {
-        $returnType = '\c-sakel\RUBClient\Model\PleskLicense[]';
+        $returnType = '\csakel\RUBClient\Model\PleskLicense[]';
         $request = $this->licensePleskUndeleteRequest($license);
 
         return $this->client

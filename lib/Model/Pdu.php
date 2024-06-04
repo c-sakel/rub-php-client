@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Model;
+namespace csakel\RUBClient\Model;
 
 use \ArrayAccess;
-use \c-sakel\RUBClient\ObjectSerializer;
+use \csakel\RUBClient\ObjectSerializer;
 
 /**
  * Pdu Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class Pdu implements ModelInterface, ArrayAccess
         'comment' => 'string',
         'max_watt' => 'int',
         'max_ampere' => 'int',
-        'current_usage' => '\c-sakel\RUBClient\Model\PduCurrentUsage[]'
+        'current_usage' => '\csakel\RUBClient\Model\PduCurrentUsage[]'
     ];
 
     /**
@@ -354,7 +354,7 @@ class Pdu implements ModelInterface, ArrayAccess
     /**
      * Gets current_usage
      *
-     * @return \c-sakel\RUBClient\Model\PduCurrentUsage[]
+     * @return \csakel\RUBClient\Model\PduCurrentUsage[]
      */
     public function getCurrentUsage()
     {
@@ -364,7 +364,7 @@ class Pdu implements ModelInterface, ArrayAccess
     /**
      * Sets current_usage
      *
-     * @param \c-sakel\RUBClient\Model\PduCurrentUsage[] $current_usage current_usage
+     * @param \csakel\RUBClient\Model\PduCurrentUsage[] $current_usage current_usage
      *
      * @return $this
      */

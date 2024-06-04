@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,18 +25,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace c-sakel\RUBClient;
+namespace csakel\RUBClient;
 
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * ResellernewsApiTest Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

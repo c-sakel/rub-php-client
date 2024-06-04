@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Model;
+namespace csakel\RUBClient\Model;
 
 use \ArrayAccess;
-use \c-sakel\RUBClient\ObjectSerializer;
+use \csakel\RUBClient\ObjectSerializer;
 
 /**
  * PleskLicense Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -70,8 +70,8 @@ class PleskLicense implements ModelInterface, ArrayAccess
         'orderdate' => '\DateTime',
         'comment' => 'string',
         'days' => 'int',
-        'additional_keys' => '\c-sakel\RUBClient\Model\PleskLicenseAdditionalKey[]',
-        'addons' => '\c-sakel\RUBClient\Model\PleskLicenseAddon[]'
+        'additional_keys' => '\csakel\RUBClient\Model\PleskLicenseAdditionalKey[]',
+        'addons' => '\csakel\RUBClient\Model\PleskLicenseAddon[]'
     ];
 
     /**
@@ -630,7 +630,7 @@ class PleskLicense implements ModelInterface, ArrayAccess
     /**
      * Gets additional_keys
      *
-     * @return \c-sakel\RUBClient\Model\PleskLicenseAdditionalKey[]
+     * @return \csakel\RUBClient\Model\PleskLicenseAdditionalKey[]
      */
     public function getAdditionalKeys()
     {
@@ -640,7 +640,7 @@ class PleskLicense implements ModelInterface, ArrayAccess
     /**
      * Sets additional_keys
      *
-     * @param \c-sakel\RUBClient\Model\PleskLicenseAdditionalKey[] $additional_keys Array mit zusätzlichen Produktschlüsseln
+     * @param \csakel\RUBClient\Model\PleskLicenseAdditionalKey[] $additional_keys Array mit zusätzlichen Produktschlüsseln
      *
      * @return $this
      */
@@ -654,7 +654,7 @@ class PleskLicense implements ModelInterface, ArrayAccess
     /**
      * Gets addons
      *
-     * @return \c-sakel\RUBClient\Model\PleskLicenseAddon[]
+     * @return \csakel\RUBClient\Model\PleskLicenseAddon[]
      */
     public function getAddons()
     {
@@ -664,7 +664,7 @@ class PleskLicense implements ModelInterface, ArrayAccess
     /**
      * Sets addons
      *
-     * @param \c-sakel\RUBClient\Model\PleskLicenseAddon[] $addons Array mit Addons
+     * @param \csakel\RUBClient\Model\PleskLicenseAddon[] $addons Array mit Addons
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Model;
+namespace csakel\RUBClient\Model;
 
 use \ArrayAccess;
-use \c-sakel\RUBClient\ObjectSerializer;
+use \csakel\RUBClient\ObjectSerializer;
 
 /**
  * DomainDnsZone Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,7 +64,7 @@ class DomainDnsZone implements ModelInterface, ArrayAccess
         'retry' => 'int',
         'expire' => 'int',
         'ttl' => 'int',
-        'records' => '\c-sakel\RUBClient\Model\DnsRecord[]'
+        'records' => '\csakel\RUBClient\Model\DnsRecord[]'
     ];
 
     /**
@@ -444,7 +444,7 @@ class DomainDnsZone implements ModelInterface, ArrayAccess
     /**
      * Gets records
      *
-     * @return \c-sakel\RUBClient\Model\DnsRecord[]
+     * @return \csakel\RUBClient\Model\DnsRecord[]
      */
     public function getRecords()
     {
@@ -454,7 +454,7 @@ class DomainDnsZone implements ModelInterface, ArrayAccess
     /**
      * Sets records
      *
-     * @param \c-sakel\RUBClient\Model\DnsRecord[] $records Array with DNS Record Objects
+     * @param \csakel\RUBClient\Model\DnsRecord[] $records Array with DNS Record Objects
      *
      * @return $this
      */

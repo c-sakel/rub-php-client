@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\DedicatedServerApi
+# csakel\RUBClient\DedicatedServerApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 [**dedicatedServerTemplates**](DedicatedServerApi.md#dedicatedservertemplates) | **GET** /dedicated_server/templates | Installations-Templates abrufen
 
 # **dedicatedServerIndex**
-> \c-sakel\RUBClient\Model\DedicatedServer[] dedicatedServerIndex()
+> \csakel\RUBClient\Model\DedicatedServer[] dedicatedServerIndex()
 
 Alle dedizierten Server abrufen
 
@@ -25,11 +25,11 @@ Alle dedizierten Server abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DedicatedServerApi(
+$apiInstance = new csakel\RUBClient\Api\DedicatedServerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\DedicatedServer[]**](../Model/DedicatedServer.md)
+[**\csakel\RUBClient\Model\DedicatedServer[]**](../Model/DedicatedServer.md)
 
 ### Authorization
 
@@ -75,11 +75,11 @@ Lädt eine Java-KVM Konsole herunter.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DedicatedServerApi(
+$apiInstance = new csakel\RUBClient\Api\DedicatedServerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -129,11 +129,11 @@ Wird benötigt, wenn ein Login über die KVM Konsole nicht möglich ist.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DedicatedServerApi(
+$apiInstance = new csakel\RUBClient\Api\DedicatedServerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -171,7 +171,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dedicatedServerReinstall**
-> \c-sakel\RUBClient\Model\Vserver[] dedicatedServerReinstall($server_id, $template, $password, $ssh_keys, $commands, $raid_level)
+> \csakel\RUBClient\Model\Vserver[] dedicatedServerReinstall($server_id, $template, $password, $ssh_keys, $commands, $raid_level)
 
 Dedizierten Server neuinstallieren
 
@@ -182,11 +182,11 @@ Alle Daten werden hierbei unwiderruflich gelöscht.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DedicatedServerApi(
+$apiInstance = new csakel\RUBClient\Api\DedicatedServerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Vserver[]**](../Model/Vserver.md)
+[**\csakel\RUBClient\Model\Vserver[]**](../Model/Vserver.md)
 
 ### Authorization
 
@@ -235,7 +235,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dedicatedServerReset**
-> \c-sakel\RUBClient\Model\DedicatedServer[] dedicatedServerReset($server_id)
+> \csakel\RUBClient\Model\DedicatedServer[] dedicatedServerReset($server_id)
 
 Dedizierten Server neustarten
 
@@ -246,11 +246,11 @@ Bitte beachten Sie, dass dieser Befehl einen Hardreset durchführt und der Serve
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DedicatedServerApi(
+$apiInstance = new csakel\RUBClient\Api\DedicatedServerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -275,7 +275,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\DedicatedServer[]**](../Model/DedicatedServer.md)
+[**\csakel\RUBClient\Model\DedicatedServer[]**](../Model/DedicatedServer.md)
 
 ### Authorization
 
@@ -289,7 +289,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dedicatedServerShow**
-> \c-sakel\RUBClient\Model\DedicatedServer[] dedicatedServerShow($server_id)
+> \csakel\RUBClient\Model\DedicatedServer[] dedicatedServerShow($server_id)
 
 Einzelnen dedizierten Server abrufen
 
@@ -298,11 +298,11 @@ Einzelnen dedizierten Server abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DedicatedServerApi(
+$apiInstance = new csakel\RUBClient\Api\DedicatedServerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\DedicatedServer[]**](../Model/DedicatedServer.md)
+[**\csakel\RUBClient\Model\DedicatedServer[]**](../Model/DedicatedServer.md)
 
 ### Authorization
 
@@ -341,7 +341,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dedicatedServerStart**
-> \c-sakel\RUBClient\Model\DedicatedServer[] dedicatedServerStart($server_id)
+> \csakel\RUBClient\Model\DedicatedServer[] dedicatedServerStart($server_id)
 
 Dedizierten Server starten
 
@@ -350,11 +350,11 @@ Dedizierten Server starten
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DedicatedServerApi(
+$apiInstance = new csakel\RUBClient\Api\DedicatedServerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -379,7 +379,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\DedicatedServer[]**](../Model/DedicatedServer.md)
+[**\csakel\RUBClient\Model\DedicatedServer[]**](../Model/DedicatedServer.md)
 
 ### Authorization
 
@@ -393,7 +393,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dedicatedServerStatus**
-> \c-sakel\RUBClient\Model\DedicatedServer[] dedicatedServerStatus($server_id)
+> \csakel\RUBClient\Model\DedicatedServer[] dedicatedServerStatus($server_id)
 
 Status eines dedizierten Servers abrufen
 
@@ -402,11 +402,11 @@ Status eines dedizierten Servers abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DedicatedServerApi(
+$apiInstance = new csakel\RUBClient\Api\DedicatedServerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -431,7 +431,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\DedicatedServer[]**](../Model/DedicatedServer.md)
+[**\csakel\RUBClient\Model\DedicatedServer[]**](../Model/DedicatedServer.md)
 
 ### Authorization
 
@@ -445,7 +445,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dedicatedServerStop**
-> \c-sakel\RUBClient\Model\DedicatedServer[] dedicatedServerStop($server_id)
+> \csakel\RUBClient\Model\DedicatedServer[] dedicatedServerStop($server_id)
 
 Dedizierten Server herunterfahren
 
@@ -454,11 +454,11 @@ Dedizierten Server herunterfahren
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DedicatedServerApi(
+$apiInstance = new csakel\RUBClient\Api\DedicatedServerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -483,7 +483,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\DedicatedServer[]**](../Model/DedicatedServer.md)
+[**\csakel\RUBClient\Model\DedicatedServer[]**](../Model/DedicatedServer.md)
 
 ### Authorization
 
@@ -497,7 +497,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dedicatedServerTemplates**
-> \c-sakel\RUBClient\Model\PxeTemplate[] dedicatedServerTemplates()
+> \csakel\RUBClient\Model\PxeTemplate[] dedicatedServerTemplates()
 
 Installations-Templates abrufen
 
@@ -508,11 +508,11 @@ Diese Funktion gibt verfügbare Templates zur Installation zurück.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\DedicatedServerApi(
+$apiInstance = new csakel\RUBClient\Api\DedicatedServerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -533,7 +533,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PxeTemplate[]**](../Model/PxeTemplate.md)
+[**\csakel\RUBClient\Model\PxeTemplate[]**](../Model/PxeTemplate.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * AbuseManagementApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class AbuseManagementApi
      * @param  int $evidence_id evidence_id (required)
      * @param  int $attachment_id attachment_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -110,7 +110,7 @@ class AbuseManagementApi
      * @param  int $evidence_id (required)
      * @param  int $attachment_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -379,9 +379,9 @@ class AbuseManagementApi
      *
      * @param  int $incident_id incident_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\AbuseEvidence[]
+     * @return \csakel\RUBClient\Model\AbuseEvidence[]
      */
     public function abuseManagementEvidenceGet($incident_id)
     {
@@ -394,13 +394,13 @@ class AbuseManagementApi
      *
      * @param  int $incident_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\AbuseEvidence[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\AbuseEvidence[], HTTP status code, HTTP response headers (array of strings)
      */
     public function abuseManagementEvidenceGetWithHttpInfo($incident_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\AbuseEvidence[]';
+        $returnType = '\csakel\RUBClient\Model\AbuseEvidence[]';
         $request = $this->abuseManagementEvidenceGetRequest($incident_id);
 
         try {
@@ -452,7 +452,7 @@ class AbuseManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\AbuseEvidence[]',
+                        '\csakel\RUBClient\Model\AbuseEvidence[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -494,7 +494,7 @@ class AbuseManagementApi
      */
     public function abuseManagementEvidenceGetAsyncWithHttpInfo($incident_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\AbuseEvidence[]';
+        $returnType = '\csakel\RUBClient\Model\AbuseEvidence[]';
         $request = $this->abuseManagementEvidenceGetRequest($incident_id);
 
         return $this->client
@@ -638,9 +638,9 @@ class AbuseManagementApi
      * @param  int $incident_id incident_id (required)
      * @param  int $evidence_id evidence_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\AbuseEvidence[]
+     * @return \csakel\RUBClient\Model\AbuseEvidence[]
      */
     public function abuseManagementEvidenceShowGet($incident_id, $evidence_id)
     {
@@ -654,13 +654,13 @@ class AbuseManagementApi
      * @param  int $incident_id (required)
      * @param  int $evidence_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\AbuseEvidence[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\AbuseEvidence[], HTTP status code, HTTP response headers (array of strings)
      */
     public function abuseManagementEvidenceShowGetWithHttpInfo($incident_id, $evidence_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\AbuseEvidence[]';
+        $returnType = '\csakel\RUBClient\Model\AbuseEvidence[]';
         $request = $this->abuseManagementEvidenceShowGetRequest($incident_id, $evidence_id);
 
         try {
@@ -712,7 +712,7 @@ class AbuseManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\AbuseEvidence[]',
+                        '\csakel\RUBClient\Model\AbuseEvidence[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -756,7 +756,7 @@ class AbuseManagementApi
      */
     public function abuseManagementEvidenceShowGetAsyncWithHttpInfo($incident_id, $evidence_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\AbuseEvidence[]';
+        $returnType = '\csakel\RUBClient\Model\AbuseEvidence[]';
         $request = $this->abuseManagementEvidenceShowGetRequest($incident_id, $evidence_id);
 
         return $this->client
@@ -910,7 +910,7 @@ class AbuseManagementApi
      *
      * @param  int $incident_id incident_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -925,7 +925,7 @@ class AbuseManagementApi
      *
      * @param  int $incident_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1167,9 +1167,9 @@ class AbuseManagementApi
      * Operation abuseManagementIncidentGet
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\AbuseIncident[]
+     * @return \csakel\RUBClient\Model\AbuseIncident[]
      */
     public function abuseManagementIncidentGet()
     {
@@ -1181,13 +1181,13 @@ class AbuseManagementApi
      * Operation abuseManagementIncidentGetWithHttpInfo
      *
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\AbuseIncident[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\AbuseIncident[], HTTP status code, HTTP response headers (array of strings)
      */
     public function abuseManagementIncidentGetWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\AbuseIncident[]';
+        $returnType = '\csakel\RUBClient\Model\AbuseIncident[]';
         $request = $this->abuseManagementIncidentGetRequest();
 
         try {
@@ -1239,7 +1239,7 @@ class AbuseManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\AbuseIncident[]',
+                        '\csakel\RUBClient\Model\AbuseIncident[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1279,7 +1279,7 @@ class AbuseManagementApi
      */
     public function abuseManagementIncidentGetAsyncWithHttpInfo()
     {
-        $returnType = '\c-sakel\RUBClient\Model\AbuseIncident[]';
+        $returnType = '\csakel\RUBClient\Model\AbuseIncident[]';
         $request = $this->abuseManagementIncidentGetRequest();
 
         return $this->client
@@ -1411,9 +1411,9 @@ class AbuseManagementApi
      *
      * @param  int $incident_id incident_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\AbuseIncident[]
+     * @return \csakel\RUBClient\Model\AbuseIncident[]
      */
     public function abuseManagementIncidentShowGet($incident_id)
     {
@@ -1426,13 +1426,13 @@ class AbuseManagementApi
      *
      * @param  int $incident_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\AbuseIncident[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\AbuseIncident[], HTTP status code, HTTP response headers (array of strings)
      */
     public function abuseManagementIncidentShowGetWithHttpInfo($incident_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\AbuseIncident[]';
+        $returnType = '\csakel\RUBClient\Model\AbuseIncident[]';
         $request = $this->abuseManagementIncidentShowGetRequest($incident_id);
 
         try {
@@ -1484,7 +1484,7 @@ class AbuseManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\AbuseIncident[]',
+                        '\csakel\RUBClient\Model\AbuseIncident[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1526,7 +1526,7 @@ class AbuseManagementApi
      */
     public function abuseManagementIncidentShowGetAsyncWithHttpInfo($incident_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\AbuseIncident[]';
+        $returnType = '\csakel\RUBClient\Model\AbuseIncident[]';
         $request = $this->abuseManagementIncidentShowGetRequest($incident_id);
 
         return $this->client
@@ -1669,7 +1669,7 @@ class AbuseManagementApi
      *
      * @param  int $incident_id incident_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1684,7 +1684,7 @@ class AbuseManagementApi
      *
      * @param  int $incident_id (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

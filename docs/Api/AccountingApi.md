@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\AccountingApi
+# csakel\RUBClient\AccountingApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**accountingInvoiceIndex**](AccountingApi.md#accountinginvoiceindex) | **GET** /accounting/invoice | Alle Rechnungen abrufen
 
 # **accountingBalance**
-> \c-sakel\RUBClient\Model\AccountingBalance[] accountingBalance()
+> \csakel\RUBClient\Model\AccountingBalance[] accountingBalance()
 
 Accounting Daten abrufen
 
@@ -17,11 +17,11 @@ Accounting Daten abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\AccountingApi(
+$apiInstance = new csakel\RUBClient\Api\AccountingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -42,7 +42,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\AccountingBalance[]**](../Model/AccountingBalance.md)
+[**\csakel\RUBClient\Model\AccountingBalance[]**](../Model/AccountingBalance.md)
 
 ### Authorization
 
@@ -56,7 +56,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **accountingInvoiceIndex**
-> \c-sakel\RUBClient\Model\Invoice[] accountingInvoiceIndex()
+> \csakel\RUBClient\Model\Invoice[] accountingInvoiceIndex()
 
 Alle Rechnungen abrufen
 
@@ -65,11 +65,11 @@ Alle Rechnungen abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\AccountingApi(
+$apiInstance = new csakel\RUBClient\Api\AccountingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -90,7 +90,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\Invoice[]**](../Model/Invoice.md)
+[**\csakel\RUBClient\Model\Invoice[]**](../Model/Invoice.md)
 
 ### Authorization
 

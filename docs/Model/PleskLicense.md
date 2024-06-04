@@ -17,8 +17,8 @@ Name | Type | Description | Notes
 **orderdate** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **comment** | **string** |  | [optional] 
 **days** | **int** |  | [optional] 
-**additional_keys** | [**\c-sakel\RUBClient\Model\PleskLicenseAdditionalKey[]**](PleskLicenseAdditionalKey.md) | Array mit zusätzlichen Produktschlüsseln | [optional] 
-**addons** | [**\c-sakel\RUBClient\Model\PleskLicenseAddon[]**](PleskLicenseAddon.md) | Array mit Addons | [optional] 
+**additional_keys** | [**\csakel\RUBClient\Model\PleskLicenseAdditionalKey[]**](PleskLicenseAdditionalKey.md) | Array mit zusätzlichen Produktschlüsseln | [optional] 
+**addons** | [**\csakel\RUBClient\Model\PleskLicenseAddon[]**](PleskLicenseAddon.md) | Array mit Addons | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

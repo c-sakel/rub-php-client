@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace c-sakel\RUBClient\Api;
+namespace csakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use c-sakel\RUBClient\ApiException;
-use c-sakel\RUBClient\Configuration;
-use c-sakel\RUBClient\HeaderSelector;
-use c-sakel\RUBClient\ObjectSerializer;
+use csakel\RUBClient\ApiException;
+use csakel\RUBClient\Configuration;
+use csakel\RUBClient\HeaderSelector;
+use csakel\RUBClient\ObjectSerializer;
 
 /**
  * VservernetworkInterfaceApi Class Doc Comment
  *
  * @category Class
- * @package  c-sakel\RUBClient
+ * @package  csakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class VservernetworkInterfaceApi
      * @param  int $server_id Server-ID (required)
      * @param  string $name Interface Name. Wenn leer, dann werden alle Interfaces deaktiviert. (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverNetworkInterface[]
+     * @return \csakel\RUBClient\Model\VserverNetworkInterface[]
      */
     public function vserverNetworkInterfaceDisable($server_id, $name = null)
     {
@@ -112,13 +112,13 @@ class VservernetworkInterfaceApi
      * @param  int $server_id Server-ID (required)
      * @param  string $name Interface Name. Wenn leer, dann werden alle Interfaces deaktiviert. (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverNetworkInterface[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverNetworkInterface[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverNetworkInterfaceDisableWithHttpInfo($server_id, $name = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverNetworkInterface[]';
+        $returnType = '\csakel\RUBClient\Model\VserverNetworkInterface[]';
         $request = $this->vserverNetworkInterfaceDisableRequest($server_id, $name);
 
         try {
@@ -170,7 +170,7 @@ class VservernetworkInterfaceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverNetworkInterface[]',
+                        '\csakel\RUBClient\Model\VserverNetworkInterface[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class VservernetworkInterfaceApi
      */
     public function vserverNetworkInterfaceDisableAsyncWithHttpInfo($server_id, $name = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverNetworkInterface[]';
+        $returnType = '\csakel\RUBClient\Model\VserverNetworkInterface[]';
         $request = $this->vserverNetworkInterfaceDisableRequest($server_id, $name);
 
         return $this->client
@@ -365,9 +365,9 @@ class VservernetworkInterfaceApi
      * @param  int $server_id Server-ID (required)
      * @param  string $name Interface Name. Wenn leer, dann werden alle Interfaces aktiviert. (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverNetworkInterface[]
+     * @return \csakel\RUBClient\Model\VserverNetworkInterface[]
      */
     public function vserverNetworkInterfaceEnable($server_id, $name = null)
     {
@@ -383,13 +383,13 @@ class VservernetworkInterfaceApi
      * @param  int $server_id Server-ID (required)
      * @param  string $name Interface Name. Wenn leer, dann werden alle Interfaces aktiviert. (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverNetworkInterface[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverNetworkInterface[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverNetworkInterfaceEnableWithHttpInfo($server_id, $name = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverNetworkInterface[]';
+        $returnType = '\csakel\RUBClient\Model\VserverNetworkInterface[]';
         $request = $this->vserverNetworkInterfaceEnableRequest($server_id, $name);
 
         try {
@@ -441,7 +441,7 @@ class VservernetworkInterfaceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverNetworkInterface[]',
+                        '\csakel\RUBClient\Model\VserverNetworkInterface[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -485,7 +485,7 @@ class VservernetworkInterfaceApi
      */
     public function vserverNetworkInterfaceEnableAsyncWithHttpInfo($server_id, $name = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverNetworkInterface[]';
+        $returnType = '\csakel\RUBClient\Model\VserverNetworkInterface[]';
         $request = $this->vserverNetworkInterfaceEnableRequest($server_id, $name);
 
         return $this->client
@@ -635,9 +635,9 @@ class VservernetworkInterfaceApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverNetworkInterface[]
+     * @return \csakel\RUBClient\Model\VserverNetworkInterface[]
      */
     public function vserverNetworkInterfaceIndex($server_id)
     {
@@ -652,13 +652,13 @@ class VservernetworkInterfaceApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverNetworkInterface[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverNetworkInterface[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverNetworkInterfaceIndexWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverNetworkInterface[]';
+        $returnType = '\csakel\RUBClient\Model\VserverNetworkInterface[]';
         $request = $this->vserverNetworkInterfaceIndexRequest($server_id);
 
         try {
@@ -710,7 +710,7 @@ class VservernetworkInterfaceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverNetworkInterface[]',
+                        '\csakel\RUBClient\Model\VserverNetworkInterface[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -752,7 +752,7 @@ class VservernetworkInterfaceApi
      */
     public function vserverNetworkInterfaceIndexAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverNetworkInterface[]';
+        $returnType = '\csakel\RUBClient\Model\VserverNetworkInterface[]';
         $request = $this->vserverNetworkInterfaceIndexRequest($server_id);
 
         return $this->client
@@ -899,9 +899,9 @@ class VservernetworkInterfaceApi
      * @param  int $limit Limit in Mbit/s (required)
      * @param  string $name Interface Name. Wenn leer, dann werden alle Interfaces limitiert. (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverNetworkInterface[]
+     * @return \csakel\RUBClient\Model\VserverNetworkInterface[]
      */
     public function vserverNetworkInterfaceLimit($server_id, $limit, $name = null)
     {
@@ -918,13 +918,13 @@ class VservernetworkInterfaceApi
      * @param  int $limit Limit in Mbit/s (required)
      * @param  string $name Interface Name. Wenn leer, dann werden alle Interfaces limitiert. (optional)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverNetworkInterface[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverNetworkInterface[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverNetworkInterfaceLimitWithHttpInfo($server_id, $limit, $name = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverNetworkInterface[]';
+        $returnType = '\csakel\RUBClient\Model\VserverNetworkInterface[]';
         $request = $this->vserverNetworkInterfaceLimitRequest($server_id, $limit, $name);
 
         try {
@@ -976,7 +976,7 @@ class VservernetworkInterfaceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverNetworkInterface[]',
+                        '\csakel\RUBClient\Model\VserverNetworkInterface[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1022,7 +1022,7 @@ class VservernetworkInterfaceApi
      */
     public function vserverNetworkInterfaceLimitAsyncWithHttpInfo($server_id, $limit, $name = null)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverNetworkInterface[]';
+        $returnType = '\csakel\RUBClient\Model\VserverNetworkInterface[]';
         $request = $this->vserverNetworkInterfaceLimitRequest($server_id, $limit, $name);
 
         return $this->client
@@ -1184,9 +1184,9 @@ class VservernetworkInterfaceApi
      * @param  int $server_id Server-ID (required)
      * @param  string $name Interface Name (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \c-sakel\RUBClient\Model\VserverNetworkInterface[]
+     * @return \csakel\RUBClient\Model\VserverNetworkInterface[]
      */
     public function vserverNetworkInterfaceShow($server_id, $name)
     {
@@ -1202,13 +1202,13 @@ class VservernetworkInterfaceApi
      * @param  int $server_id Server-ID (required)
      * @param  string $name Interface Name (required)
      *
-     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
+     * @throws \csakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \c-sakel\RUBClient\Model\VserverNetworkInterface[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \csakel\RUBClient\Model\VserverNetworkInterface[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverNetworkInterfaceShowWithHttpInfo($server_id, $name)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverNetworkInterface[]';
+        $returnType = '\csakel\RUBClient\Model\VserverNetworkInterface[]';
         $request = $this->vserverNetworkInterfaceShowRequest($server_id, $name);
 
         try {
@@ -1260,7 +1260,7 @@ class VservernetworkInterfaceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\c-sakel\RUBClient\Model\VserverNetworkInterface[]',
+                        '\csakel\RUBClient\Model\VserverNetworkInterface[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1304,7 +1304,7 @@ class VservernetworkInterfaceApi
      */
     public function vserverNetworkInterfaceShowAsyncWithHttpInfo($server_id, $name)
     {
-        $returnType = '\c-sakel\RUBClient\Model\VserverNetworkInterface[]';
+        $returnType = '\csakel\RUBClient\Model\VserverNetworkInterface[]';
         $request = $this->vserverNetworkInterfaceShowRequest($server_id, $name);
 
         return $this->client

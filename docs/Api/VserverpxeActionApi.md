@@ -1,4 +1,4 @@
-# c-sakel\RUBClient\VserverpxeActionApi
+# csakel\RUBClient\VserverpxeActionApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**vserverPxeActionIndex**](VserverpxeActionApi.md#vserverpxeactionindex) | **GET** /vserver/pxe_action | Alle vServer PXE Aktionen abrufen
 
 # **vserverPxeActionAbort**
-> \c-sakel\RUBClient\Model\PxeAction[] vserverPxeActionAbort($server_id, $action_id)
+> \csakel\RUBClient\Model\PxeAction[] vserverPxeActionAbort($server_id, $action_id)
 
 vServer PXE Aktion abbrechen
 
@@ -17,11 +17,11 @@ vServer PXE Aktion abbrechen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VserverpxeActionApi(
+$apiInstance = new csakel\RUBClient\Api\VserverpxeActionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PxeAction[]**](../Model/PxeAction.md)
+[**\csakel\RUBClient\Model\PxeAction[]**](../Model/PxeAction.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverPxeActionIndex**
-> \c-sakel\RUBClient\Model\PxeAction[] vserverPxeActionIndex($server_id)
+> \csakel\RUBClient\Model\PxeAction[] vserverPxeActionIndex($server_id)
 
 Alle vServer PXE Aktionen abrufen
 
@@ -71,11 +71,11 @@ Alle vServer PXE Aktionen abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
+    $config = csakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new c-sakel\RUBClient\Api\VserverpxeActionApi(
+$apiInstance = new csakel\RUBClient\Api\VserverpxeActionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -100,7 +100,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\c-sakel\RUBClient\Model\PxeAction[]**](../Model/PxeAction.md)
+[**\csakel\RUBClient\Model\PxeAction[]**](../Model/PxeAction.md)
 
 ### Authorization
 
