@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace c-sakel\RUBClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * VserverTraffic Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class VserverTraffic implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'start_date' => '\DateTime',
         'end_date' => '\DateTime',
-        'traffic' => '\Swagger\Client\Model\AddressTrafficTraffic[]',
-        'addresses' => '\Swagger\Client\Model\Address[]'
+        'traffic' => '\c-sakel\RUBClient\Model\AddressTrafficTraffic[]',
+        'addresses' => '\c-sakel\RUBClient\Model\Address[]'
     ];
 
     /**
@@ -270,7 +270,7 @@ class VserverTraffic implements ModelInterface, ArrayAccess
     /**
      * Gets traffic
      *
-     * @return \Swagger\Client\Model\AddressTrafficTraffic[]
+     * @return \c-sakel\RUBClient\Model\AddressTrafficTraffic[]
      */
     public function getTraffic()
     {
@@ -280,7 +280,7 @@ class VserverTraffic implements ModelInterface, ArrayAccess
     /**
      * Sets traffic
      *
-     * @param \Swagger\Client\Model\AddressTrafficTraffic[] $traffic traffic
+     * @param \c-sakel\RUBClient\Model\AddressTrafficTraffic[] $traffic traffic
      *
      * @return $this
      */
@@ -294,7 +294,7 @@ class VserverTraffic implements ModelInterface, ArrayAccess
     /**
      * Gets addresses
      *
-     * @return \Swagger\Client\Model\Address[]
+     * @return \c-sakel\RUBClient\Model\Address[]
      */
     public function getAddresses()
     {
@@ -304,7 +304,7 @@ class VserverTraffic implements ModelInterface, ArrayAccess
     /**
      * Sets addresses
      *
-     * @param \Swagger\Client\Model\Address[] $addresses addresses
+     * @param \c-sakel\RUBClient\Model\Address[] $addresses addresses
      *
      * @return $this
      */

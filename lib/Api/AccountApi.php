@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * AccountApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class AccountApi
      * Account Daten abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Account[]
+     * @return \c-sakel\RUBClient\Model\Account[]
      */
     public function accountIndex()
     {
@@ -108,13 +108,13 @@ class AccountApi
      * Account Daten abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Account[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\Account[], HTTP status code, HTTP response headers (array of strings)
      */
     public function accountIndexWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Account[]';
+        $returnType = '\c-sakel\RUBClient\Model\Account[]';
         $request = $this->accountIndexRequest();
 
         try {
@@ -166,7 +166,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Account[]',
+                        '\c-sakel\RUBClient\Model\Account[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class AccountApi
      */
     public function accountIndexAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Account[]';
+        $returnType = '\c-sakel\RUBClient\Model\Account[]';
         $request = $this->accountIndexRequest();
 
         return $this->client

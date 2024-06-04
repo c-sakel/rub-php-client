@@ -1,4 +1,4 @@
-# Swagger\Client\VserverscheduledTaskApi
+# c-sakel\RUBClient\VserverscheduledTaskApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**vserverScheduledTaskIndex**](VserverscheduledTaskApi.md#vserverscheduledtaskindex) | **GET** /vserver/scheduled_task | vServer geplante Aufgabe abrufen
 
 # **vserverScheduledTaskCreate**
-> \Swagger\Client\Model\ScheduledTask[] vserverScheduledTaskCreate($server_id, $methode, $interval, $next_execution_at)
+> \c-sakel\RUBClient\Model\ScheduledTask[] vserverScheduledTaskCreate($server_id, $methode, $interval, $next_execution_at)
 
 Geplante Aufgabe anlegen
 
@@ -18,11 +18,11 @@ Geplante Aufgabe anlegen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverscheduledTaskApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverscheduledTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ScheduledTask[]**](../Model/ScheduledTask.md)
+[**\c-sakel\RUBClient\Model\ScheduledTask[]**](../Model/ScheduledTask.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverScheduledTaskDelete**
-> \Swagger\Client\Model\ScheduledTask[] vserverScheduledTaskDelete($server_id, $task_id)
+> \c-sakel\RUBClient\Model\ScheduledTask[] vserverScheduledTaskDelete($server_id, $task_id)
 
 Geplante Aufgabe löschen
 
@@ -76,11 +76,11 @@ Geplante Aufgabe löschen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverscheduledTaskApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverscheduledTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ScheduledTask[]**](../Model/ScheduledTask.md)
+[**\c-sakel\RUBClient\Model\ScheduledTask[]**](../Model/ScheduledTask.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverScheduledTaskIndex**
-> \Swagger\Client\Model\ScheduledTask[] vserverScheduledTaskIndex($server_id)
+> \c-sakel\RUBClient\Model\ScheduledTask[] vserverScheduledTaskIndex($server_id)
 
 vServer geplante Aufgabe abrufen
 
@@ -130,11 +130,11 @@ vServer geplante Aufgabe abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverscheduledTaskApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverscheduledTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ScheduledTask[]**](../Model/ScheduledTask.md)
+[**\c-sakel\RUBClient\Model\ScheduledTask[]**](../Model/ScheduledTask.md)
 
 ### Authorization
 

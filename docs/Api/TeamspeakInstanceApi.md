@@ -1,4 +1,4 @@
-# Swagger\Client\TeamspeakInstanceApi
+# c-sakel\RUBClient\TeamspeakInstanceApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 [**teamspeakInstanceWhitelistRemove**](TeamspeakInstanceApi.md#teamspeakinstancewhitelistremove) | **DELETE** /teamspeak_instance/whitelist/remove | Teamspeak Instanz Whitelist Adresse entfernen
 
 # **teamspeakInstanceDdosAlert**
-> \Swagger\Client\Model\DdosAlert[] teamspeakInstanceDdosAlert($instance)
+> \c-sakel\RUBClient\Model\DdosAlert[] teamspeakInstanceDdosAlert($instance)
 
 DDoS Alerts zur Teamspeak Instanz abrufen
 
@@ -26,11 +26,11 @@ DDoS Alerts zur Teamspeak Instanz abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TeamspeakInstanceApi(
+$apiInstance = new c-sakel\RUBClient\Api\TeamspeakInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DdosAlert[]**](../Model/DdosAlert.md)
+[**\c-sakel\RUBClient\Model\DdosAlert[]**](../Model/DdosAlert.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **teamspeakInstanceIndex**
-> \Swagger\Client\Model\TeamspeakInstance[] teamspeakInstanceIndex()
+> \c-sakel\RUBClient\Model\TeamspeakInstance[] teamspeakInstanceIndex()
 
 Teamspeak Instanzen abrufen
 
@@ -78,11 +78,11 @@ Teamspeak Instanzen abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TeamspeakInstanceApi(
+$apiInstance = new c-sakel\RUBClient\Api\TeamspeakInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -103,7 +103,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\TeamspeakInstance[]**](../Model/TeamspeakInstance.md)
+[**\c-sakel\RUBClient\Model\TeamspeakInstance[]**](../Model/TeamspeakInstance.md)
 
 ### Authorization
 
@@ -117,7 +117,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **teamspeakInstanceResetQueryPassword**
-> \Swagger\Client\Model\TeamspeakInstance[] teamspeakInstanceResetQueryPassword($instance)
+> \c-sakel\RUBClient\Model\TeamspeakInstance[] teamspeakInstanceResetQueryPassword($instance)
 
 Query Passwort von Teamspeak Instanz zurücksetzen
 
@@ -126,11 +126,11 @@ Query Passwort von Teamspeak Instanz zurücksetzen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TeamspeakInstanceApi(
+$apiInstance = new c-sakel\RUBClient\Api\TeamspeakInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\TeamspeakInstance[]**](../Model/TeamspeakInstance.md)
+[**\c-sakel\RUBClient\Model\TeamspeakInstance[]**](../Model/TeamspeakInstance.md)
 
 ### Authorization
 
@@ -169,7 +169,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **teamspeakInstanceRestart**
-> \Swagger\Client\Model\TeamspeakInstance[] teamspeakInstanceRestart($instance)
+> \c-sakel\RUBClient\Model\TeamspeakInstance[] teamspeakInstanceRestart($instance)
 
 Teamspeak Instanzen neustarten
 
@@ -178,11 +178,11 @@ Teamspeak Instanzen neustarten
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TeamspeakInstanceApi(
+$apiInstance = new c-sakel\RUBClient\Api\TeamspeakInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\TeamspeakInstance[]**](../Model/TeamspeakInstance.md)
+[**\c-sakel\RUBClient\Model\TeamspeakInstance[]**](../Model/TeamspeakInstance.md)
 
 ### Authorization
 
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **teamspeakInstanceSettings**
-> \Swagger\Client\Model\TeamspeakInstance[] teamspeakInstanceSettings($instance, $title)
+> \c-sakel\RUBClient\Model\TeamspeakInstance[] teamspeakInstanceSettings($instance, $title)
 
 Einstellungen von Teamspeak Instanz speichern
 
@@ -232,11 +232,11 @@ Einstellungen von Teamspeak Instanz speichern
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TeamspeakInstanceApi(
+$apiInstance = new c-sakel\RUBClient\Api\TeamspeakInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\TeamspeakInstance[]**](../Model/TeamspeakInstance.md)
+[**\c-sakel\RUBClient\Model\TeamspeakInstance[]**](../Model/TeamspeakInstance.md)
 
 ### Authorization
 
@@ -277,7 +277,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **teamspeakInstanceShow**
-> \Swagger\Client\Model\TeamspeakInstance[] teamspeakInstanceShow($instance)
+> \c-sakel\RUBClient\Model\TeamspeakInstance[] teamspeakInstanceShow($instance)
 
 Einzelne Teamspeak Instanz abrufen
 
@@ -286,11 +286,11 @@ Einzelne Teamspeak Instanz abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TeamspeakInstanceApi(
+$apiInstance = new c-sakel\RUBClient\Api\TeamspeakInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -315,7 +315,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\TeamspeakInstance[]**](../Model/TeamspeakInstance.md)
+[**\c-sakel\RUBClient\Model\TeamspeakInstance[]**](../Model/TeamspeakInstance.md)
 
 ### Authorization
 
@@ -329,7 +329,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **teamspeakInstanceStart**
-> \Swagger\Client\Model\TeamspeakInstance[] teamspeakInstanceStart($instance)
+> \c-sakel\RUBClient\Model\TeamspeakInstance[] teamspeakInstanceStart($instance)
 
 Teamspeak Instanzen starten
 
@@ -338,11 +338,11 @@ Teamspeak Instanzen starten
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TeamspeakInstanceApi(
+$apiInstance = new c-sakel\RUBClient\Api\TeamspeakInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -367,7 +367,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\TeamspeakInstance[]**](../Model/TeamspeakInstance.md)
+[**\c-sakel\RUBClient\Model\TeamspeakInstance[]**](../Model/TeamspeakInstance.md)
 
 ### Authorization
 
@@ -381,7 +381,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **teamspeakInstanceStop**
-> \Swagger\Client\Model\TeamspeakInstance[] teamspeakInstanceStop($instance)
+> \c-sakel\RUBClient\Model\TeamspeakInstance[] teamspeakInstanceStop($instance)
 
 Teamspeak Instanzen stoppen
 
@@ -390,11 +390,11 @@ Teamspeak Instanzen stoppen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TeamspeakInstanceApi(
+$apiInstance = new c-sakel\RUBClient\Api\TeamspeakInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -419,7 +419,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\TeamspeakInstance[]**](../Model/TeamspeakInstance.md)
+[**\c-sakel\RUBClient\Model\TeamspeakInstance[]**](../Model/TeamspeakInstance.md)
 
 ### Authorization
 
@@ -442,11 +442,11 @@ Teamspeak Instanz Whitelist Adresse hinzufügen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TeamspeakInstanceApi(
+$apiInstance = new c-sakel\RUBClient\Api\TeamspeakInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -495,11 +495,11 @@ Teamspeak Instanz Whitelist Adressen abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TeamspeakInstanceApi(
+$apiInstance = new c-sakel\RUBClient\Api\TeamspeakInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -546,11 +546,11 @@ Teamspeak Instanz Whitelist Adresse entfernen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TeamspeakInstanceApi(
+$apiInstance = new c-sakel\RUBClient\Api\TeamspeakInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

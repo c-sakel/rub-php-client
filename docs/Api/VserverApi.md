@@ -1,4 +1,4 @@
-# Swagger\Client\VserverApi
+# c-sakel\RUBClient\VserverApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -30,7 +30,7 @@ Method | HTTP request | Description
 [**vserverVnc**](VserverApi.md#vservervnc) | **GET** /vserver/vnc | VNC Konsole abrufen
 
 # **vserverAddress**
-> \Swagger\Client\Model\Address[] vserverAddress($server_id)
+> \c-sakel\RUBClient\Model\Address[] vserverAddress($server_id)
 
 vServer IP-Adressen abrufen
 
@@ -39,11 +39,11 @@ vServer IP-Adressen abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Address[]**](../Model/Address.md)
+[**\c-sakel\RUBClient\Model\Address[]**](../Model/Address.md)
 
 ### Authorization
 
@@ -82,7 +82,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverCreate**
-> \Swagger\Client\Model\Vserver[] vserverCreate($cores, $memory, $disk, $ip_addresses, $ip6_addresses, $backups, $template, $hostname, $password, $ssh_keys, $commands)
+> \c-sakel\RUBClient\Model\Vserver[] vserverCreate($cores, $memory, $disk, $ip_addresses, $ip6_addresses, $backups, $template, $hostname, $password, $ssh_keys, $commands)
 
 Neuen vServer bestellen
 
@@ -93,11 +93,11 @@ Diese Funktion führt eine kostenpflichtige Bestellung aus.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Vserver[]**](../Model/Vserver.md)
+[**\c-sakel\RUBClient\Model\Vserver[]**](../Model/Vserver.md)
 
 ### Authorization
 
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverDdosAlert**
-> \Swagger\Client\Model\DdosAlert[] vserverDdosAlert($server_id)
+> \c-sakel\RUBClient\Model\DdosAlert[] vserverDdosAlert($server_id)
 
 DDoS Alerts zum vServer abrufen
 
@@ -165,11 +165,11 @@ DDoS Alerts zum vServer abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DdosAlert[]**](../Model/DdosAlert.md)
+[**\c-sakel\RUBClient\Model\DdosAlert[]**](../Model/DdosAlert.md)
 
 ### Authorization
 
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverDelete**
-> \Swagger\Client\Model\Vserver[] vserverDelete($server_id)
+> \c-sakel\RUBClient\Model\Vserver[] vserverDelete($server_id)
 
 vServer löschen
 
@@ -219,11 +219,11 @@ Diese Funktion löscht den Server inkl. Backups unwiderruflich.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Vserver[]**](../Model/Vserver.md)
+[**\c-sakel\RUBClient\Model\Vserver[]**](../Model/Vserver.md)
 
 ### Authorization
 
@@ -273,11 +273,11 @@ Diese Funktion gibt die RRD Statistik-Daten zurück.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -330,11 +330,11 @@ Diese Funktion gibt die RRD Statistik-Daten als PNG zurück.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -378,7 +378,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverIndex**
-> \Swagger\Client\Model\Vserver[] vserverIndex()
+> \c-sakel\RUBClient\Model\Vserver[] vserverIndex()
 
 Alle vServer abrufen
 
@@ -387,11 +387,11 @@ Alle vServer abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -412,7 +412,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\Vserver[]**](../Model/Vserver.md)
+[**\c-sakel\RUBClient\Model\Vserver[]**](../Model/Vserver.md)
 
 ### Authorization
 
@@ -426,7 +426,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverInstallation**
-> \Swagger\Client\Model\PxeAction[] vserverInstallation($server_id)
+> \c-sakel\RUBClient\Model\PxeAction[] vserverInstallation($server_id)
 
 vServer Installationen abrufen
 
@@ -435,11 +435,11 @@ vServer Installationen abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -464,7 +464,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PxeAction[]**](../Model/PxeAction.md)
+[**\c-sakel\RUBClient\Model\PxeAction[]**](../Model/PxeAction.md)
 
 ### Authorization
 
@@ -489,11 +489,11 @@ Diese Funktion startet den Server automatisch neu.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -531,7 +531,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverOperation**
-> \Swagger\Client\Model\PxeAction[] vserverOperation($server_id)
+> \c-sakel\RUBClient\Model\PxeAction[] vserverOperation($server_id)
 
 vServer Operationen abrufen
 
@@ -540,11 +540,11 @@ vServer Operationen abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -569,7 +569,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PxeAction[]**](../Model/PxeAction.md)
+[**\c-sakel\RUBClient\Model\PxeAction[]**](../Model/PxeAction.md)
 
 ### Authorization
 
@@ -583,7 +583,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverOperations**
-> \Swagger\Client\Model\PxeTemplate[] vserverOperations($server_id)
+> \c-sakel\RUBClient\Model\PxeTemplate[] vserverOperations($server_id)
 
 Operation-Templates abrufen
 
@@ -594,11 +594,11 @@ Diese Funktion gibt verfügbare Templates zu PXE Operationen zurück.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -623,7 +623,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PxeTemplate[]**](../Model/PxeTemplate.md)
+[**\c-sakel\RUBClient\Model\PxeTemplate[]**](../Model/PxeTemplate.md)
 
 ### Authorization
 
@@ -648,11 +648,11 @@ Diese Funktion startet den Server automatisch neu.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -692,7 +692,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverReinstall**
-> \Swagger\Client\Model\Vserver[] vserverReinstall($server_id, $template, $hostname, $password, $ssh_keys, $commands, $ip_addresses, $ip6_addresses)
+> \c-sakel\RUBClient\Model\Vserver[] vserverReinstall($server_id, $template, $hostname, $password, $ssh_keys, $commands, $ip_addresses, $ip6_addresses)
 
 vServer neuinstallieren
 
@@ -703,11 +703,11 @@ Alle Daten werden hierbei unwiderruflich gelöscht.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -746,7 +746,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Vserver[]**](../Model/Vserver.md)
+[**\c-sakel\RUBClient\Model\Vserver[]**](../Model/Vserver.md)
 
 ### Authorization
 
@@ -760,7 +760,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverRestart**
-> \Swagger\Client\Model\Vserver[] vserverRestart($server_id)
+> \c-sakel\RUBClient\Model\Vserver[] vserverRestart($server_id)
 
 vServer neustarten
 
@@ -769,11 +769,11 @@ vServer neustarten
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -798,7 +798,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Vserver[]**](../Model/Vserver.md)
+[**\c-sakel\RUBClient\Model\Vserver[]**](../Model/Vserver.md)
 
 ### Authorization
 
@@ -812,7 +812,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverSettings**
-> \Swagger\Client\Model\Vserver[] vserverSettings($server_id, $title, $hostname)
+> \c-sakel\RUBClient\Model\Vserver[] vserverSettings($server_id, $title, $hostname)
 
 Einstellungen von vServer speichern
 
@@ -823,11 +823,11 @@ Einstellungen von vServer speichern
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -856,7 +856,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Vserver[]**](../Model/Vserver.md)
+[**\c-sakel\RUBClient\Model\Vserver[]**](../Model/Vserver.md)
 
 ### Authorization
 
@@ -870,7 +870,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverShow**
-> \Swagger\Client\Model\Vserver[] vserverShow($server_id)
+> \c-sakel\RUBClient\Model\Vserver[] vserverShow($server_id)
 
 Einzelnen vServer abrufen
 
@@ -879,11 +879,11 @@ Einzelnen vServer abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -908,7 +908,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Vserver[]**](../Model/Vserver.md)
+[**\c-sakel\RUBClient\Model\Vserver[]**](../Model/Vserver.md)
 
 ### Authorization
 
@@ -922,7 +922,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverShutdown**
-> \Swagger\Client\Model\Vserver[] vserverShutdown($server_id)
+> \c-sakel\RUBClient\Model\Vserver[] vserverShutdown($server_id)
 
 vServer herunterfahren
 
@@ -931,11 +931,11 @@ vServer herunterfahren
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -960,7 +960,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Vserver[]**](../Model/Vserver.md)
+[**\c-sakel\RUBClient\Model\Vserver[]**](../Model/Vserver.md)
 
 ### Authorization
 
@@ -974,7 +974,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverStart**
-> \Swagger\Client\Model\Vserver[] vserverStart($server_id)
+> \c-sakel\RUBClient\Model\Vserver[] vserverStart($server_id)
 
 vServer starten
 
@@ -983,11 +983,11 @@ vServer starten
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1012,7 +1012,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Vserver[]**](../Model/Vserver.md)
+[**\c-sakel\RUBClient\Model\Vserver[]**](../Model/Vserver.md)
 
 ### Authorization
 
@@ -1026,7 +1026,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverStatus**
-> \Swagger\Client\Model\VserverStatus[] vserverStatus($server_id)
+> \c-sakel\RUBClient\Model\VserverStatus[] vserverStatus($server_id)
 
 vServer Status abrufen
 
@@ -1035,11 +1035,11 @@ vServer Status abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1064,7 +1064,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverStatus[]**](../Model/VserverStatus.md)
+[**\c-sakel\RUBClient\Model\VserverStatus[]**](../Model/VserverStatus.md)
 
 ### Authorization
 
@@ -1078,7 +1078,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverStop**
-> \Swagger\Client\Model\Vserver[] vserverStop($server_id)
+> \c-sakel\RUBClient\Model\Vserver[] vserverStop($server_id)
 
 vServer stoppen
 
@@ -1087,11 +1087,11 @@ vServer stoppen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1116,7 +1116,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Vserver[]**](../Model/Vserver.md)
+[**\c-sakel\RUBClient\Model\Vserver[]**](../Model/Vserver.md)
 
 ### Authorization
 
@@ -1130,7 +1130,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverTemplates**
-> \Swagger\Client\Model\PxeTemplate[] vserverTemplates()
+> \c-sakel\RUBClient\Model\PxeTemplate[] vserverTemplates()
 
 Installations-Templates abrufen
 
@@ -1141,11 +1141,11 @@ Diese Funktion gibt verfügbare Templates zur Installation zurück.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1166,7 +1166,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\PxeTemplate[]**](../Model/PxeTemplate.md)
+[**\c-sakel\RUBClient\Model\PxeTemplate[]**](../Model/PxeTemplate.md)
 
 ### Authorization
 
@@ -1180,7 +1180,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverTraffic**
-> \Swagger\Client\Model\VserverTraffic[] vserverTraffic($server_id, $start_date, $end_date, $group_by)
+> \c-sakel\RUBClient\Model\VserverTraffic[] vserverTraffic($server_id, $start_date, $end_date, $group_by)
 
 vServer Traffic abrufen
 
@@ -1189,11 +1189,11 @@ vServer Traffic abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1224,7 +1224,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverTraffic[]**](../Model/VserverTraffic.md)
+[**\c-sakel\RUBClient\Model\VserverTraffic[]**](../Model/VserverTraffic.md)
 
 ### Authorization
 
@@ -1238,7 +1238,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverUpgrade**
-> \Swagger\Client\Model\Vserver[] vserverUpgrade($server_id, $cores, $memory, $disk, $ip_addresses, $ip6_addresses, $backups)
+> \c-sakel\RUBClient\Model\Vserver[] vserverUpgrade($server_id, $cores, $memory, $disk, $ip_addresses, $ip6_addresses, $backups)
 
 vServer Konfiguration ändern
 
@@ -1249,11 +1249,11 @@ Diese Funktion startet den Server automatisch neu.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1290,7 +1290,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Vserver[]**](../Model/Vserver.md)
+[**\c-sakel\RUBClient\Model\Vserver[]**](../Model/Vserver.md)
 
 ### Authorization
 
@@ -1315,11 +1315,11 @@ Diese Funktion gibt eine HTML5 noVNC Konsole zurück.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

@@ -1,4 +1,4 @@
-# Swagger\Client\VserverdriveApi
+# c-sakel\RUBClient\VserverdriveApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 [**vserverDriveShowGet**](VserverdriveApi.md#vserverdriveshowget) | **GET** /vserver/drive/show | 
 
 # **vserverDriveCreatePost**
-> \Swagger\Client\Model\VserverDrive[] vserverDriveCreatePost($server_id)
+> \c-sakel\RUBClient\Model\VserverDrive[] vserverDriveCreatePost($server_id)
 
 
 
@@ -25,11 +25,11 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverdriveApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverdriveApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverDrive[]**](../Model/VserverDrive.md)
+[**\c-sakel\RUBClient\Model\VserverDrive[]**](../Model/VserverDrive.md)
 
 ### Authorization
 
@@ -77,11 +77,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverdriveApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverdriveApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverDriveGet**
-> \Swagger\Client\Model\VserverDrive[] vserverDriveGet($server_id)
+> \c-sakel\RUBClient\Model\VserverDrive[] vserverDriveGet($server_id)
 
 
 
@@ -131,11 +131,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverdriveApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverdriveApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverDrive[]**](../Model/VserverDrive.md)
+[**\c-sakel\RUBClient\Model\VserverDrive[]**](../Model/VserverDrive.md)
 
 ### Authorization
 
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverDriveIsoDownloadPost**
-> \Swagger\Client\Model\VserverDriveIso[] vserverDriveIsoDownloadPost($title, $url)
+> \c-sakel\RUBClient\Model\VserverDriveIso[] vserverDriveIsoDownloadPost($title, $url)
 
 
 
@@ -183,11 +183,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverdriveApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverdriveApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -214,7 +214,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverDriveIso[]**](../Model/VserverDriveIso.md)
+[**\c-sakel\RUBClient\Model\VserverDriveIso[]**](../Model/VserverDriveIso.md)
 
 ### Authorization
 
@@ -228,7 +228,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverDriveIsoGet**
-> \Swagger\Client\Model\VserverDriveIso[] vserverDriveIsoGet()
+> \c-sakel\RUBClient\Model\VserverDriveIso[] vserverDriveIsoGet()
 
 
 
@@ -237,11 +237,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverdriveApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverdriveApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -262,7 +262,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverDriveIso[]**](../Model/VserverDriveIso.md)
+[**\c-sakel\RUBClient\Model\VserverDriveIso[]**](../Model/VserverDriveIso.md)
 
 ### Authorization
 
@@ -276,7 +276,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverDriveIsoMountPost**
-> \Swagger\Client\Model\VserverDrive[] vserverDriveIsoMountPost($server_id, $drive_name, $iso_id)
+> \c-sakel\RUBClient\Model\VserverDrive[] vserverDriveIsoMountPost($server_id, $drive_name, $iso_id)
 
 
 
@@ -285,11 +285,11 @@ This endpoint does not need any parameter.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverdriveApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverdriveApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -318,7 +318,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverDrive[]**](../Model/VserverDrive.md)
+[**\c-sakel\RUBClient\Model\VserverDrive[]**](../Model/VserverDrive.md)
 
 ### Authorization
 
@@ -332,7 +332,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverDriveIsoQueryUrlGet**
-> \Swagger\Client\Model\QueryUrlMetadata[] vserverDriveIsoQueryUrlGet($url)
+> \c-sakel\RUBClient\Model\QueryUrlMetadata[] vserverDriveIsoQueryUrlGet($url)
 
 
 
@@ -341,11 +341,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverdriveApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverdriveApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -370,7 +370,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\QueryUrlMetadata[]**](../Model/QueryUrlMetadata.md)
+[**\c-sakel\RUBClient\Model\QueryUrlMetadata[]**](../Model/QueryUrlMetadata.md)
 
 ### Authorization
 
@@ -384,7 +384,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverDriveIsoShowGet**
-> \Swagger\Client\Model\VserverDriveIso[] vserverDriveIsoShowGet($iso_id)
+> \c-sakel\RUBClient\Model\VserverDriveIso[] vserverDriveIsoShowGet($iso_id)
 
 
 
@@ -393,11 +393,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverdriveApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverdriveApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -422,7 +422,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverDriveIso[]**](../Model/VserverDriveIso.md)
+[**\c-sakel\RUBClient\Model\VserverDriveIso[]**](../Model/VserverDriveIso.md)
 
 ### Authorization
 
@@ -436,7 +436,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverDriveIsoUnmountDelete**
-> \Swagger\Client\Model\VserverDrive[] vserverDriveIsoUnmountDelete($server_id, $drive_name)
+> \c-sakel\RUBClient\Model\VserverDrive[] vserverDriveIsoUnmountDelete($server_id, $drive_name)
 
 
 
@@ -445,11 +445,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverdriveApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverdriveApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -476,7 +476,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverDrive[]**](../Model/VserverDrive.md)
+[**\c-sakel\RUBClient\Model\VserverDrive[]**](../Model/VserverDrive.md)
 
 ### Authorization
 
@@ -490,7 +490,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverDriveShowGet**
-> \Swagger\Client\Model\VserverDrive[] vserverDriveShowGet($server_id, $drive_name)
+> \c-sakel\RUBClient\Model\VserverDrive[] vserverDriveShowGet($server_id, $drive_name)
 
 
 
@@ -499,11 +499,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverdriveApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverdriveApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -530,7 +530,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverDrive[]**](../Model/VserverDrive.md)
+[**\c-sakel\RUBClient\Model\VserverDrive[]**](../Model/VserverDrive.md)
 
 ### Authorization
 

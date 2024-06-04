@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * TeamspeakInstanceApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class TeamspeakInstanceApi
      *
      * @param  int $instance Instanz-ID, wofür die DDoS Alerts abgerufen werden sollen (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DdosAlert[]
+     * @return \c-sakel\RUBClient\Model\DdosAlert[]
      */
     public function teamspeakInstanceDdosAlert($instance)
     {
@@ -110,13 +110,13 @@ class TeamspeakInstanceApi
      *
      * @param  int $instance Instanz-ID, wofür die DDoS Alerts abgerufen werden sollen (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DdosAlert[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DdosAlert[], HTTP status code, HTTP response headers (array of strings)
      */
     public function teamspeakInstanceDdosAlertWithHttpInfo($instance)
     {
-        $returnType = '\Swagger\Client\Model\DdosAlert[]';
+        $returnType = '\c-sakel\RUBClient\Model\DdosAlert[]';
         $request = $this->teamspeakInstanceDdosAlertRequest($instance);
 
         try {
@@ -168,7 +168,7 @@ class TeamspeakInstanceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DdosAlert[]',
+                        '\c-sakel\RUBClient\Model\DdosAlert[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class TeamspeakInstanceApi
      */
     public function teamspeakInstanceDdosAlertAsyncWithHttpInfo($instance)
     {
-        $returnType = '\Swagger\Client\Model\DdosAlert[]';
+        $returnType = '\c-sakel\RUBClient\Model\DdosAlert[]';
         $request = $this->teamspeakInstanceDdosAlertRequest($instance);
 
         return $this->client
@@ -354,9 +354,9 @@ class TeamspeakInstanceApi
      * Teamspeak Instanzen abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TeamspeakInstance[]
+     * @return \c-sakel\RUBClient\Model\TeamspeakInstance[]
      */
     public function teamspeakInstanceIndex()
     {
@@ -370,13 +370,13 @@ class TeamspeakInstanceApi
      * Teamspeak Instanzen abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TeamspeakInstance[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\TeamspeakInstance[], HTTP status code, HTTP response headers (array of strings)
      */
     public function teamspeakInstanceIndexWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\TeamspeakInstance[]';
+        $returnType = '\c-sakel\RUBClient\Model\TeamspeakInstance[]';
         $request = $this->teamspeakInstanceIndexRequest();
 
         try {
@@ -428,7 +428,7 @@ class TeamspeakInstanceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TeamspeakInstance[]',
+                        '\c-sakel\RUBClient\Model\TeamspeakInstance[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -468,7 +468,7 @@ class TeamspeakInstanceApi
      */
     public function teamspeakInstanceIndexAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\TeamspeakInstance[]';
+        $returnType = '\c-sakel\RUBClient\Model\TeamspeakInstance[]';
         $request = $this->teamspeakInstanceIndexRequest();
 
         return $this->client
@@ -602,9 +602,9 @@ class TeamspeakInstanceApi
      *
      * @param  int $instance Instanz-ID, wofür das Query Passwort zurückgesetzt werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TeamspeakInstance[]
+     * @return \c-sakel\RUBClient\Model\TeamspeakInstance[]
      */
     public function teamspeakInstanceResetQueryPassword($instance)
     {
@@ -619,13 +619,13 @@ class TeamspeakInstanceApi
      *
      * @param  int $instance Instanz-ID, wofür das Query Passwort zurückgesetzt werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TeamspeakInstance[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\TeamspeakInstance[], HTTP status code, HTTP response headers (array of strings)
      */
     public function teamspeakInstanceResetQueryPasswordWithHttpInfo($instance)
     {
-        $returnType = '\Swagger\Client\Model\TeamspeakInstance[]';
+        $returnType = '\c-sakel\RUBClient\Model\TeamspeakInstance[]';
         $request = $this->teamspeakInstanceResetQueryPasswordRequest($instance);
 
         try {
@@ -677,7 +677,7 @@ class TeamspeakInstanceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TeamspeakInstance[]',
+                        '\c-sakel\RUBClient\Model\TeamspeakInstance[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -719,7 +719,7 @@ class TeamspeakInstanceApi
      */
     public function teamspeakInstanceResetQueryPasswordAsyncWithHttpInfo($instance)
     {
-        $returnType = '\Swagger\Client\Model\TeamspeakInstance[]';
+        $returnType = '\c-sakel\RUBClient\Model\TeamspeakInstance[]';
         $request = $this->teamspeakInstanceResetQueryPasswordRequest($instance);
 
         return $this->client
@@ -864,9 +864,9 @@ class TeamspeakInstanceApi
      *
      * @param  int $instance Instanz-ID, welche neugestartet werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TeamspeakInstance[]
+     * @return \c-sakel\RUBClient\Model\TeamspeakInstance[]
      */
     public function teamspeakInstanceRestart($instance)
     {
@@ -881,13 +881,13 @@ class TeamspeakInstanceApi
      *
      * @param  int $instance Instanz-ID, welche neugestartet werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TeamspeakInstance[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\TeamspeakInstance[], HTTP status code, HTTP response headers (array of strings)
      */
     public function teamspeakInstanceRestartWithHttpInfo($instance)
     {
-        $returnType = '\Swagger\Client\Model\TeamspeakInstance[]';
+        $returnType = '\c-sakel\RUBClient\Model\TeamspeakInstance[]';
         $request = $this->teamspeakInstanceRestartRequest($instance);
 
         try {
@@ -939,7 +939,7 @@ class TeamspeakInstanceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TeamspeakInstance[]',
+                        '\c-sakel\RUBClient\Model\TeamspeakInstance[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -981,7 +981,7 @@ class TeamspeakInstanceApi
      */
     public function teamspeakInstanceRestartAsyncWithHttpInfo($instance)
     {
-        $returnType = '\Swagger\Client\Model\TeamspeakInstance[]';
+        $returnType = '\c-sakel\RUBClient\Model\TeamspeakInstance[]';
         $request = $this->teamspeakInstanceRestartRequest($instance);
 
         return $this->client
@@ -1127,9 +1127,9 @@ class TeamspeakInstanceApi
      * @param  int $instance Instanz-ID, wofür die Einstellungen speichert werden sollen (required)
      * @param  string $title Titel der Teamspeak Instanz (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TeamspeakInstance[]
+     * @return \c-sakel\RUBClient\Model\TeamspeakInstance[]
      */
     public function teamspeakInstanceSettings($instance, $title = null)
     {
@@ -1145,13 +1145,13 @@ class TeamspeakInstanceApi
      * @param  int $instance Instanz-ID, wofür die Einstellungen speichert werden sollen (required)
      * @param  string $title Titel der Teamspeak Instanz (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TeamspeakInstance[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\TeamspeakInstance[], HTTP status code, HTTP response headers (array of strings)
      */
     public function teamspeakInstanceSettingsWithHttpInfo($instance, $title = null)
     {
-        $returnType = '\Swagger\Client\Model\TeamspeakInstance[]';
+        $returnType = '\c-sakel\RUBClient\Model\TeamspeakInstance[]';
         $request = $this->teamspeakInstanceSettingsRequest($instance, $title);
 
         try {
@@ -1203,7 +1203,7 @@ class TeamspeakInstanceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TeamspeakInstance[]',
+                        '\c-sakel\RUBClient\Model\TeamspeakInstance[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1247,7 +1247,7 @@ class TeamspeakInstanceApi
      */
     public function teamspeakInstanceSettingsAsyncWithHttpInfo($instance, $title = null)
     {
-        $returnType = '\Swagger\Client\Model\TeamspeakInstance[]';
+        $returnType = '\c-sakel\RUBClient\Model\TeamspeakInstance[]';
         $request = $this->teamspeakInstanceSettingsRequest($instance, $title);
 
         return $this->client
@@ -1397,9 +1397,9 @@ class TeamspeakInstanceApi
      *
      * @param  int $instance Instanz-ID, welche abgerufen werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TeamspeakInstance[]
+     * @return \c-sakel\RUBClient\Model\TeamspeakInstance[]
      */
     public function teamspeakInstanceShow($instance)
     {
@@ -1414,13 +1414,13 @@ class TeamspeakInstanceApi
      *
      * @param  int $instance Instanz-ID, welche abgerufen werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TeamspeakInstance[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\TeamspeakInstance[], HTTP status code, HTTP response headers (array of strings)
      */
     public function teamspeakInstanceShowWithHttpInfo($instance)
     {
-        $returnType = '\Swagger\Client\Model\TeamspeakInstance[]';
+        $returnType = '\c-sakel\RUBClient\Model\TeamspeakInstance[]';
         $request = $this->teamspeakInstanceShowRequest($instance);
 
         try {
@@ -1472,7 +1472,7 @@ class TeamspeakInstanceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TeamspeakInstance[]',
+                        '\c-sakel\RUBClient\Model\TeamspeakInstance[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1514,7 +1514,7 @@ class TeamspeakInstanceApi
      */
     public function teamspeakInstanceShowAsyncWithHttpInfo($instance)
     {
-        $returnType = '\Swagger\Client\Model\TeamspeakInstance[]';
+        $returnType = '\c-sakel\RUBClient\Model\TeamspeakInstance[]';
         $request = $this->teamspeakInstanceShowRequest($instance);
 
         return $this->client
@@ -1659,9 +1659,9 @@ class TeamspeakInstanceApi
      *
      * @param  int $instance Instanz-ID, welche gestartet werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TeamspeakInstance[]
+     * @return \c-sakel\RUBClient\Model\TeamspeakInstance[]
      */
     public function teamspeakInstanceStart($instance)
     {
@@ -1676,13 +1676,13 @@ class TeamspeakInstanceApi
      *
      * @param  int $instance Instanz-ID, welche gestartet werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TeamspeakInstance[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\TeamspeakInstance[], HTTP status code, HTTP response headers (array of strings)
      */
     public function teamspeakInstanceStartWithHttpInfo($instance)
     {
-        $returnType = '\Swagger\Client\Model\TeamspeakInstance[]';
+        $returnType = '\c-sakel\RUBClient\Model\TeamspeakInstance[]';
         $request = $this->teamspeakInstanceStartRequest($instance);
 
         try {
@@ -1734,7 +1734,7 @@ class TeamspeakInstanceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TeamspeakInstance[]',
+                        '\c-sakel\RUBClient\Model\TeamspeakInstance[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1776,7 +1776,7 @@ class TeamspeakInstanceApi
      */
     public function teamspeakInstanceStartAsyncWithHttpInfo($instance)
     {
-        $returnType = '\Swagger\Client\Model\TeamspeakInstance[]';
+        $returnType = '\c-sakel\RUBClient\Model\TeamspeakInstance[]';
         $request = $this->teamspeakInstanceStartRequest($instance);
 
         return $this->client
@@ -1921,9 +1921,9 @@ class TeamspeakInstanceApi
      *
      * @param  int $instance Instanz-ID, welche gestoppt werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TeamspeakInstance[]
+     * @return \c-sakel\RUBClient\Model\TeamspeakInstance[]
      */
     public function teamspeakInstanceStop($instance)
     {
@@ -1938,13 +1938,13 @@ class TeamspeakInstanceApi
      *
      * @param  int $instance Instanz-ID, welche gestoppt werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TeamspeakInstance[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\TeamspeakInstance[], HTTP status code, HTTP response headers (array of strings)
      */
     public function teamspeakInstanceStopWithHttpInfo($instance)
     {
-        $returnType = '\Swagger\Client\Model\TeamspeakInstance[]';
+        $returnType = '\c-sakel\RUBClient\Model\TeamspeakInstance[]';
         $request = $this->teamspeakInstanceStopRequest($instance);
 
         try {
@@ -1996,7 +1996,7 @@ class TeamspeakInstanceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TeamspeakInstance[]',
+                        '\c-sakel\RUBClient\Model\TeamspeakInstance[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2038,7 +2038,7 @@ class TeamspeakInstanceApi
      */
     public function teamspeakInstanceStopAsyncWithHttpInfo($instance)
     {
-        $returnType = '\Swagger\Client\Model\TeamspeakInstance[]';
+        $returnType = '\c-sakel\RUBClient\Model\TeamspeakInstance[]';
         $request = $this->teamspeakInstanceStopRequest($instance);
 
         return $this->client
@@ -2184,7 +2184,7 @@ class TeamspeakInstanceApi
      * @param  string $instance Teamspeak-Instanz (required)
      * @param  string $address IP-Adresse, welche in die Whitelist hinzugefügt werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2201,7 +2201,7 @@ class TeamspeakInstanceApi
      * @param  string $instance Teamspeak-Instanz (required)
      * @param  string $address IP-Adresse, welche in die Whitelist hinzugefügt werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2423,7 +2423,7 @@ class TeamspeakInstanceApi
      *
      * @param  string $instance Teamspeak-Instanz (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2439,7 +2439,7 @@ class TeamspeakInstanceApi
      *
      * @param  string $instance Teamspeak-Instanz (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2649,7 +2649,7 @@ class TeamspeakInstanceApi
      * @param  string $instance Teamspeak-Instanz (required)
      * @param  string $address IP-Adresse, welche aus der Whitelist entfernt werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2666,7 +2666,7 @@ class TeamspeakInstanceApi
      * @param  string $instance Teamspeak-Instanz (required)
      * @param  string $address IP-Adresse, welche aus der Whitelist entfernt werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

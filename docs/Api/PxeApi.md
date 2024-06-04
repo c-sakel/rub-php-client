@@ -1,4 +1,4 @@
-# Swagger\Client\PxeApi
+# c-sakel\RUBClient\PxeApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**pxeInstallationTemplates**](PxeApi.md#pxeinstallationtemplates) | **GET** /pxe/installation/templates | Installations-Templates abrufen
 
 # **pxeInstallationCreate**
-> \Swagger\Client\Model\PxeAction[] pxeInstallationCreate($mac_address, $template, $hostname, $password, $ssh_keys, $commands, $ip_addresses, $ip6_addresses)
+> \c-sakel\RUBClient\Model\PxeAction[] pxeInstallationCreate($mac_address, $template, $hostname, $password, $ssh_keys, $commands, $ip_addresses, $ip6_addresses)
 
 Installation anlegen und starten
 
@@ -21,11 +21,11 @@ Diese Funktion legt eine PXE Installation an und startet die Aktion. Bitte start
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\PxeApi(
+$apiInstance = new c-sakel\RUBClient\Api\PxeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PxeAction[]**](../Model/PxeAction.md)
+[**\c-sakel\RUBClient\Model\PxeAction[]**](../Model/PxeAction.md)
 
 ### Authorization
 
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pxeInstallationIndex**
-> \Swagger\Client\Model\PxeAction[] pxeInstallationIndex()
+> \c-sakel\RUBClient\Model\PxeAction[] pxeInstallationIndex()
 
 Alle PXE Installationen abrufen
 
@@ -89,11 +89,11 @@ Diese Funktion gibt alle PXE Installationen zurück.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\PxeApi(
+$apiInstance = new c-sakel\RUBClient\Api\PxeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -114,7 +114,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\PxeAction[]**](../Model/PxeAction.md)
+[**\c-sakel\RUBClient\Model\PxeAction[]**](../Model/PxeAction.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pxeInstallationShow**
-> \Swagger\Client\Model\PxeAction[] pxeInstallationShow($installation)
+> \c-sakel\RUBClient\Model\PxeAction[] pxeInstallationShow($installation)
 
 Eine einzelne PXE Installation abrufen
 
@@ -139,11 +139,11 @@ Diese Funktion gibt eine einzelne PXE Installation zurück.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\PxeApi(
+$apiInstance = new c-sakel\RUBClient\Api\PxeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PxeAction[]**](../Model/PxeAction.md)
+[**\c-sakel\RUBClient\Model\PxeAction[]**](../Model/PxeAction.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pxeInstallationTemplates**
-> \Swagger\Client\Model\PxeTemplate[] pxeInstallationTemplates()
+> \c-sakel\RUBClient\Model\PxeTemplate[] pxeInstallationTemplates()
 
 Installations-Templates abrufen
 
@@ -193,11 +193,11 @@ Diese Funktion gibt verfügbare Templates zur Installation zurück.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\PxeApi(
+$apiInstance = new c-sakel\RUBClient\Api\PxeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -218,7 +218,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\PxeTemplate[]**](../Model/PxeTemplate.md)
+[**\c-sakel\RUBClient\Model\PxeTemplate[]**](../Model/PxeTemplate.md)
 
 ### Authorization
 

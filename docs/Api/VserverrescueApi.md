@@ -1,4 +1,4 @@
-# Swagger\Client\VserverrescueApi
+# c-sakel\RUBClient\VserverrescueApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -19,11 +19,11 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverrescueApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverrescueApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -71,11 +71,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverrescueApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverrescueApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverRescueGet**
-> \Swagger\Client\Model\VserverRescueImage[] vserverRescueGet()
+> \c-sakel\RUBClient\Model\VserverRescueImage[] vserverRescueGet()
 
 
 
@@ -125,11 +125,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverrescueApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverrescueApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -150,7 +150,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverRescueImage[]**](../Model/VserverRescueImage.md)
+[**\c-sakel\RUBClient\Model\VserverRescueImage[]**](../Model/VserverRescueImage.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverRescueShowGet**
-> \Swagger\Client\Model\VserverRescueImage[] vserverRescueShowGet($image_id)
+> \c-sakel\RUBClient\Model\VserverRescueImage[] vserverRescueShowGet($image_id)
 
 
 
@@ -173,11 +173,11 @@ This endpoint does not need any parameter.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverrescueApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverrescueApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverRescueImage[]**](../Model/VserverRescueImage.md)
+[**\c-sakel\RUBClient\Model\VserverRescueImage[]**](../Model/VserverRescueImage.md)
 
 ### Authorization
 

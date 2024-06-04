@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * AccountingApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class AccountingApi
      * Accounting Daten abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AccountingBalance[]
+     * @return \c-sakel\RUBClient\Model\AccountingBalance[]
      */
     public function accountingBalance()
     {
@@ -108,13 +108,13 @@ class AccountingApi
      * Accounting Daten abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AccountingBalance[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\AccountingBalance[], HTTP status code, HTTP response headers (array of strings)
      */
     public function accountingBalanceWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\AccountingBalance[]';
+        $returnType = '\c-sakel\RUBClient\Model\AccountingBalance[]';
         $request = $this->accountingBalanceRequest();
 
         try {
@@ -166,7 +166,7 @@ class AccountingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AccountingBalance[]',
+                        '\c-sakel\RUBClient\Model\AccountingBalance[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class AccountingApi
      */
     public function accountingBalanceAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\AccountingBalance[]';
+        $returnType = '\c-sakel\RUBClient\Model\AccountingBalance[]';
         $request = $this->accountingBalanceRequest();
 
         return $this->client
@@ -339,9 +339,9 @@ class AccountingApi
      * Alle Rechnungen abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Invoice[]
+     * @return \c-sakel\RUBClient\Model\Invoice[]
      */
     public function accountingInvoiceIndex()
     {
@@ -355,13 +355,13 @@ class AccountingApi
      * Alle Rechnungen abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Invoice[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\Invoice[], HTTP status code, HTTP response headers (array of strings)
      */
     public function accountingInvoiceIndexWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Invoice[]';
+        $returnType = '\c-sakel\RUBClient\Model\Invoice[]';
         $request = $this->accountingInvoiceIndexRequest();
 
         try {
@@ -413,7 +413,7 @@ class AccountingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Invoice[]',
+                        '\c-sakel\RUBClient\Model\Invoice[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -453,7 +453,7 @@ class AccountingApi
      */
     public function accountingInvoiceIndexAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Invoice[]';
+        $returnType = '\c-sakel\RUBClient\Model\Invoice[]';
         $request = $this->accountingInvoiceIndexRequest();
 
         return $this->client

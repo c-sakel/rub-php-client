@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * VserverscheduledTaskApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class VserverscheduledTaskApi
      * @param  string $interval Zeitintervall, wie die Aufgabe ausgeführt werden soll. Mögliche Werte: hourly, daily, 2-days, 3-days, 5-days, weekly, 2-weeks, monthly, yearly (required)
      * @param  string $next_execution_at Datum der ersten Ausführung. Dieses Datum muss in der Zukunft liegen. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ScheduledTask[]
+     * @return \c-sakel\RUBClient\Model\ScheduledTask[]
      */
     public function vserverScheduledTaskCreate($server_id, $methode, $interval, $next_execution_at)
     {
@@ -116,13 +116,13 @@ class VserverscheduledTaskApi
      * @param  string $interval Zeitintervall, wie die Aufgabe ausgeführt werden soll. Mögliche Werte: hourly, daily, 2-days, 3-days, 5-days, weekly, 2-weeks, monthly, yearly (required)
      * @param  string $next_execution_at Datum der ersten Ausführung. Dieses Datum muss in der Zukunft liegen. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ScheduledTask[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\ScheduledTask[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverScheduledTaskCreateWithHttpInfo($server_id, $methode, $interval, $next_execution_at)
     {
-        $returnType = '\Swagger\Client\Model\ScheduledTask[]';
+        $returnType = '\c-sakel\RUBClient\Model\ScheduledTask[]';
         $request = $this->vserverScheduledTaskCreateRequest($server_id, $methode, $interval, $next_execution_at);
 
         try {
@@ -174,7 +174,7 @@ class VserverscheduledTaskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ScheduledTask[]',
+                        '\c-sakel\RUBClient\Model\ScheduledTask[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -222,7 +222,7 @@ class VserverscheduledTaskApi
      */
     public function vserverScheduledTaskCreateAsyncWithHttpInfo($server_id, $methode, $interval, $next_execution_at)
     {
-        $returnType = '\Swagger\Client\Model\ScheduledTask[]';
+        $returnType = '\c-sakel\RUBClient\Model\ScheduledTask[]';
         $request = $this->vserverScheduledTaskCreateRequest($server_id, $methode, $interval, $next_execution_at);
 
         return $this->client
@@ -401,9 +401,9 @@ class VserverscheduledTaskApi
      * @param  int $server_id Server-ID (required)
      * @param  int $task_id Geplante Aufgaben ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ScheduledTask[]
+     * @return \c-sakel\RUBClient\Model\ScheduledTask[]
      */
     public function vserverScheduledTaskDelete($server_id, $task_id)
     {
@@ -419,13 +419,13 @@ class VserverscheduledTaskApi
      * @param  int $server_id Server-ID (required)
      * @param  int $task_id Geplante Aufgaben ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ScheduledTask[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\ScheduledTask[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverScheduledTaskDeleteWithHttpInfo($server_id, $task_id)
     {
-        $returnType = '\Swagger\Client\Model\ScheduledTask[]';
+        $returnType = '\c-sakel\RUBClient\Model\ScheduledTask[]';
         $request = $this->vserverScheduledTaskDeleteRequest($server_id, $task_id);
 
         try {
@@ -477,7 +477,7 @@ class VserverscheduledTaskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ScheduledTask[]',
+                        '\c-sakel\RUBClient\Model\ScheduledTask[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -521,7 +521,7 @@ class VserverscheduledTaskApi
      */
     public function vserverScheduledTaskDeleteAsyncWithHttpInfo($server_id, $task_id)
     {
-        $returnType = '\Swagger\Client\Model\ScheduledTask[]';
+        $returnType = '\c-sakel\RUBClient\Model\ScheduledTask[]';
         $request = $this->vserverScheduledTaskDeleteRequest($server_id, $task_id);
 
         return $this->client
@@ -677,9 +677,9 @@ class VserverscheduledTaskApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ScheduledTask[]
+     * @return \c-sakel\RUBClient\Model\ScheduledTask[]
      */
     public function vserverScheduledTaskIndex($server_id)
     {
@@ -694,13 +694,13 @@ class VserverscheduledTaskApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ScheduledTask[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\ScheduledTask[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverScheduledTaskIndexWithHttpInfo($server_id)
     {
-        $returnType = '\Swagger\Client\Model\ScheduledTask[]';
+        $returnType = '\c-sakel\RUBClient\Model\ScheduledTask[]';
         $request = $this->vserverScheduledTaskIndexRequest($server_id);
 
         try {
@@ -752,7 +752,7 @@ class VserverscheduledTaskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ScheduledTask[]',
+                        '\c-sakel\RUBClient\Model\ScheduledTask[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -794,7 +794,7 @@ class VserverscheduledTaskApi
      */
     public function vserverScheduledTaskIndexAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\Swagger\Client\Model\ScheduledTask[]';
+        $returnType = '\c-sakel\RUBClient\Model\ScheduledTask[]';
         $request = $this->vserverScheduledTaskIndexRequest($server_id);
 
         return $this->client

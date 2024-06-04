@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * PduApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -90,9 +90,9 @@ class PduApi
      * Operation pduGet
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Pdu[]
+     * @return \c-sakel\RUBClient\Model\Pdu[]
      */
     public function pduGet()
     {
@@ -104,13 +104,13 @@ class PduApi
      * Operation pduGetWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Pdu[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\Pdu[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pduGetWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Pdu[]';
+        $returnType = '\c-sakel\RUBClient\Model\Pdu[]';
         $request = $this->pduGetRequest();
 
         try {
@@ -162,7 +162,7 @@ class PduApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Pdu[]',
+                        '\c-sakel\RUBClient\Model\Pdu[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -202,7 +202,7 @@ class PduApi
      */
     public function pduGetAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Pdu[]';
+        $returnType = '\c-sakel\RUBClient\Model\Pdu[]';
         $request = $this->pduGetRequest();
 
         return $this->client
@@ -333,9 +333,9 @@ class PduApi
      * Operation pduShowGet
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Pdu[]
+     * @return \c-sakel\RUBClient\Model\Pdu[]
      */
     public function pduShowGet()
     {
@@ -347,13 +347,13 @@ class PduApi
      * Operation pduShowGetWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Pdu[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\Pdu[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pduShowGetWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Pdu[]';
+        $returnType = '\c-sakel\RUBClient\Model\Pdu[]';
         $request = $this->pduShowGetRequest();
 
         try {
@@ -405,7 +405,7 @@ class PduApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Pdu[]',
+                        '\c-sakel\RUBClient\Model\Pdu[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -445,7 +445,7 @@ class PduApi
      */
     public function pduShowGetAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Pdu[]';
+        $returnType = '\c-sakel\RUBClient\Model\Pdu[]';
         $request = $this->pduShowGetRequest();
 
         return $this->client
@@ -579,9 +579,9 @@ class PduApi
      * @param  \DateTime $start_date start_date (optional)
      * @param  \DateTime $end_date end_date (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PduUsage[]
+     * @return \c-sakel\RUBClient\Model\PduUsage[]
      */
     public function pduUsageGet($pdu_id, $start_date = null, $end_date = null)
     {
@@ -596,13 +596,13 @@ class PduApi
      * @param  \DateTime $start_date (optional)
      * @param  \DateTime $end_date (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PduUsage[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\PduUsage[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pduUsageGetWithHttpInfo($pdu_id, $start_date = null, $end_date = null)
     {
-        $returnType = '\Swagger\Client\Model\PduUsage[]';
+        $returnType = '\c-sakel\RUBClient\Model\PduUsage[]';
         $request = $this->pduUsageGetRequest($pdu_id, $start_date, $end_date);
 
         try {
@@ -654,7 +654,7 @@ class PduApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PduUsage[]',
+                        '\c-sakel\RUBClient\Model\PduUsage[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -700,7 +700,7 @@ class PduApi
      */
     public function pduUsageGetAsyncWithHttpInfo($pdu_id, $start_date = null, $end_date = null)
     {
-        $returnType = '\Swagger\Client\Model\PduUsage[]';
+        $returnType = '\c-sakel\RUBClient\Model\PduUsage[]';
         $request = $this->pduUsageGetRequest($pdu_id, $start_date, $end_date);
 
         return $this->client

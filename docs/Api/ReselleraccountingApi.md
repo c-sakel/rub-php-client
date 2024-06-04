@@ -1,4 +1,4 @@
-# Swagger\Client\ReselleraccountingApi
+# c-sakel\RUBClient\ReselleraccountingApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**resellerAccountingBalanceGet**](ReselleraccountingApi.md#reselleraccountingbalanceget) | **GET** /reseller/accounting/balance | 
 
 # **resellerAccountingBalanceGet**
-> \Swagger\Client\Model\AccountingBalance[] resellerAccountingBalanceGet($reseller_id)
+> \c-sakel\RUBClient\Model\AccountingBalance[] resellerAccountingBalanceGet($reseller_id)
 
 
 
@@ -16,11 +16,11 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ReselleraccountingApi(
+$apiInstance = new c-sakel\RUBClient\Api\ReselleraccountingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AccountingBalance[]**](../Model/AccountingBalance.md)
+[**\c-sakel\RUBClient\Model\AccountingBalance[]**](../Model/AccountingBalance.md)
 
 ### Authorization
 

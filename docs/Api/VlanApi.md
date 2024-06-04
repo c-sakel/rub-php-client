@@ -1,4 +1,4 @@
-# Swagger\Client\VlanApi
+# c-sakel\RUBClient\VlanApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**vlanTrafficUsageGet**](VlanApi.md#vlantrafficusageget) | **GET** /vlan/traffic/usage | 
 
 # **vlanGet**
-> \Swagger\Client\Model\Vlan[] vlanGet()
+> \c-sakel\RUBClient\Model\Vlan[] vlanGet()
 
 
 
@@ -19,11 +19,11 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VlanApi(
+$apiInstance = new c-sakel\RUBClient\Api\VlanApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -44,7 +44,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\Vlan[]**](../Model/Vlan.md)
+[**\c-sakel\RUBClient\Model\Vlan[]**](../Model/Vlan.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vlanShowGet**
-> \Swagger\Client\Model\Vlan[] vlanShowGet($vlan)
+> \c-sakel\RUBClient\Model\Vlan[] vlanShowGet($vlan)
 
 
 
@@ -67,11 +67,11 @@ This endpoint does not need any parameter.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VlanApi(
+$apiInstance = new c-sakel\RUBClient\Api\VlanApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Vlan[]**](../Model/Vlan.md)
+[**\c-sakel\RUBClient\Model\Vlan[]**](../Model/Vlan.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vlanTrafficTimeseriesGet**
-> \Swagger\Client\Model\VlanTrafficTimeseries[] vlanTrafficTimeseriesGet($vlan, $start_date, $end_date)
+> \c-sakel\RUBClient\Model\VlanTrafficTimeseries[] vlanTrafficTimeseriesGet($vlan, $start_date, $end_date)
 
 
 
@@ -119,11 +119,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VlanApi(
+$apiInstance = new c-sakel\RUBClient\Api\VlanApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VlanTrafficTimeseries[]**](../Model/VlanTrafficTimeseries.md)
+[**\c-sakel\RUBClient\Model\VlanTrafficTimeseries[]**](../Model/VlanTrafficTimeseries.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vlanTrafficUsageGet**
-> \Swagger\Client\Model\VlanTrafficUsage[] vlanTrafficUsageGet($vlan, $start_date, $end_date)
+> \c-sakel\RUBClient\Model\VlanTrafficUsage[] vlanTrafficUsageGet($vlan, $start_date, $end_date)
 
 
 
@@ -175,11 +175,11 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VlanApi(
+$apiInstance = new c-sakel\RUBClient\Api\VlanApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VlanTrafficUsage[]**](../Model/VlanTrafficUsage.md)
+[**\c-sakel\RUBClient\Model\VlanTrafficUsage[]**](../Model/VlanTrafficUsage.md)
 
 ### Authorization
 

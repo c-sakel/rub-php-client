@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * DomainApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class DomainApi
      *
      * @param  string $domain_name Domain, wofür der Authcode abgerufen werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,7 +109,7 @@ class DomainApi
      *
      * @param  string $domain_name Domain, wofür der Authcode abgerufen werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -318,7 +318,7 @@ class DomainApi
      *
      * @param  string $domain_name Domain, wofür der Authcode versendet werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -334,7 +334,7 @@ class DomainApi
      *
      * @param  string $domain_name Domain, wofür der Authcode versendet werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -543,7 +543,7 @@ class DomainApi
      *
      * @param  string $domain_name Domain, wofür die Authinfo2 abgerufen werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -559,7 +559,7 @@ class DomainApi
      *
      * @param  string $domain_name Domain, wofür die Authinfo2 abgerufen werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -768,7 +768,7 @@ class DomainApi
      *
      * @param  string $domain_name Domain, welche geprüft werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -784,7 +784,7 @@ class DomainApi
      *
      * @param  string $domain_name Domain, welche geprüft werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1004,9 +1004,9 @@ class DomainApi
      * @param  string $authinfo Authinfo, wird nur bei Transfer benötigt (optional)
      * @param  bool $create_zone Soll eine Zone auf unseren Nameservern erstellt werden? Dies gilt auch, wenn fremde Nameserver genutzt werden. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Domain[]
+     * @return \c-sakel\RUBClient\Model\Domain[]
      */
     public function domainCreate($domain_name, $owner_c, $admin_c, $tech_c, $zone_c, $ns1, $ns2, $ns3 = null, $ns4 = null, $ns5 = null, $authinfo = null, $create_zone = null)
     {
@@ -1032,13 +1032,13 @@ class DomainApi
      * @param  string $authinfo Authinfo, wird nur bei Transfer benötigt (optional)
      * @param  bool $create_zone Soll eine Zone auf unseren Nameservern erstellt werden? Dies gilt auch, wenn fremde Nameserver genutzt werden. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainCreateWithHttpInfo($domain_name, $owner_c, $admin_c, $tech_c, $zone_c, $ns1, $ns2, $ns3 = null, $ns4 = null, $ns5 = null, $authinfo = null, $create_zone = null)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainCreateRequest($domain_name, $owner_c, $admin_c, $tech_c, $zone_c, $ns1, $ns2, $ns3, $ns4, $ns5, $authinfo, $create_zone);
 
         try {
@@ -1090,7 +1090,7 @@ class DomainApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Domain[]',
+                        '\c-sakel\RUBClient\Model\Domain[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1154,7 +1154,7 @@ class DomainApi
      */
     public function domainCreateAsyncWithHttpInfo($domain_name, $owner_c, $admin_c, $tech_c, $zone_c, $ns1, $ns2, $ns3 = null, $ns4 = null, $ns5 = null, $authinfo = null, $create_zone = null)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainCreateRequest($domain_name, $owner_c, $admin_c, $tech_c, $zone_c, $ns1, $ns2, $ns3, $ns4, $ns5, $authinfo, $create_zone);
 
         return $this->client
@@ -1391,9 +1391,9 @@ class DomainApi
      * @param  string $domain_name Domain, welche gelöscht werden soll (required)
      * @param  string $date Datum, falls nicht angegeben, dann wird die Domain sofort gelöscht. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Domain[]
+     * @return \c-sakel\RUBClient\Model\Domain[]
      */
     public function domainDelete($domain_name, $date = null)
     {
@@ -1409,13 +1409,13 @@ class DomainApi
      * @param  string $domain_name Domain, welche gelöscht werden soll (required)
      * @param  string $date Datum, falls nicht angegeben, dann wird die Domain sofort gelöscht. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainDeleteWithHttpInfo($domain_name, $date = null)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainDeleteRequest($domain_name, $date);
 
         try {
@@ -1467,7 +1467,7 @@ class DomainApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Domain[]',
+                        '\c-sakel\RUBClient\Model\Domain[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1511,7 +1511,7 @@ class DomainApi
      */
     public function domainDeleteAsyncWithHttpInfo($domain_name, $date = null)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainDeleteRequest($domain_name, $date);
 
         return $this->client
@@ -1660,9 +1660,9 @@ class DomainApi
      * Alle Domains abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Domain[]
+     * @return \c-sakel\RUBClient\Model\Domain[]
      */
     public function domainIndex()
     {
@@ -1676,13 +1676,13 @@ class DomainApi
      * Alle Domains abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainIndexWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainIndexRequest();
 
         try {
@@ -1734,7 +1734,7 @@ class DomainApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Domain[]',
+                        '\c-sakel\RUBClient\Model\Domain[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1774,7 +1774,7 @@ class DomainApi
      */
     public function domainIndexAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainIndexRequest();
 
         return $this->client
@@ -1909,9 +1909,9 @@ class DomainApi
      * @param  string $domain_name Domain, welche aktualisiert werden soll (required)
      * @param  string $status Registry Status für Domain.  Mögliche Werte: ACTIVE &#x3D;&gt; Domain aktiv und konnektiert LOCK &#x3D;&gt; Domain aktiv und transfergeschützt, konnektiert HOLD &#x3D;&gt; Domain aktiv, nicht konnektiert HOLD_LOCK &#x3D;&gt; Domain aktiv und transfergeschützt, nicht konnektiert (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Domain[]
+     * @return \c-sakel\RUBClient\Model\Domain[]
      */
     public function domainRegistryStatus($domain_name, $status)
     {
@@ -1927,13 +1927,13 @@ class DomainApi
      * @param  string $domain_name Domain, welche aktualisiert werden soll (required)
      * @param  string $status Registry Status für Domain.  Mögliche Werte: ACTIVE &#x3D;&gt; Domain aktiv und konnektiert LOCK &#x3D;&gt; Domain aktiv und transfergeschützt, konnektiert HOLD &#x3D;&gt; Domain aktiv, nicht konnektiert HOLD_LOCK &#x3D;&gt; Domain aktiv und transfergeschützt, nicht konnektiert (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainRegistryStatusWithHttpInfo($domain_name, $status)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainRegistryStatusRequest($domain_name, $status);
 
         try {
@@ -1985,7 +1985,7 @@ class DomainApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Domain[]',
+                        '\c-sakel\RUBClient\Model\Domain[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2029,7 +2029,7 @@ class DomainApi
      */
     public function domainRegistryStatusAsyncWithHttpInfo($domain_name, $status)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainRegistryStatusRequest($domain_name, $status);
 
         return $this->client
@@ -2185,9 +2185,9 @@ class DomainApi
      *
      * @param  string $domain_name Domain, wofür die Verifizierungsemail erneut gesendet werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Domain[]
+     * @return \c-sakel\RUBClient\Model\Domain[]
      */
     public function domainResendVerificationEmail($domain_name)
     {
@@ -2202,13 +2202,13 @@ class DomainApi
      *
      * @param  string $domain_name Domain, wofür die Verifizierungsemail erneut gesendet werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainResendVerificationEmailWithHttpInfo($domain_name)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainResendVerificationEmailRequest($domain_name);
 
         try {
@@ -2260,7 +2260,7 @@ class DomainApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Domain[]',
+                        '\c-sakel\RUBClient\Model\Domain[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2302,7 +2302,7 @@ class DomainApi
      */
     public function domainResendVerificationEmailAsyncWithHttpInfo($domain_name)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainResendVerificationEmailRequest($domain_name);
 
         return $this->client
@@ -2447,9 +2447,9 @@ class DomainApi
      *
      * @param  string $domain_name Domain (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Domain[]
+     * @return \c-sakel\RUBClient\Model\Domain[]
      */
     public function domainRestore($domain_name)
     {
@@ -2464,13 +2464,13 @@ class DomainApi
      *
      * @param  string $domain_name Domain (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainRestoreWithHttpInfo($domain_name)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainRestoreRequest($domain_name);
 
         try {
@@ -2522,7 +2522,7 @@ class DomainApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Domain[]',
+                        '\c-sakel\RUBClient\Model\Domain[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2564,7 +2564,7 @@ class DomainApi
      */
     public function domainRestoreAsyncWithHttpInfo($domain_name)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainRestoreRequest($domain_name);
 
         return $this->client
@@ -2709,9 +2709,9 @@ class DomainApi
      *
      * @param  string $domain_name Domain, welche abgerufen werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Domain[]
+     * @return \c-sakel\RUBClient\Model\Domain[]
      */
     public function domainShow($domain_name)
     {
@@ -2726,13 +2726,13 @@ class DomainApi
      *
      * @param  string $domain_name Domain, welche abgerufen werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainShowWithHttpInfo($domain_name)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainShowRequest($domain_name);
 
         try {
@@ -2784,7 +2784,7 @@ class DomainApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Domain[]',
+                        '\c-sakel\RUBClient\Model\Domain[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2826,7 +2826,7 @@ class DomainApi
      */
     public function domainShowAsyncWithHttpInfo($domain_name)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainShowRequest($domain_name);
 
         return $this->client
@@ -2971,9 +2971,9 @@ class DomainApi
      *
      * @param  string $domain_name Domain (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Domain[]
+     * @return \c-sakel\RUBClient\Model\Domain[]
      */
     public function domainUndelete($domain_name)
     {
@@ -2988,13 +2988,13 @@ class DomainApi
      *
      * @param  string $domain_name Domain (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainUndeleteWithHttpInfo($domain_name)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainUndeleteRequest($domain_name);
 
         try {
@@ -3046,7 +3046,7 @@ class DomainApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Domain[]',
+                        '\c-sakel\RUBClient\Model\Domain[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3088,7 +3088,7 @@ class DomainApi
      */
     public function domainUndeleteAsyncWithHttpInfo($domain_name)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainUndeleteRequest($domain_name);
 
         return $this->client
@@ -3242,9 +3242,9 @@ class DomainApi
      * @param  string $ns4 Vierter Nameserver (optional)
      * @param  string $ns5 Fünfter Nameserver (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Domain[]
+     * @return \c-sakel\RUBClient\Model\Domain[]
      */
     public function domainUpdate($domain_name, $owner_c, $admin_c, $tech_c, $zone_c, $ns1, $ns2, $ns3 = null, $ns4 = null, $ns5 = null)
     {
@@ -3268,13 +3268,13 @@ class DomainApi
      * @param  string $ns4 Vierter Nameserver (optional)
      * @param  string $ns5 Fünfter Nameserver (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\Domain[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainUpdateWithHttpInfo($domain_name, $owner_c, $admin_c, $tech_c, $zone_c, $ns1, $ns2, $ns3 = null, $ns4 = null, $ns5 = null)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainUpdateRequest($domain_name, $owner_c, $admin_c, $tech_c, $zone_c, $ns1, $ns2, $ns3, $ns4, $ns5);
 
         try {
@@ -3326,7 +3326,7 @@ class DomainApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Domain[]',
+                        '\c-sakel\RUBClient\Model\Domain[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3386,7 +3386,7 @@ class DomainApi
      */
     public function domainUpdateAsyncWithHttpInfo($domain_name, $owner_c, $admin_c, $tech_c, $zone_c, $ns1, $ns2, $ns3 = null, $ns4 = null, $ns5 = null)
     {
-        $returnType = '\Swagger\Client\Model\Domain[]';
+        $returnType = '\c-sakel\RUBClient\Model\Domain[]';
         $request = $this->domainUpdateRequest($domain_name, $owner_c, $admin_c, $tech_c, $zone_c, $ns1, $ns2, $ns3, $ns4, $ns5);
 
         return $this->client

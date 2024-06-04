@@ -1,4 +1,4 @@
-# Swagger\Client\DomaindnsApi
+# c-sakel\RUBClient\DomaindnsApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**domainDnsUpdate**](DomaindnsApi.md#domaindnsupdate) | **POST** /domain/dns/update | DNS Zone speichern
 
 # **domainDns**
-> \Swagger\Client\Model\DomainDnsZone[] domainDns($domain_name)
+> \c-sakel\RUBClient\Model\DomainDnsZone[] domainDns($domain_name)
 
 DNS Zone abrufen
 
@@ -19,11 +19,11 @@ DNS Zone abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\DomaindnsApi(
+$apiInstance = new c-sakel\RUBClient\Api\DomaindnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DomainDnsZone[]**](../Model/DomainDnsZone.md)
+[**\c-sakel\RUBClient\Model\DomainDnsZone[]**](../Model/DomainDnsZone.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainDnsUpdate**
-> \Swagger\Client\Model\DomainDnsZone[] domainDnsUpdate($domain_name, $records)
+> \c-sakel\RUBClient\Model\DomainDnsZone[] domainDnsUpdate($domain_name, $records)
 
 DNS Zone speichern
 
@@ -73,11 +73,11 @@ DNS Zone speichern
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\DomaindnsApi(
+$apiInstance = new c-sakel\RUBClient\Api\DomaindnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DomainDnsZone[]**](../Model/DomainDnsZone.md)
+[**\c-sakel\RUBClient\Model\DomainDnsZone[]**](../Model/DomainDnsZone.md)
 
 ### Authorization
 

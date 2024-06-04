@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace c-sakel\RUBClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * AddressTraffic Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class AddressTraffic implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'start_date' => '\DateTime',
         'end_date' => '\DateTime',
-        'traffic' => '\Swagger\Client\Model\AddressTrafficTraffic[]'
+        'traffic' => '\c-sakel\RUBClient\Model\AddressTrafficTraffic[]'
     ];
 
     /**
@@ -264,7 +264,7 @@ class AddressTraffic implements ModelInterface, ArrayAccess
     /**
      * Gets traffic
      *
-     * @return \Swagger\Client\Model\AddressTrafficTraffic[]
+     * @return \c-sakel\RUBClient\Model\AddressTrafficTraffic[]
      */
     public function getTraffic()
     {
@@ -274,7 +274,7 @@ class AddressTraffic implements ModelInterface, ArrayAccess
     /**
      * Sets traffic
      *
-     * @param \Swagger\Client\Model\AddressTrafficTraffic[] $traffic traffic
+     * @param \c-sakel\RUBClient\Model\AddressTrafficTraffic[] $traffic traffic
      *
      * @return $this
      */

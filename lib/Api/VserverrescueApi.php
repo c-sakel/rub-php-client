@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * VserverrescueApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,7 +91,7 @@ class VserverrescueApi
      *
      * @param  int $server_id server_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -106,7 +106,7 @@ class VserverrescueApi
      *
      * @param  int $server_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -350,7 +350,7 @@ class VserverrescueApi
      * @param  int $server_id server_id (required)
      * @param  int $image_id image_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -366,7 +366,7 @@ class VserverrescueApi
      * @param  int $server_id (required)
      * @param  int $image_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -621,9 +621,9 @@ class VserverrescueApi
      * Operation vserverRescueGet
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VserverRescueImage[]
+     * @return \c-sakel\RUBClient\Model\VserverRescueImage[]
      */
     public function vserverRescueGet()
     {
@@ -635,13 +635,13 @@ class VserverrescueApi
      * Operation vserverRescueGetWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VserverRescueImage[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\VserverRescueImage[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverRescueGetWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\VserverRescueImage[]';
+        $returnType = '\c-sakel\RUBClient\Model\VserverRescueImage[]';
         $request = $this->vserverRescueGetRequest();
 
         try {
@@ -693,7 +693,7 @@ class VserverrescueApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VserverRescueImage[]',
+                        '\c-sakel\RUBClient\Model\VserverRescueImage[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -733,7 +733,7 @@ class VserverrescueApi
      */
     public function vserverRescueGetAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\VserverRescueImage[]';
+        $returnType = '\c-sakel\RUBClient\Model\VserverRescueImage[]';
         $request = $this->vserverRescueGetRequest();
 
         return $this->client
@@ -865,9 +865,9 @@ class VserverrescueApi
      *
      * @param  int $image_id image_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VserverRescueImage[]
+     * @return \c-sakel\RUBClient\Model\VserverRescueImage[]
      */
     public function vserverRescueShowGet($image_id)
     {
@@ -880,13 +880,13 @@ class VserverrescueApi
      *
      * @param  int $image_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VserverRescueImage[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\VserverRescueImage[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverRescueShowGetWithHttpInfo($image_id)
     {
-        $returnType = '\Swagger\Client\Model\VserverRescueImage[]';
+        $returnType = '\c-sakel\RUBClient\Model\VserverRescueImage[]';
         $request = $this->vserverRescueShowGetRequest($image_id);
 
         try {
@@ -938,7 +938,7 @@ class VserverrescueApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VserverRescueImage[]',
+                        '\c-sakel\RUBClient\Model\VserverRescueImage[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -980,7 +980,7 @@ class VserverrescueApi
      */
     public function vserverRescueShowGetAsyncWithHttpInfo($image_id)
     {
-        $returnType = '\Swagger\Client\Model\VserverRescueImage[]';
+        $returnType = '\c-sakel\RUBClient\Model\VserverRescueImage[]';
         $request = $this->vserverRescueShowGetRequest($image_id);
 
         return $this->client

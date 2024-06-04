@@ -1,4 +1,4 @@
-# Swagger\Client\DomainpriceApi
+# c-sakel\RUBClient\DomainpriceApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**domainPricePromotionCsv**](DomainpriceApi.md#domainpricepromotioncsv) | **GET** /domain/price/promotion/csv | Domain-Aktionen Preise als CSV abrufen
 
 # **domainPrice**
-> \Swagger\Client\Model\DomainPrice[] domainPrice()
+> \c-sakel\RUBClient\Model\DomainPrice[] domainPrice()
 
 Domain Preise abrufen
 
@@ -21,11 +21,11 @@ Domain Preise abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\DomainpriceApi(
+$apiInstance = new c-sakel\RUBClient\Api\DomainpriceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -46,7 +46,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\DomainPrice[]**](../Model/DomainPrice.md)
+[**\c-sakel\RUBClient\Model\DomainPrice[]**](../Model/DomainPrice.md)
 
 ### Authorization
 
@@ -60,7 +60,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainPriceCsv**
-> \Swagger\Client\Model\DomainPriceCsv[] domainPriceCsv()
+> \c-sakel\RUBClient\Model\DomainPriceCsv[] domainPriceCsv()
 
 Domain Preise als CSV abrufen
 
@@ -71,11 +71,11 @@ Domain Preise als CSV abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\DomainpriceApi(
+$apiInstance = new c-sakel\RUBClient\Api\DomainpriceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -96,7 +96,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\DomainPriceCsv[]**](../Model/DomainPriceCsv.md)
+[**\c-sakel\RUBClient\Model\DomainPriceCsv[]**](../Model/DomainPriceCsv.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainPricePromotion**
-> \Swagger\Client\Model\DomainPricePromotion[] domainPricePromotion()
+> \c-sakel\RUBClient\Model\DomainPricePromotion[] domainPricePromotion()
 
 Domain-Aktionen Preise abrufen
 
@@ -121,11 +121,11 @@ Domain-Aktionen Preise abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\DomainpriceApi(
+$apiInstance = new c-sakel\RUBClient\Api\DomainpriceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -146,7 +146,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\DomainPricePromotion[]**](../Model/DomainPricePromotion.md)
+[**\c-sakel\RUBClient\Model\DomainPricePromotion[]**](../Model/DomainPricePromotion.md)
 
 ### Authorization
 
@@ -160,7 +160,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainPricePromotionCsv**
-> \Swagger\Client\Model\DomainPriceCsv[] domainPricePromotionCsv()
+> \c-sakel\RUBClient\Model\DomainPriceCsv[] domainPricePromotionCsv()
 
 Domain-Aktionen Preise als CSV abrufen
 
@@ -171,11 +171,11 @@ Domain-Aktionen Preise als CSV abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\DomainpriceApi(
+$apiInstance = new c-sakel\RUBClient\Api\DomainpriceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -196,7 +196,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\DomainPriceCsv[]**](../Model/DomainPriceCsv.md)
+[**\c-sakel\RUBClient\Model\DomainPriceCsv[]**](../Model/DomainPriceCsv.md)
 
 ### Authorization
 

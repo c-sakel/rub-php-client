@@ -1,4 +1,4 @@
-# Swagger\Client\DomainnameserverApi
+# c-sakel\RUBClient\DomainnameserverApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**domainNameserverShow**](DomainnameserverApi.md#domainnameservershow) | **GET** /domain/nameserver/show | Einzelnen Nameserver abrufen
 
 # **domainNameserverCreate**
-> \Swagger\Client\Model\DomainNameserver[] domainNameserverCreate($hostname)
+> \c-sakel\RUBClient\Model\DomainNameserver[] domainNameserverCreate($hostname)
 
 Neuen Nameserver anlegen
 
@@ -22,11 +22,11 @@ Neuen Nameserver anlegen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\DomainnameserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\DomainnameserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DomainNameserver[]**](../Model/DomainNameserver.md)
+[**\c-sakel\RUBClient\Model\DomainNameserver[]**](../Model/DomainNameserver.md)
 
 ### Authorization
 
@@ -76,11 +76,11 @@ Nameserver löschen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\DomainnameserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\DomainnameserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainNameserverIndex**
-> \Swagger\Client\Model\DomainNameserver[] domainNameserverIndex()
+> \c-sakel\RUBClient\Model\DomainNameserver[] domainNameserverIndex()
 
 Alle Nameserver abrufen
 
@@ -130,11 +130,11 @@ Alle Nameserver abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\DomainnameserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\DomainnameserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -155,7 +155,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\DomainNameserver[]**](../Model/DomainNameserver.md)
+[**\c-sakel\RUBClient\Model\DomainNameserver[]**](../Model/DomainNameserver.md)
 
 ### Authorization
 
@@ -169,7 +169,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainNameserverRefresh**
-> \Swagger\Client\Model\DomainNameserver[] domainNameserverRefresh($hostname)
+> \c-sakel\RUBClient\Model\DomainNameserver[] domainNameserverRefresh($hostname)
 
 Nameserver IP-Adressen aktualisieren
 
@@ -180,11 +180,11 @@ Nameserver IP-Adressen aktualisieren
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\DomainnameserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\DomainnameserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DomainNameserver[]**](../Model/DomainNameserver.md)
+[**\c-sakel\RUBClient\Model\DomainNameserver[]**](../Model/DomainNameserver.md)
 
 ### Authorization
 
@@ -223,7 +223,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **domainNameserverShow**
-> \Swagger\Client\Model\DomainNameserver[] domainNameserverShow($hostname)
+> \c-sakel\RUBClient\Model\DomainNameserver[] domainNameserverShow($hostname)
 
 Einzelnen Nameserver abrufen
 
@@ -234,11 +234,11 @@ Einzelnen Nameserver abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\DomainnameserverApi(
+$apiInstance = new c-sakel\RUBClient\Api\DomainnameserverApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DomainNameserver[]**](../Model/DomainNameserver.md)
+[**\c-sakel\RUBClient\Model\DomainNameserver[]**](../Model/DomainNameserver.md)
 
 ### Authorization
 

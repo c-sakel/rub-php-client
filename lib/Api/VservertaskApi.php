@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * VservertaskApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class VservertaskApi
      * @param  int $server_id Server-ID (required)
      * @param  int $task_id Task-ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VserverTask[]
+     * @return \c-sakel\RUBClient\Model\VserverTask[]
      */
     public function vserverTaskAbort($server_id, $task_id)
     {
@@ -112,13 +112,13 @@ class VservertaskApi
      * @param  int $server_id Server-ID (required)
      * @param  int $task_id Task-ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VserverTask[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\VserverTask[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverTaskAbortWithHttpInfo($server_id, $task_id)
     {
-        $returnType = '\Swagger\Client\Model\VserverTask[]';
+        $returnType = '\c-sakel\RUBClient\Model\VserverTask[]';
         $request = $this->vserverTaskAbortRequest($server_id, $task_id);
 
         try {
@@ -170,7 +170,7 @@ class VservertaskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VserverTask[]',
+                        '\c-sakel\RUBClient\Model\VserverTask[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class VservertaskApi
      */
     public function vserverTaskAbortAsyncWithHttpInfo($server_id, $task_id)
     {
-        $returnType = '\Swagger\Client\Model\VserverTask[]';
+        $returnType = '\c-sakel\RUBClient\Model\VserverTask[]';
         $request = $this->vserverTaskAbortRequest($server_id, $task_id);
 
         return $this->client
@@ -370,9 +370,9 @@ class VservertaskApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VserverTask[]
+     * @return \c-sakel\RUBClient\Model\VserverTask[]
      */
     public function vserverTaskIndex($server_id)
     {
@@ -387,13 +387,13 @@ class VservertaskApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VserverTask[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\VserverTask[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverTaskIndexWithHttpInfo($server_id)
     {
-        $returnType = '\Swagger\Client\Model\VserverTask[]';
+        $returnType = '\c-sakel\RUBClient\Model\VserverTask[]';
         $request = $this->vserverTaskIndexRequest($server_id);
 
         try {
@@ -445,7 +445,7 @@ class VservertaskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VserverTask[]',
+                        '\c-sakel\RUBClient\Model\VserverTask[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -487,7 +487,7 @@ class VservertaskApi
      */
     public function vserverTaskIndexAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\Swagger\Client\Model\VserverTask[]';
+        $returnType = '\c-sakel\RUBClient\Model\VserverTask[]';
         $request = $this->vserverTaskIndexRequest($server_id);
 
         return $this->client
@@ -632,9 +632,9 @@ class VservertaskApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VserverTask[]
+     * @return \c-sakel\RUBClient\Model\VserverTask[]
      */
     public function vserverTaskRunning($server_id)
     {
@@ -649,13 +649,13 @@ class VservertaskApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VserverTask[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\VserverTask[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverTaskRunningWithHttpInfo($server_id)
     {
-        $returnType = '\Swagger\Client\Model\VserverTask[]';
+        $returnType = '\c-sakel\RUBClient\Model\VserverTask[]';
         $request = $this->vserverTaskRunningRequest($server_id);
 
         try {
@@ -707,7 +707,7 @@ class VservertaskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VserverTask[]',
+                        '\c-sakel\RUBClient\Model\VserverTask[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -749,7 +749,7 @@ class VservertaskApi
      */
     public function vserverTaskRunningAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\Swagger\Client\Model\VserverTask[]';
+        $returnType = '\c-sakel\RUBClient\Model\VserverTask[]';
         $request = $this->vserverTaskRunningRequest($server_id);
 
         return $this->client

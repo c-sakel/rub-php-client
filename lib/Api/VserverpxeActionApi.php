@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * VserverpxeActionApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class VserverpxeActionApi
      * @param  int $server_id Server-ID (required)
      * @param  int $action_id PXE Aktion ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PxeAction[]
+     * @return \c-sakel\RUBClient\Model\PxeAction[]
      */
     public function vserverPxeActionAbort($server_id, $action_id)
     {
@@ -112,13 +112,13 @@ class VserverpxeActionApi
      * @param  int $server_id Server-ID (required)
      * @param  int $action_id PXE Aktion ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PxeAction[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\PxeAction[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverPxeActionAbortWithHttpInfo($server_id, $action_id)
     {
-        $returnType = '\Swagger\Client\Model\PxeAction[]';
+        $returnType = '\c-sakel\RUBClient\Model\PxeAction[]';
         $request = $this->vserverPxeActionAbortRequest($server_id, $action_id);
 
         try {
@@ -170,7 +170,7 @@ class VserverpxeActionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PxeAction[]',
+                        '\c-sakel\RUBClient\Model\PxeAction[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class VserverpxeActionApi
      */
     public function vserverPxeActionAbortAsyncWithHttpInfo($server_id, $action_id)
     {
-        $returnType = '\Swagger\Client\Model\PxeAction[]';
+        $returnType = '\c-sakel\RUBClient\Model\PxeAction[]';
         $request = $this->vserverPxeActionAbortRequest($server_id, $action_id);
 
         return $this->client
@@ -370,9 +370,9 @@ class VserverpxeActionApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PxeAction[]
+     * @return \c-sakel\RUBClient\Model\PxeAction[]
      */
     public function vserverPxeActionIndex($server_id)
     {
@@ -387,13 +387,13 @@ class VserverpxeActionApi
      *
      * @param  int $server_id Server-ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PxeAction[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\PxeAction[], HTTP status code, HTTP response headers (array of strings)
      */
     public function vserverPxeActionIndexWithHttpInfo($server_id)
     {
-        $returnType = '\Swagger\Client\Model\PxeAction[]';
+        $returnType = '\c-sakel\RUBClient\Model\PxeAction[]';
         $request = $this->vserverPxeActionIndexRequest($server_id);
 
         try {
@@ -445,7 +445,7 @@ class VserverpxeActionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PxeAction[]',
+                        '\c-sakel\RUBClient\Model\PxeAction[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -487,7 +487,7 @@ class VserverpxeActionApi
      */
     public function vserverPxeActionIndexAsyncWithHttpInfo($server_id)
     {
-        $returnType = '\Swagger\Client\Model\PxeAction[]';
+        $returnType = '\c-sakel\RUBClient\Model\PxeAction[]';
         $request = $this->vserverPxeActionIndexRequest($server_id);
 
         return $this->client

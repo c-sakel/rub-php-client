@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace c-sakel\RUBClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * VlanTrafficUsage Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class VlanTrafficUsage implements ModelInterface, ArrayAccess
         'in' => 'int',
         'out' => 'int',
         'total' => 'int',
-        '_95_percentage' => '\Swagger\Client\Model\VlanTrafficUsage95Percentage[]'
+        '_95_percentage' => '\c-sakel\RUBClient\Model\VlanTrafficUsage95Percentage[]'
     ];
 
     /**
@@ -294,7 +294,7 @@ class VlanTrafficUsage implements ModelInterface, ArrayAccess
     /**
      * Gets _95_percentage
      *
-     * @return \Swagger\Client\Model\VlanTrafficUsage95Percentage[]
+     * @return \c-sakel\RUBClient\Model\VlanTrafficUsage95Percentage[]
      */
     public function get95Percentage()
     {
@@ -304,7 +304,7 @@ class VlanTrafficUsage implements ModelInterface, ArrayAccess
     /**
      * Sets _95_percentage
      *
-     * @param \Swagger\Client\Model\VlanTrafficUsage95Percentage[] $_95_percentage _95_percentage
+     * @param \c-sakel\RUBClient\Model\VlanTrafficUsage95Percentage[] $_95_percentage _95_percentage
      *
      * @return $this
      */

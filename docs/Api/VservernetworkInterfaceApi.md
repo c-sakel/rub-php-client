@@ -1,4 +1,4 @@
-# Swagger\Client\VservernetworkInterfaceApi
+# c-sakel\RUBClient\VservernetworkInterfaceApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**vserverNetworkInterfaceShow**](VservernetworkInterfaceApi.md#vservernetworkinterfaceshow) | **GET** /vserver/network_interface/show | Einzelnes vServer Netzwerk Interface abrufen
 
 # **vserverNetworkInterfaceDisable**
-> \Swagger\Client\Model\VserverNetworkInterface[] vserverNetworkInterfaceDisable($server_id, $name)
+> \c-sakel\RUBClient\Model\VserverNetworkInterface[] vserverNetworkInterfaceDisable($server_id, $name)
 
 vServer Netzwerk Interface deaktivieren
 
@@ -20,11 +20,11 @@ vServer Netzwerk Interface deaktivieren
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VservernetworkInterfaceApi(
+$apiInstance = new c-sakel\RUBClient\Api\VservernetworkInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverNetworkInterface[]**](../Model/VserverNetworkInterface.md)
+[**\c-sakel\RUBClient\Model\VserverNetworkInterface[]**](../Model/VserverNetworkInterface.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverNetworkInterfaceEnable**
-> \Swagger\Client\Model\VserverNetworkInterface[] vserverNetworkInterfaceEnable($server_id, $name)
+> \c-sakel\RUBClient\Model\VserverNetworkInterface[] vserverNetworkInterfaceEnable($server_id, $name)
 
 vServer Netzwerk Interface aktivieren
 
@@ -74,11 +74,11 @@ vServer Netzwerk Interface aktivieren
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VservernetworkInterfaceApi(
+$apiInstance = new c-sakel\RUBClient\Api\VservernetworkInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverNetworkInterface[]**](../Model/VserverNetworkInterface.md)
+[**\c-sakel\RUBClient\Model\VserverNetworkInterface[]**](../Model/VserverNetworkInterface.md)
 
 ### Authorization
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverNetworkInterfaceIndex**
-> \Swagger\Client\Model\VserverNetworkInterface[] vserverNetworkInterfaceIndex($server_id)
+> \c-sakel\RUBClient\Model\VserverNetworkInterface[] vserverNetworkInterfaceIndex($server_id)
 
 vServer Netzwerk Interfaces abrufen
 
@@ -128,11 +128,11 @@ vServer Netzwerk Interfaces abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VservernetworkInterfaceApi(
+$apiInstance = new c-sakel\RUBClient\Api\VservernetworkInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverNetworkInterface[]**](../Model/VserverNetworkInterface.md)
+[**\c-sakel\RUBClient\Model\VserverNetworkInterface[]**](../Model/VserverNetworkInterface.md)
 
 ### Authorization
 
@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverNetworkInterfaceLimit**
-> \Swagger\Client\Model\VserverNetworkInterface[] vserverNetworkInterfaceLimit($server_id, $limit, $name)
+> \c-sakel\RUBClient\Model\VserverNetworkInterface[] vserverNetworkInterfaceLimit($server_id, $limit, $name)
 
 vServer Netzwerk Interface limitieren
 
@@ -180,11 +180,11 @@ vServer Netzwerk Interface limitieren
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VservernetworkInterfaceApi(
+$apiInstance = new c-sakel\RUBClient\Api\VservernetworkInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverNetworkInterface[]**](../Model/VserverNetworkInterface.md)
+[**\c-sakel\RUBClient\Model\VserverNetworkInterface[]**](../Model/VserverNetworkInterface.md)
 
 ### Authorization
 
@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **vserverNetworkInterfaceShow**
-> \Swagger\Client\Model\VserverNetworkInterface[] vserverNetworkInterfaceShow($server_id, $name)
+> \c-sakel\RUBClient\Model\VserverNetworkInterface[] vserverNetworkInterfaceShow($server_id, $name)
 
 Einzelnes vServer Netzwerk Interface abrufen
 
@@ -236,11 +236,11 @@ Einzelnes vServer Netzwerk Interface abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VservernetworkInterfaceApi(
+$apiInstance = new c-sakel\RUBClient\Api\VservernetworkInterfaceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -267,7 +267,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VserverNetworkInterface[]**](../Model/VserverNetworkInterface.md)
+[**\c-sakel\RUBClient\Model\VserverNetworkInterface[]**](../Model/VserverNetworkInterface.md)
 
 ### Authorization
 

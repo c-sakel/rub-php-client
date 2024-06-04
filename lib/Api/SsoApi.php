@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * SsoApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class SsoApi
      * @param  string $ip_address Client-IP, welche sich einloggen soll (required)
      * @param  string $url URL, wohin der Nutzer nach dem Login weitergeleitet werden soll (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SsoHash[]
+     * @return \c-sakel\RUBClient\Model\SsoHash[]
      */
     public function ssoCreate($username, $ip_address, $url = null)
     {
@@ -114,13 +114,13 @@ class SsoApi
      * @param  string $ip_address Client-IP, welche sich einloggen soll (required)
      * @param  string $url URL, wohin der Nutzer nach dem Login weitergeleitet werden soll (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SsoHash[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\SsoHash[], HTTP status code, HTTP response headers (array of strings)
      */
     public function ssoCreateWithHttpInfo($username, $ip_address, $url = null)
     {
-        $returnType = '\Swagger\Client\Model\SsoHash[]';
+        $returnType = '\c-sakel\RUBClient\Model\SsoHash[]';
         $request = $this->ssoCreateRequest($username, $ip_address, $url);
 
         try {
@@ -172,7 +172,7 @@ class SsoApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SsoHash[]',
+                        '\c-sakel\RUBClient\Model\SsoHash[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class SsoApi
      */
     public function ssoCreateAsyncWithHttpInfo($username, $ip_address, $url = null)
     {
-        $returnType = '\Swagger\Client\Model\SsoHash[]';
+        $returnType = '\c-sakel\RUBClient\Model\SsoHash[]';
         $request = $this->ssoCreateRequest($username, $ip_address, $url);
 
         return $this->client

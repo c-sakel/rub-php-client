@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace c-sakel\RUBClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * Invoice Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -68,7 +68,7 @@ class Invoice implements ModelInterface, ArrayAccess
         'paid_amount' => 'double',
         'created_at' => '\DateTime',
         'updated_at' => '\DateTime',
-        'transactions' => '\Swagger\Client\Model\Transaction[]'
+        'transactions' => '\c-sakel\RUBClient\Model\Transaction[]'
     ];
 
     /**
@@ -632,7 +632,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Gets transactions
      *
-     * @return \Swagger\Client\Model\Transaction[]
+     * @return \c-sakel\RUBClient\Model\Transaction[]
      */
     public function getTransactions()
     {
@@ -642,7 +642,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets transactions
      *
-     * @param \Swagger\Client\Model\Transaction[] $transactions transactions
+     * @param \c-sakel\RUBClient\Model\Transaction[] $transactions transactions
      *
      * @return $this
      */

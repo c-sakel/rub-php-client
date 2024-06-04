@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * DomainnameserverApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class DomainnameserverApi
      *
      * @param  string $hostname Hostname des Nameservers, welcher angelegt werden soll. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainNameserver[]
+     * @return \c-sakel\RUBClient\Model\DomainNameserver[]
      */
     public function domainNameserverCreate($hostname)
     {
@@ -110,13 +110,13 @@ class DomainnameserverApi
      *
      * @param  string $hostname Hostname des Nameservers, welcher angelegt werden soll. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainNameserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainNameserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainNameserverCreateWithHttpInfo($hostname)
     {
-        $returnType = '\Swagger\Client\Model\DomainNameserver[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainNameserver[]';
         $request = $this->domainNameserverCreateRequest($hostname);
 
         try {
@@ -168,7 +168,7 @@ class DomainnameserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainNameserver[]',
+                        '\c-sakel\RUBClient\Model\DomainNameserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class DomainnameserverApi
      */
     public function domainNameserverCreateAsyncWithHttpInfo($hostname)
     {
-        $returnType = '\Swagger\Client\Model\DomainNameserver[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainNameserver[]';
         $request = $this->domainNameserverCreateRequest($hostname);
 
         return $this->client
@@ -355,7 +355,7 @@ class DomainnameserverApi
      *
      * @param  string $hostname Hostname des Nameservers, welcher gelöscht werden soll. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -372,7 +372,7 @@ class DomainnameserverApi
      *
      * @param  string $hostname Hostname des Nameservers, welcher gelöscht werden soll. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -616,9 +616,9 @@ class DomainnameserverApi
      * Alle Nameserver abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainNameserver[]
+     * @return \c-sakel\RUBClient\Model\DomainNameserver[]
      */
     public function domainNameserverIndex()
     {
@@ -632,13 +632,13 @@ class DomainnameserverApi
      * Alle Nameserver abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainNameserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainNameserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainNameserverIndexWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\DomainNameserver[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainNameserver[]';
         $request = $this->domainNameserverIndexRequest();
 
         try {
@@ -690,7 +690,7 @@ class DomainnameserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainNameserver[]',
+                        '\c-sakel\RUBClient\Model\DomainNameserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -730,7 +730,7 @@ class DomainnameserverApi
      */
     public function domainNameserverIndexAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\DomainNameserver[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainNameserver[]';
         $request = $this->domainNameserverIndexRequest();
 
         return $this->client
@@ -864,9 +864,9 @@ class DomainnameserverApi
      *
      * @param  string $hostname Hostname des Nameservers, welcher aktualisiert werden soll. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainNameserver[]
+     * @return \c-sakel\RUBClient\Model\DomainNameserver[]
      */
     public function domainNameserverRefresh($hostname)
     {
@@ -881,13 +881,13 @@ class DomainnameserverApi
      *
      * @param  string $hostname Hostname des Nameservers, welcher aktualisiert werden soll. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainNameserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainNameserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainNameserverRefreshWithHttpInfo($hostname)
     {
-        $returnType = '\Swagger\Client\Model\DomainNameserver[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainNameserver[]';
         $request = $this->domainNameserverRefreshRequest($hostname);
 
         try {
@@ -939,7 +939,7 @@ class DomainnameserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainNameserver[]',
+                        '\c-sakel\RUBClient\Model\DomainNameserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -981,7 +981,7 @@ class DomainnameserverApi
      */
     public function domainNameserverRefreshAsyncWithHttpInfo($hostname)
     {
-        $returnType = '\Swagger\Client\Model\DomainNameserver[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainNameserver[]';
         $request = $this->domainNameserverRefreshRequest($hostname);
 
         return $this->client
@@ -1126,9 +1126,9 @@ class DomainnameserverApi
      *
      * @param  string $hostname Hostname des Nameservers, welcher abgerufen werden soll. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainNameserver[]
+     * @return \c-sakel\RUBClient\Model\DomainNameserver[]
      */
     public function domainNameserverShow($hostname)
     {
@@ -1143,13 +1143,13 @@ class DomainnameserverApi
      *
      * @param  string $hostname Hostname des Nameservers, welcher abgerufen werden soll. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainNameserver[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainNameserver[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainNameserverShowWithHttpInfo($hostname)
     {
-        $returnType = '\Swagger\Client\Model\DomainNameserver[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainNameserver[]';
         $request = $this->domainNameserverShowRequest($hostname);
 
         try {
@@ -1201,7 +1201,7 @@ class DomainnameserverApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainNameserver[]',
+                        '\c-sakel\RUBClient\Model\DomainNameserver[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1243,7 +1243,7 @@ class DomainnameserverApi
      */
     public function domainNameserverShowAsyncWithHttpInfo($hostname)
     {
-        $returnType = '\Swagger\Client\Model\DomainNameserver[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainNameserver[]';
         $request = $this->domainNameserverShowRequest($hostname);
 
         return $this->client

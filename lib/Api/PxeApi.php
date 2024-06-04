@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * PxeApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -100,9 +100,9 @@ class PxeApi
      * @param  string[] $ip_addresses Array von IPv4-Adressen, welche automatisch eingerichtet werden sollen. Es muss mindestens 1 IPv4 oder 1 IPv6-Adresse angegeben werden. (optional)
      * @param  string[] $ip6_addresses Array von IPv6-Adressen bzw. IPv6-Netzen, welche automatisch eingerichtet werden sollen.  Es muss mindestens 1 IPv4 oder 1 IPv6-Adresse angegeben werden. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PxeAction[]
+     * @return \c-sakel\RUBClient\Model\PxeAction[]
      */
     public function pxeInstallationCreate($mac_address, $template, $hostname, $password, $ssh_keys = null, $commands = null, $ip_addresses = null, $ip6_addresses = null)
     {
@@ -124,13 +124,13 @@ class PxeApi
      * @param  string[] $ip_addresses Array von IPv4-Adressen, welche automatisch eingerichtet werden sollen. Es muss mindestens 1 IPv4 oder 1 IPv6-Adresse angegeben werden. (optional)
      * @param  string[] $ip6_addresses Array von IPv6-Adressen bzw. IPv6-Netzen, welche automatisch eingerichtet werden sollen.  Es muss mindestens 1 IPv4 oder 1 IPv6-Adresse angegeben werden. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PxeAction[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\PxeAction[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pxeInstallationCreateWithHttpInfo($mac_address, $template, $hostname, $password, $ssh_keys = null, $commands = null, $ip_addresses = null, $ip6_addresses = null)
     {
-        $returnType = '\Swagger\Client\Model\PxeAction[]';
+        $returnType = '\c-sakel\RUBClient\Model\PxeAction[]';
         $request = $this->pxeInstallationCreateRequest($mac_address, $template, $hostname, $password, $ssh_keys, $commands, $ip_addresses, $ip6_addresses);
 
         try {
@@ -182,7 +182,7 @@ class PxeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PxeAction[]',
+                        '\c-sakel\RUBClient\Model\PxeAction[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class PxeApi
      */
     public function pxeInstallationCreateAsyncWithHttpInfo($mac_address, $template, $hostname, $password, $ssh_keys = null, $commands = null, $ip_addresses = null, $ip6_addresses = null)
     {
-        $returnType = '\Swagger\Client\Model\PxeAction[]';
+        $returnType = '\c-sakel\RUBClient\Model\PxeAction[]';
         $request = $this->pxeInstallationCreateRequest($mac_address, $template, $hostname, $password, $ssh_keys, $commands, $ip_addresses, $ip6_addresses);
 
         return $this->client
@@ -447,9 +447,9 @@ class PxeApi
      * Alle PXE Installationen abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PxeAction[]
+     * @return \c-sakel\RUBClient\Model\PxeAction[]
      */
     public function pxeInstallationIndex()
     {
@@ -463,13 +463,13 @@ class PxeApi
      * Alle PXE Installationen abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PxeAction[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\PxeAction[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pxeInstallationIndexWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\PxeAction[]';
+        $returnType = '\c-sakel\RUBClient\Model\PxeAction[]';
         $request = $this->pxeInstallationIndexRequest();
 
         try {
@@ -521,7 +521,7 @@ class PxeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PxeAction[]',
+                        '\c-sakel\RUBClient\Model\PxeAction[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -561,7 +561,7 @@ class PxeApi
      */
     public function pxeInstallationIndexAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\PxeAction[]';
+        $returnType = '\c-sakel\RUBClient\Model\PxeAction[]';
         $request = $this->pxeInstallationIndexRequest();
 
         return $this->client
@@ -695,9 +695,9 @@ class PxeApi
      *
      * @param  int $installation Installation-ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PxeAction[]
+     * @return \c-sakel\RUBClient\Model\PxeAction[]
      */
     public function pxeInstallationShow($installation)
     {
@@ -712,13 +712,13 @@ class PxeApi
      *
      * @param  int $installation Installation-ID (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PxeAction[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\PxeAction[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pxeInstallationShowWithHttpInfo($installation)
     {
-        $returnType = '\Swagger\Client\Model\PxeAction[]';
+        $returnType = '\c-sakel\RUBClient\Model\PxeAction[]';
         $request = $this->pxeInstallationShowRequest($installation);
 
         try {
@@ -770,7 +770,7 @@ class PxeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PxeAction[]',
+                        '\c-sakel\RUBClient\Model\PxeAction[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -812,7 +812,7 @@ class PxeApi
      */
     public function pxeInstallationShowAsyncWithHttpInfo($installation)
     {
-        $returnType = '\Swagger\Client\Model\PxeAction[]';
+        $returnType = '\c-sakel\RUBClient\Model\PxeAction[]';
         $request = $this->pxeInstallationShowRequest($installation);
 
         return $this->client
@@ -956,9 +956,9 @@ class PxeApi
      * Installations-Templates abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PxeTemplate[]
+     * @return \c-sakel\RUBClient\Model\PxeTemplate[]
      */
     public function pxeInstallationTemplates()
     {
@@ -972,13 +972,13 @@ class PxeApi
      * Installations-Templates abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PxeTemplate[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\PxeTemplate[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pxeInstallationTemplatesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\PxeTemplate[]';
+        $returnType = '\c-sakel\RUBClient\Model\PxeTemplate[]';
         $request = $this->pxeInstallationTemplatesRequest();
 
         try {
@@ -1030,7 +1030,7 @@ class PxeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PxeTemplate[]',
+                        '\c-sakel\RUBClient\Model\PxeTemplate[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1070,7 +1070,7 @@ class PxeApi
      */
     public function pxeInstallationTemplatesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\PxeTemplate[]';
+        $returnType = '\c-sakel\RUBClient\Model\PxeTemplate[]';
         $request = $this->pxeInstallationTemplatesRequest();
 
         return $this->client

@@ -1,4 +1,4 @@
-# Swagger\Client\SshKeyApi
+# c-sakel\RUBClient\SshKeyApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**sshKeyShow**](SshKeyApi.md#sshkeyshow) | **GET** /ssh_key/show | Einzelnen SSH Key abrufen
 
 # **sshKeyCreate**
-> \Swagger\Client\Model\SshKey[] sshKeyCreate($name, $ssh_public_key)
+> \c-sakel\RUBClient\Model\SshKey[] sshKeyCreate($name, $ssh_public_key)
 
 Neuen SSH Key anlegen
 
@@ -19,11 +19,11 @@ Neuen SSH Key anlegen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\SshKeyApi(
+$apiInstance = new c-sakel\RUBClient\Api\SshKeyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SshKey[]**](../Model/SshKey.md)
+[**\c-sakel\RUBClient\Model\SshKey[]**](../Model/SshKey.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sshKeyDelete**
-> \Swagger\Client\Model\SshKey[] sshKeyDelete($ssh_key_id)
+> \c-sakel\RUBClient\Model\SshKey[] sshKeyDelete($ssh_key_id)
 
 SSH Key löschen
 
@@ -73,11 +73,11 @@ SSH Key löschen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\SshKeyApi(
+$apiInstance = new c-sakel\RUBClient\Api\SshKeyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SshKey[]**](../Model/SshKey.md)
+[**\c-sakel\RUBClient\Model\SshKey[]**](../Model/SshKey.md)
 
 ### Authorization
 
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sshKeyIndex**
-> \Swagger\Client\Model\SshKey[] sshKeyIndex()
+> \c-sakel\RUBClient\Model\SshKey[] sshKeyIndex()
 
 Alle SSH Keys abrufen
 
@@ -125,11 +125,11 @@ Alle SSH Keys abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\SshKeyApi(
+$apiInstance = new c-sakel\RUBClient\Api\SshKeyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -150,7 +150,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\SshKey[]**](../Model/SshKey.md)
+[**\c-sakel\RUBClient\Model\SshKey[]**](../Model/SshKey.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sshKeyShow**
-> \Swagger\Client\Model\SshKey[] sshKeyShow($ssh_key_id)
+> \c-sakel\RUBClient\Model\SshKey[] sshKeyShow($ssh_key_id)
 
 Einzelnen SSH Key abrufen
 
@@ -173,11 +173,11 @@ Einzelnen SSH Key abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\SshKeyApi(
+$apiInstance = new c-sakel\RUBClient\Api\SshKeyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SshKey[]**](../Model/SshKey.md)
+[**\c-sakel\RUBClient\Model\SshKey[]**](../Model/SshKey.md)
 
 ### Authorization
 

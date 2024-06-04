@@ -1,4 +1,4 @@
-# Swagger\Client\VserverupdateManagementApi
+# c-sakel\RUBClient\VserverupdateManagementApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -19,11 +19,11 @@ Dieser Endpunkt führt einen asynchronen Task aus. Die Updates werden somit im H
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverupdateManagementApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverupdateManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -71,11 +71,11 @@ vServer Updates abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\VserverupdateManagementApi(
+$apiInstance = new c-sakel\RUBClient\Api\VserverupdateManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

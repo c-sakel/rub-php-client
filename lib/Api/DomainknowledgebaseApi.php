@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * DomainknowledgebaseApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class DomainknowledgebaseApi
      * Alle TLDs aus der Wissensdatenbank abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainKnowledgebase[]
+     * @return \c-sakel\RUBClient\Model\DomainKnowledgebase[]
      */
     public function domainKnowledgebaseIndex()
     {
@@ -108,13 +108,13 @@ class DomainknowledgebaseApi
      * Alle TLDs aus der Wissensdatenbank abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainKnowledgebase[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainKnowledgebase[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainKnowledgebaseIndexWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\DomainKnowledgebase[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainKnowledgebase[]';
         $request = $this->domainKnowledgebaseIndexRequest();
 
         try {
@@ -166,7 +166,7 @@ class DomainknowledgebaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainKnowledgebase[]',
+                        '\c-sakel\RUBClient\Model\DomainKnowledgebase[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class DomainknowledgebaseApi
      */
     public function domainKnowledgebaseIndexAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\DomainKnowledgebase[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainKnowledgebase[]';
         $request = $this->domainKnowledgebaseIndexRequest();
 
         return $this->client
@@ -340,9 +340,9 @@ class DomainknowledgebaseApi
      *
      * @param  string $tld TLD, welche abgerufen werden soll. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainKnowledgebase[]
+     * @return \c-sakel\RUBClient\Model\DomainKnowledgebase[]
      */
     public function domainKnowledgebaseShow($tld)
     {
@@ -357,13 +357,13 @@ class DomainknowledgebaseApi
      *
      * @param  string $tld TLD, welche abgerufen werden soll. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainKnowledgebase[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainKnowledgebase[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainKnowledgebaseShowWithHttpInfo($tld)
     {
-        $returnType = '\Swagger\Client\Model\DomainKnowledgebase[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainKnowledgebase[]';
         $request = $this->domainKnowledgebaseShowRequest($tld);
 
         try {
@@ -415,7 +415,7 @@ class DomainknowledgebaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainKnowledgebase[]',
+                        '\c-sakel\RUBClient\Model\DomainKnowledgebase[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -457,7 +457,7 @@ class DomainknowledgebaseApi
      */
     public function domainKnowledgebaseShowAsyncWithHttpInfo($tld)
     {
-        $returnType = '\Swagger\Client\Model\DomainKnowledgebase[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainKnowledgebase[]';
         $request = $this->domainKnowledgebaseShowRequest($tld);
 
         return $this->client

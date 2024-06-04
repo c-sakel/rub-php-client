@@ -1,4 +1,4 @@
-# Swagger\Client\AddressApi
+# c-sakel\RUBClient\AddressApi
 
 All URIs are relative to *https://api.reselling.services/api/v1*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**addressTraffic**](AddressApi.md#addresstraffic) | **GET** /address/traffic | Traffic für IP-Adresse abrufen
 
 # **addressIndex**
-> \Swagger\Client\Model\Address[] addressIndex()
+> \c-sakel\RUBClient\Model\Address[] addressIndex()
 
 Alle IP-Adressen abrufen
 
@@ -19,11 +19,11 @@ Alle IP-Adressen abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\AddressApi(
+$apiInstance = new c-sakel\RUBClient\Api\AddressApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -44,7 +44,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\Address[]**](../Model/Address.md)
+[**\c-sakel\RUBClient\Model\Address[]**](../Model/Address.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addressRdns**
-> \Swagger\Client\Model\Address[] addressRdns($address, $rdns)
+> \c-sakel\RUBClient\Model\Address[] addressRdns($address, $rdns)
 
 rDNS Eintrag für IP-Adresse setzen
 
@@ -67,11 +67,11 @@ rDNS Eintrag für IP-Adresse setzen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\AddressApi(
+$apiInstance = new c-sakel\RUBClient\Api\AddressApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Address[]**](../Model/Address.md)
+[**\c-sakel\RUBClient\Model\Address[]**](../Model/Address.md)
 
 ### Authorization
 
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addressShow**
-> \Swagger\Client\Model\Address[] addressShow($address)
+> \c-sakel\RUBClient\Model\Address[] addressShow($address)
 
 Einzelne IP-Adresse abrufen
 
@@ -121,11 +121,11 @@ Einzelne IP-Adresse abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\AddressApi(
+$apiInstance = new c-sakel\RUBClient\Api\AddressApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Address[]**](../Model/Address.md)
+[**\c-sakel\RUBClient\Model\Address[]**](../Model/Address.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addressTraffic**
-> \Swagger\Client\Model\AddressTraffic[] addressTraffic($address, $start_date, $end_date)
+> \c-sakel\RUBClient\Model\AddressTraffic[] addressTraffic($address, $start_date, $end_date)
 
 Traffic für IP-Adresse abrufen
 
@@ -173,11 +173,11 @@ Traffic für IP-Adresse abrufen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: api_token
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = c-sakel\RUBClient\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\AddressApi(
+$apiInstance = new c-sakel\RUBClient\Api\AddressApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AddressTraffic[]**](../Model/AddressTraffic.md)
+[**\c-sakel\RUBClient\Model\AddressTraffic[]**](../Model/AddressTraffic.md)
 
 ### Authorization
 

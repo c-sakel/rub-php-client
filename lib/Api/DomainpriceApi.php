@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * DomainpriceApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class DomainpriceApi
      * Domain Preise abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainPrice[]
+     * @return \c-sakel\RUBClient\Model\DomainPrice[]
      */
     public function domainPrice()
     {
@@ -108,13 +108,13 @@ class DomainpriceApi
      * Domain Preise abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainPrice[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainPrice[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainPriceWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\DomainPrice[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainPrice[]';
         $request = $this->domainPriceRequest();
 
         try {
@@ -166,7 +166,7 @@ class DomainpriceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainPrice[]',
+                        '\c-sakel\RUBClient\Model\DomainPrice[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class DomainpriceApi
      */
     public function domainPriceAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\DomainPrice[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainPrice[]';
         $request = $this->domainPriceRequest();
 
         return $this->client
@@ -339,9 +339,9 @@ class DomainpriceApi
      * Domain Preise als CSV abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainPriceCsv[]
+     * @return \c-sakel\RUBClient\Model\DomainPriceCsv[]
      */
     public function domainPriceCsv()
     {
@@ -355,13 +355,13 @@ class DomainpriceApi
      * Domain Preise als CSV abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainPriceCsv[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainPriceCsv[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainPriceCsvWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\DomainPriceCsv[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainPriceCsv[]';
         $request = $this->domainPriceCsvRequest();
 
         try {
@@ -413,7 +413,7 @@ class DomainpriceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainPriceCsv[]',
+                        '\c-sakel\RUBClient\Model\DomainPriceCsv[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -453,7 +453,7 @@ class DomainpriceApi
      */
     public function domainPriceCsvAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\DomainPriceCsv[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainPriceCsv[]';
         $request = $this->domainPriceCsvRequest();
 
         return $this->client
@@ -586,9 +586,9 @@ class DomainpriceApi
      * Domain-Aktionen Preise abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainPricePromotion[]
+     * @return \c-sakel\RUBClient\Model\DomainPricePromotion[]
      */
     public function domainPricePromotion()
     {
@@ -602,13 +602,13 @@ class DomainpriceApi
      * Domain-Aktionen Preise abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainPricePromotion[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainPricePromotion[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainPricePromotionWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\DomainPricePromotion[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainPricePromotion[]';
         $request = $this->domainPricePromotionRequest();
 
         try {
@@ -660,7 +660,7 @@ class DomainpriceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainPricePromotion[]',
+                        '\c-sakel\RUBClient\Model\DomainPricePromotion[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -700,7 +700,7 @@ class DomainpriceApi
      */
     public function domainPricePromotionAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\DomainPricePromotion[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainPricePromotion[]';
         $request = $this->domainPricePromotionRequest();
 
         return $this->client
@@ -833,9 +833,9 @@ class DomainpriceApi
      * Domain-Aktionen Preise als CSV abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainPriceCsv[]
+     * @return \c-sakel\RUBClient\Model\DomainPriceCsv[]
      */
     public function domainPricePromotionCsv()
     {
@@ -849,13 +849,13 @@ class DomainpriceApi
      * Domain-Aktionen Preise als CSV abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainPriceCsv[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainPriceCsv[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainPricePromotionCsvWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\DomainPriceCsv[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainPriceCsv[]';
         $request = $this->domainPricePromotionCsvRequest();
 
         try {
@@ -907,7 +907,7 @@ class DomainpriceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainPriceCsv[]',
+                        '\c-sakel\RUBClient\Model\DomainPriceCsv[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -947,7 +947,7 @@ class DomainpriceApi
      */
     public function domainPricePromotionCsvAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\DomainPriceCsv[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainPriceCsv[]';
         $request = $this->domainPricePromotionCsvRequest();
 
         return $this->client

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace c-sakel\RUBClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use c-sakel\RUBClient\ApiException;
+use c-sakel\RUBClient\Configuration;
+use c-sakel\RUBClient\HeaderSelector;
+use c-sakel\RUBClient\ObjectSerializer;
 
 /**
  * DomainhandleApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  c-sakel\RUBClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class DomainhandleApi
      * Alle Handles abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainHandle[]
+     * @return \c-sakel\RUBClient\Model\DomainHandle[]
      */
     public function domainHandle()
     {
@@ -108,13 +108,13 @@ class DomainhandleApi
      * Alle Handles abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainHandle[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainHandle[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainHandleWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\DomainHandle[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainHandle[]';
         $request = $this->domainHandleRequest();
 
         try {
@@ -166,7 +166,7 @@ class DomainhandleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainHandle[]',
+                        '\c-sakel\RUBClient\Model\DomainHandle[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class DomainhandleApi
      */
     public function domainHandleAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\DomainHandle[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainHandle[]';
         $request = $this->domainHandleRequest();
 
         return $this->client
@@ -339,7 +339,7 @@ class DomainhandleApi
      * Länder für Handles abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string[]
      */
@@ -355,7 +355,7 @@ class DomainhandleApi
      * Länder für Handles abrufen
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -600,9 +600,9 @@ class DomainhandleApi
      * @param  string $phone Telefon Nummer (optional)
      * @param  string $fax Fax Nummer (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainHandle[]
+     * @return \c-sakel\RUBClient\Model\DomainHandle[]
      */
     public function domainHandleCreate($type, $sex, $first_name, $last_name, $street, $number, $postcode, $city, $region, $country, $email, $organisation = null, $phone = null, $fax = null)
     {
@@ -630,13 +630,13 @@ class DomainhandleApi
      * @param  string $phone Telefon Nummer (optional)
      * @param  string $fax Fax Nummer (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainHandle[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainHandle[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainHandleCreateWithHttpInfo($type, $sex, $first_name, $last_name, $street, $number, $postcode, $city, $region, $country, $email, $organisation = null, $phone = null, $fax = null)
     {
-        $returnType = '\Swagger\Client\Model\DomainHandle[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainHandle[]';
         $request = $this->domainHandleCreateRequest($type, $sex, $first_name, $last_name, $street, $number, $postcode, $city, $region, $country, $email, $organisation, $phone, $fax);
 
         try {
@@ -688,7 +688,7 @@ class DomainhandleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainHandle[]',
+                        '\c-sakel\RUBClient\Model\DomainHandle[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -756,7 +756,7 @@ class DomainhandleApi
      */
     public function domainHandleCreateAsyncWithHttpInfo($type, $sex, $first_name, $last_name, $street, $number, $postcode, $city, $region, $country, $email, $organisation = null, $phone = null, $fax = null)
     {
-        $returnType = '\Swagger\Client\Model\DomainHandle[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainHandle[]';
         $request = $this->domainHandleCreateRequest($type, $sex, $first_name, $last_name, $street, $number, $postcode, $city, $region, $country, $email, $organisation, $phone, $fax);
 
         return $this->client
@@ -1026,9 +1026,9 @@ class DomainhandleApi
      *
      * @param  string $handle Handle, welches gelöscht werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainHandle[]
+     * @return \c-sakel\RUBClient\Model\DomainHandle[]
      */
     public function domainHandleDelete($handle)
     {
@@ -1043,13 +1043,13 @@ class DomainhandleApi
      *
      * @param  string $handle Handle, welches gelöscht werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainHandle[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainHandle[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainHandleDeleteWithHttpInfo($handle)
     {
-        $returnType = '\Swagger\Client\Model\DomainHandle[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainHandle[]';
         $request = $this->domainHandleDeleteRequest($handle);
 
         try {
@@ -1101,7 +1101,7 @@ class DomainhandleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainHandle[]',
+                        '\c-sakel\RUBClient\Model\DomainHandle[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1143,7 +1143,7 @@ class DomainhandleApi
      */
     public function domainHandleDeleteAsyncWithHttpInfo($handle)
     {
-        $returnType = '\Swagger\Client\Model\DomainHandle[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainHandle[]';
         $request = $this->domainHandleDeleteRequest($handle);
 
         return $this->client
@@ -1288,9 +1288,9 @@ class DomainhandleApi
      *
      * @param  string $handle Handle, welches abgerufen werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainHandle[]
+     * @return \c-sakel\RUBClient\Model\DomainHandle[]
      */
     public function domainHandleShow($handle)
     {
@@ -1305,13 +1305,13 @@ class DomainhandleApi
      *
      * @param  string $handle Handle, welches abgerufen werden soll (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainHandle[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainHandle[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainHandleShowWithHttpInfo($handle)
     {
-        $returnType = '\Swagger\Client\Model\DomainHandle[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainHandle[]';
         $request = $this->domainHandleShowRequest($handle);
 
         try {
@@ -1363,7 +1363,7 @@ class DomainhandleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainHandle[]',
+                        '\c-sakel\RUBClient\Model\DomainHandle[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1405,7 +1405,7 @@ class DomainhandleApi
      */
     public function domainHandleShowAsyncWithHttpInfo($handle)
     {
-        $returnType = '\Swagger\Client\Model\DomainHandle[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainHandle[]';
         $request = $this->domainHandleShowRequest($handle);
 
         return $this->client
@@ -1560,9 +1560,9 @@ class DomainhandleApi
      * @param  string $phone Telefon Nummer (optional)
      * @param  string $fax Fax Nummer (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DomainHandle[]
+     * @return \c-sakel\RUBClient\Model\DomainHandle[]
      */
     public function domainHandleUpdate($handle, $street, $number, $postcode, $city, $region, $country, $email, $organisation = null, $phone = null, $fax = null)
     {
@@ -1587,13 +1587,13 @@ class DomainhandleApi
      * @param  string $phone Telefon Nummer (optional)
      * @param  string $fax Fax Nummer (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \c-sakel\RUBClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DomainHandle[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \c-sakel\RUBClient\Model\DomainHandle[], HTTP status code, HTTP response headers (array of strings)
      */
     public function domainHandleUpdateWithHttpInfo($handle, $street, $number, $postcode, $city, $region, $country, $email, $organisation = null, $phone = null, $fax = null)
     {
-        $returnType = '\Swagger\Client\Model\DomainHandle[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainHandle[]';
         $request = $this->domainHandleUpdateRequest($handle, $street, $number, $postcode, $city, $region, $country, $email, $organisation, $phone, $fax);
 
         try {
@@ -1645,7 +1645,7 @@ class DomainhandleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DomainHandle[]',
+                        '\c-sakel\RUBClient\Model\DomainHandle[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1707,7 +1707,7 @@ class DomainhandleApi
      */
     public function domainHandleUpdateAsyncWithHttpInfo($handle, $street, $number, $postcode, $city, $region, $country, $email, $organisation = null, $phone = null, $fax = null)
     {
-        $returnType = '\Swagger\Client\Model\DomainHandle[]';
+        $returnType = '\c-sakel\RUBClient\Model\DomainHandle[]';
         $request = $this->domainHandleUpdateRequest($handle, $street, $number, $postcode, $city, $region, $country, $email, $organisation, $phone, $fax);
 
         return $this->client
